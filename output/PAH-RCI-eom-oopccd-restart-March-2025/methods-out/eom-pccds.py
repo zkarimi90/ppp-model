@@ -48,7 +48,7 @@ hf_output = hf(one_body, two_body, 0.0, olp, orb_a)
 oopccd = ROOpCCD(lf, occ_model) 
 oopccd_output = oopccd(
     one_body,
-    two_body, hf_output, maxiter={"orbiter":0})
+    two_body, hf_output)
 
 eom = REOMpCCDS(lf, occ_model)
-eom_output = eom(one_body,two_body, oopccd_output, nroot=4)
+eom_output = eom(one_body,two_body, oopccd_output, nroot=1)
