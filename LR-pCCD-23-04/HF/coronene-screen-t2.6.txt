@@ -1,0 +1,1058 @@
+zahrakarimi@host-105 properties % python lr_pccd_ppp.py
+
+
+====================================================================================================
+
+ Welcome to
+
+                                 ____        ____  _____ ____ _____
+                                |  _ \ _   _| __ )| ____/ ___|_   _|
+                                | |_) | | | |  _ \|  _| \___ \ | |
+                                |  __/| |_| | |_) | |___ ___) || |
+                                |_|    \__, |____/|_____|____/ |_|
+                                       |___/
+
+ version 2.1.0.dev60+g74c4c368!
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@        @@              @@@@@             #@@        @@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@            @@@       @@@       @@,       @@@           @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@               @@@   @@           @@   @@@               @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                   @@@             @@@                   @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                     @@           @@                     @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@                     @@,       @@@                     @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@.                     @@@@@@@                     @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @@\     @@\  @@@  @@@@@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @  @    @  @     @   @        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          @@/ @ @ @@:  @@@ \@  @         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @    @  @  @       @ @          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@            @    @  @@/  @@@ @@/ @           @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                 @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@               @@@@@@@@@@@@@@&              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ PyBEST is written and maintained at Nicolaus Copernicus University (NCU) in Torun.
+ It contains contributions from (in alphabetic order)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         Developers                             Affiliation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Somayeh Ahmadkhani             Institute of Physics, NCU in Torun, Poland
+ Saman Behjou                   Institute of Physics, NCU in Torun, Poland
+ Katharina Boguslawski          Institute of Physics, NCU in Torun, Poland
+ Iulia Brumboiu                 Institute of Physics, NCU in Torun, Poland
+ Filip Brzęk                    Institute of Physics, NCU in Torun, Poland
+ Rahul Chakraborty              Institute of Physics, NCU in Torun, Poland
+ Kacper Cieślak                 Institute of Engineering and Technology, NCU in Torun, Poland
+ Marta Gałyńska                 Faculty of Chemistry, NCU in Torun, Poland
+ Antonina Dobrowolska           Institute of Engineering and Technology, NCU in Torun, Poland
+ Seyedehdelaram Jahani          Institute of Physics, NCU in Torun, Poland
+ Zahra Karimi                   Institute of Physics, NCU in Torun, Poland
+ Dariusz Kędziera               Faculty of Chemistry, NCU in Torun, Poland
+ Michał Kopczyński              Institute of Engineering and Technology, NCU in Torun, Poland
+ Maximilian Kriebel             Institute of Physics, NCU in Torun, Poland
+ Aleksandra Leszczyk            Institute of Physics, NCU in Torun, Poland
+ Artur Nowak                    Institute of Physics, NCU in Torun, Poland
+ Ram Dhari Pandey               Institute of Physics, NCU in Torun, Poland
+ Julia Szczuczko                Institute of Engineering and Technology, NCU in Torun, Poland
+ Lena Szczuczko                 Institute of Physics, NCU in Torun, Poland
+ Emil Sujkowski                 Institute of Engineering and Technology, NCU in Torun, Poland
+ Julian Świerczyński            Institute of Engineering and Technology, NCU in Torun, Poland
+ Paweł Tecmer                   Institute of Physics, NCU in Torun, Poland
+ Piotr Żuchowski                Institute of Physics, NCU in Torun, Poland
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         Contributors                           Affiliation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ More information about PyBEST can be found on this website: https://hd.fizyka.umk.pl/~pybest/
+
+ This log file allows you to track the progress of a calculation. It does not contain any data
+ that can be used for restarting. Useful numerical data is written to checkpoint files during
+ the calculation and can be accessed through the Python scripting interface.
+
+====================================================================================================
+User:            zahrakarimi
+Machine info:    Darwin host-105.42.fizyka.umk.pl 24.6.0 Darwin Kernel Version 24.6.0: Mon Jan 19
+                 22:00:10 PST 2026; root:xnu-11417.140.69.708.3~1/RELEASE_X86_64 x86_64
+Time:            2026-04-23T11:12:18.008090
+Python version:  3.12.8 (main, Dec  7 2024, 10:37:29) [Clang 17.0.0 (clang-1700.0.13.3)]
+PyBEST version:  2.1.0.dev60+g74c4c368
+Current Dir:     /Users/zahrakarimi/my_pybest/pybest/src/pybest/data/examples/properties
+Command line:    lr_pccd_ppp.py
+PyBEST module:   /Users/zahrakarimi/my_pybest/pybest/src/pybest/log.py
+
+!WARNING! The opt_einsum module has not been detected.
+
+====================================================================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Occupation Module:
+ 
+Aufbau occupation number model.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+              Total number of electrons: 24
+                Total electronic charge: 0
+                                         alpha
+        Total number of basis functions: 24   
+      Total number of occupied orbitals: 12   
+       Total number of virtual orbitals: 12   
+         Number of frozen core orbitals: 0    
+   Number of active core orbitals (CVS): 0    
+     Number of active occupied orbitals: 12   
+      Number of active virtual orbitals: 12   
+              Number of active orbitals: 24   
+      Number of electrons for each spin: 12   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+                                                                                                    
+Entering the PPP Model Hamiltonian
+ 
+          Total number of atoms: 36
+      Structure information for: 
+ 
+     Symbols of supported atoms: C24
+        On-site value (epsilon):   0.00 eV
+              Hubbard value (U):   8.00 eV   |    0.29 a.u.
+              Hopping value (t):  -2.60 eV   |   -0.10 a.u.
+        Dielectric constant (k):   2.00 eV
+                   Hubbard term: True
+====================================================================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Performing a core Hamiltonian guess.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting restricted closed-shell CDIIS-SCF
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Iter         Error        CN         Last nv Method          Energy       Change
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   0      5.39321e-01     1  
+   0      2.61343e-01     2  
+   0                  6.044e+00   0.72802  2 C  
+   1      2.29027e-02     3  
+   1                  2.752e+03   1.11641  3 C  
+   2      2.29627e-03     4  
+   2                  3.685e+05   1.08705  4 C  
+   3      3.35011e-04     5  
+   3                  4.738e+07   1.10804  5 C  
+   4      1.64058e-05     6  
+   4                  2.897e+09   1.03893  6 C  
+   5      3.17624e-06     6  
+   5                  2.850e+11   1.30477  6 C  
+   6      4.25885e-07     6  
+   6                  9.257e+10   1.17540  6 C  
+   7      1.72227e-08     6  
+   7                  2.228e+10   1.01678  6 C  
+   8      3.04210e-09 (converged)
+
+Contributions to the energy:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          term           Value
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           one     -31.438683559181
+                       hartree      17.595964925980
+                          x_hf      -2.316332511429
+                      external       0.000000000000
+                         total     -16.159051144630
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Print orbital information:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+               orb_index        Energy[E_h]     Energy[eV]
+		   1     	-0.1663430        -4.526
+		   2     	-0.1196074        -3.255
+		   3     	-0.1196065        -3.255
+		   4     	-0.0632327        -1.721
+		   5     	-0.0632309        -1.721
+		   6     	-0.0492641        -1.341
+		   7     	-0.0108427        -0.295
+		   8     	 0.0071388         0.194
+		   9     	 0.0095407         0.260
+		  10     	 0.0095412         0.260
+		  11     	 0.0630977         1.717
+		HOMO	         0.0630994         1.717
+		LUMO	         0.2308952         6.283
+		  14     	 0.2308969         6.283
+		  15     	 0.2844535         7.740
+		  16     	 0.2844539         7.740
+		  17     	 0.2868558         7.806
+		  18     	 0.3048373         8.295
+		  19     	 0.3432587         9.341
+		  20     	 0.3572255         9.721
+		  21     	 0.3572273         9.721
+		  22     	 0.4136011        11.255
+		  23     	 0.4136020        11.255
+		  24     	 0.4603376        12.526
+----------------------------------------------------------------------------------------------------
+       LUMO-HOMO gap 		 0.1677958         4.566
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+Entering RpCCD module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+Entering RpCCD optimization (restricted):
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OPTIMIZATION PARAMETERS:
+Number of frozen cores:      0
+Number of active pairs:      12
+Number of active virtuals:   12
+4-index transformation:      optimal
+Initial guess:
+  type:                        mp2
+  scaling factor:              -0.100
+Solvers:
+  wavefunction amplitudes:   krylov
+  lambda amplitudes:         krylov
+Optimization thresholds:
+  wavefunction:              1.00e-12
+Printing options:
+  threshold:                   1.00e-02
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Generating initial mp2 guess
+----------------------------------------------------------------------------------------------------
+Final reference Energy:          -16.159051144630
+            (Core Energy:          0.000000000000)
+     (determinant Energy:        -16.159051144630)
+Final correlation Energy:         -0.016669400996
+====================================================================================================
+Final total Energy:              -16.175720545627
+====================================================================================================
+----------------------------------------------------------------------------------------------------
+Leading electron-pair excitation amplitudes (i,a = alpha spin; I, A = beta spin)
+ 
+    amplitude    i    I  ->    a    A
+ 
+    -0.058349   12   12  ->   13   13
+    -0.058344   11   11  ->   14   14
+    -0.047757   10   10  ->   15   15
+    -0.047748    9    9  ->   16   16
+    -0.029270    8    8  ->   17   17
+    -0.024647    7    7  ->   18   18
+    -0.024256   11   11  ->   17   17
+    -0.024256    8    8  ->   14   14
+    -0.024252    8    8  ->   13   13
+    -0.024252   12   12  ->   17   17
+    -0.022281   11   11  ->   13   13
+    -0.022281   12   12  ->   14   14
+    -0.018760    7    7  ->   13   13
+    -0.018760   12   12  ->   18   18
+    -0.018759   11   11  ->   18   18
+    -0.018759    7    7  ->   14   14
+    -0.015866    5    5  ->   20   20
+    -0.015866    4    4  ->   21   21
+    -0.015242    5    5  ->   13   13
+    -0.015242   12   12  ->   20   20
+----------------------------------------------------------------------------------------------------
+Natural occupation numbers (for spatial orbitals):
+     1:  1.998884     2:  1.998645     3:  1.998645     4:  1.997781     5:  1.997781
+     6:  1.997746     7:  1.996033     8:  1.994886     9:  1.993199    10:  1.993197
+    11:  1.988426    12:  1.988425    13:  0.011575    14:  0.011574    15:  0.006803
+    16:  0.006801    17:  0.005114    18:  0.003967    19:  0.002254    20:  0.002219
+    21:  0.002219    22:  0.001355    23:  0.001355    24:  0.001116
+====================================================================================================
+====================================================================================================
+====================================================================================================
+ 
+Entering EOM-CC module
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+EOM-pCCD+S framework selected
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OPTIMIZATION PARAMETERS:
+Reference function:                 pCCD
+Number of frozen occupied orbitals: 0
+Number of active occupied orbitals: 12
+Total number of electrons:          24
+Number of active electrons:         24
+Number of active virtual orbitals:  12
+Number of roots:                    20
+Total number of roots:              289
+Diagonalization:                    Davidson
+Tensor contraction engine:          automatic
+Dumping cached arrays:              False
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Building effective Hamiltonian...
+...done.
+Starting diagonalization...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+Davidson diagonalization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             maxiter: 200
+              nroots: 21
+              nguess: 81
+             to disk: False
+    Energy tolerance: 1e-06
+    Vector tolerance: 0.0001
+             restart: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Orthogonalization of (almost) degenerate vectors 23 22
+Orthogonalization of (almost) degenerate vectors 26 25
+Orthogonalization of (almost) degenerate vectors 30 29
+Orthogonalization of (almost) degenerate vectors 42 41
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    0      1    8.617403e-03     1.206393e-01   1.206393e-01  
+    0      2    1.585695e-02     1.362872e-01   1.362872e-01  
+    0      3    8.981418e-03     1.481768e-01   1.481768e-01  
+    0      4    9.011261e-03     1.491331e-01   1.491331e-01  
+    0      5    3.343012e-02     1.682946e-01   1.682946e-01  
+    0      6    1.310579e-02     1.688769e-01   1.688769e-01  
+    0      7    3.965362e-02     1.732283e-01   1.732283e-01  
+    0      8    1.126371e-02     1.745490e-01   1.745490e-01  
+    0      9    3.232862e-02     1.764228e-01   1.764228e-01  
+    0     10    7.396363e-03     1.777925e-01   1.777925e-01  
+    0     11    3.474676e-02     1.825494e-01   1.825494e-01  
+    0     12    1.026540e-02     1.830588e-01   1.830588e-01  
+    0     13    1.182924e-02     1.874473e-01   1.874473e-01  
+    0     14    2.373736e-02     1.910339e-01   1.910339e-01  
+    0     15    1.864499e-02     1.947052e-01   1.947052e-01  
+    0     16    3.036227e-02     1.958612e-01   1.958612e-01  
+    0     17    1.159203e-02     1.964674e-01   1.964674e-01  
+    0     18    6.300430e-03     2.022584e-01   2.022584e-01  
+    0     19    1.920932e-02     2.150401e-01   2.150401e-01  
+    0     20    1.034527e-02     2.152828e-01   2.152828e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 23 22
+Orthogonalization of (almost) degenerate vectors 27 26
+Orthogonalization of (almost) degenerate vectors 30 29
+Orthogonalization of (almost) degenerate vectors 44 43
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    1      1    9.217478e-05    -3.062557e-04   1.203330e-01  
+    1      2    2.033703e-04    -8.893651e-04   1.353978e-01  
+    1      3    1.753680e-04    -3.452004e-04   1.478316e-01  
+    1      4    1.836372e-04    -3.605564e-04   1.487725e-01  
+    1      5    3.171451e-03    -2.754119e-03   1.655405e-01  
+    1      6    1.181886e-03    -4.512217e-04   1.684257e-01  
+    1      7    6.103746e-03    -3.062248e-03   1.701661e-01  
+    1      8    4.569553e-03    -4.579779e-04   1.740910e-01  
+    1      9    5.166891e-04    -2.295287e-03   1.741275e-01  
+    1     10    2.678159e-04    -9.678505e-05   1.776958e-01  
+    1     11    4.611997e-03    -2.516734e-03   1.800327e-01  
+    1     12    8.865907e-04    -2.467373e-04   1.828120e-01  
+    1     13    1.391475e-03    -4.913184e-04   1.869560e-01  
+    1     14    3.171299e-03    -1.263902e-03   1.897700e-01  
+    1     15    6.374988e-03    -9.106348e-04   1.937946e-01  
+    1     16    1.894645e-03    -1.793869e-03   1.940673e-01  
+    1     17    5.249808e-04    -4.741864e-04   1.959932e-01  
+    1     18    5.425933e-04    -1.187644e-04   2.021397e-01  
+    1     19    1.878817e-03    -7.338058e-04   2.143063e-01  
+    1     20    7.342418e-04    -2.353941e-04   2.150474e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 23 22
+Orthogonalization of (almost) degenerate vectors 27 26
+Orthogonalization of (almost) degenerate vectors 30 29
+Orthogonalization of (almost) degenerate vectors 44 43
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    2      1    1.903786e-05    -2.787802e-08   1.203330e-01  converged
+    2      2    5.425237e-06    -2.000006e-07   1.353976e-01  converged
+    2      3    7.082167e-06    -1.165506e-07   1.478315e-01  converged
+    2      4    7.044519e-06    -1.533497e-07   1.487724e-01  converged
+    2      5    3.921843e-04    -1.062669e-05   1.655298e-01  
+    2      6    1.014320e-04    -1.699959e-06   1.684240e-01  
+    2      7    1.101804e-03    -3.625987e-05   1.701298e-01  
+    2      8    4.279178e-04    -5.122956e-05   1.740398e-01  
+    2      9    2.834897e-05    -6.295654e-07   1.741269e-01  converged
+    2     10    1.536367e-05     6.718070e-07   1.776964e-01  converged
+    2     11    5.261189e-04    -2.730515e-05   1.800054e-01  
+    2     12    5.766667e-05    -4.894484e-07   1.828116e-01  converged
+    2     13    9.460767e-05    -5.417276e-06   1.869506e-01  
+    2     14    2.300622e-04    -3.961495e-05   1.897304e-01  
+    2     15    7.182345e-04    -3.718185e-05   1.937574e-01  
+    2     16    2.823139e-04    -9.758805e-06   1.940575e-01  
+    2     17    2.689554e-05     4.760941e-07   1.959936e-01  converged
+    2     18    5.077475e-05    -4.433346e-07   2.021392e-01  converged
+    2     19    1.705434e-04    -2.719868e-06   2.143036e-01  
+    2     20    4.783603e-05    -6.975608e-08   2.150474e-01  converged
+ 
+Orthogonalization of (almost) degenerate vectors 23 22
+Orthogonalization of (almost) degenerate vectors 27 26
+Orthogonalization of (almost) degenerate vectors 30 29
+Orthogonalization of (almost) degenerate vectors 44 43
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    3      5    4.102806e-05    -1.241233e-06   1.655286e-01  
+    3      6    1.011185e-05     5.238496e-08   1.684240e-01  converged
+    3      7    1.298894e-04    -3.185909e-06   1.701266e-01  
+    3      8    3.581005e-05    -4.696870e-07   1.740393e-01  converged
+    3     11    4.194876e-05    -1.642341e-06   1.800037e-01  
+    3     13    3.174236e-05     6.442221e-08   1.869506e-01  converged
+    3     14    1.743542e-05     2.594197e-07   1.897307e-01  converged
+    3     15    1.145987e-04    -1.656782e-06   1.937558e-01  
+    3     16    4.445168e-05    -6.268981e-07   1.940569e-01  converged
+    3     19    1.304071e-05    -1.629352e-07   2.143035e-01  converged
+ 
+Orthogonalization of (almost) degenerate vectors 23 22
+Orthogonalization of (almost) degenerate vectors 27 26
+Orthogonalization of (almost) degenerate vectors 30 29
+Orthogonalization of (almost) degenerate vectors 44 43
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    4      5    1.155688e-05    -5.209593e-08   1.655285e-01  converged
+    4      7    1.107654e-05     5.394766e-08   1.701267e-01  converged
+    4     11    1.195024e-05     1.823738e-07   1.800039e-01  converged
+    4     15    1.474299e-05    -6.629944e-08   1.937557e-01  converged
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Davidson converged
+====================================================================================================
+Final results:
+ 
+Excitation energy:               -0.00004438 [au]  /  -1.207763e-03 [eV]  /  -9.741267e+00 [cm-1]
+             t_0:                      -0.99994  
+          weight(s):  0.00011
+          weight(p):  0.00000
+Excitation energy:                0.12033300 [au]  /   3.274427e+00 [eV]  /   2.641004e+04 [cm-1]
+            t_ia:          ( 11, 13)    0.70018
+            t_ia:          ( 12, 14)   -0.70018
+          weight(s):  1.00000
+          weight(p):  0.00000
+Excitation energy:                0.13539760 [au]  /   3.684356e+00 [eV]  /   2.971634e+04 [cm-1]
+            t_ia:          ( 11, 14)   -0.70454
+            t_ia:          ( 12, 13)   -0.70473
+          weight(s):  1.00000
+          weight(p):  0.00000
+Excitation energy:                0.14783149 [au]  /   4.022699e+00 [eV]  /   3.244526e+04 [cm-1]
+            t_ia:          ( 11, 14)   -0.70312
+            t_ia:          ( 12, 13)    0.70262
+          weight(s):  1.00000
+          weight(p):  0.00000
+Excitation energy:                0.14877239 [au]  /   4.048303e+00 [eV]  /   3.265177e+04 [cm-1]
+            t_ia:          ( 11, 13)   -0.70256
+            t_ia:          ( 12, 14)   -0.70256
+          weight(s):  1.00000
+          weight(p):  0.00000
+Excitation energy:                0.16552854 [au]  /   4.504261e+00 [eV]  /   3.632932e+04 [cm-1]
+            t_ia:          (  7, 13)    0.17411
+            t_ia:          (  8, 14)    0.33954
+            t_ia:          (  9, 13)   -0.45275
+            t_ia:          ( 10, 14)   -0.34370
+            t_ia:          ( 11, 15)   -0.34369
+            t_ia:          ( 11, 17)   -0.33954
+            t_ia:          ( 12, 16)    0.45274
+            t_ia:          ( 12, 18)   -0.17411
+          t_iaia:  ( 11, 14, 11, 14)    0.14167
+          weight(s):  0.95001
+          weight(p):  0.04981
+Excitation energy:                0.16842401 [au]  /   4.583050e+00 [eV]  /   3.696480e+04 [cm-1]
+            t_ia:          (  7, 14)   -0.20392
+            t_ia:          (  8, 13)    0.26527
+            t_ia:          (  9, 14)   -0.43102
+            t_ia:          ( 10, 13)    0.43386
+            t_ia:          ( 11, 16)    0.43101
+            t_ia:          ( 11, 18)    0.20392
+            t_ia:          ( 12, 15)    0.43385
+            t_ia:          ( 12, 17)   -0.26527
+          weight(s):  0.99690
+          weight(p):  0.00307
+Excitation energy:                0.17012667 [au]  /   4.629382e+00 [eV]  /   3.733849e+04 [cm-1]
+            t_ia:          (  8, 14)    0.11562
+            t_ia:          (  9, 13)   -0.34193
+            t_ia:          ( 10, 14)    0.54645
+            t_ia:          ( 11, 15)    0.54644
+            t_ia:          ( 11, 17)   -0.11562
+            t_ia:          ( 12, 16)    0.34194
+          t_iaia:  ( 11, 14, 11, 14)    0.27488
+          t_iaia:  ( 12, 13, 12, 13)    0.11939
+          weight(s):  0.88116
+          weight(p):  0.11669
+Excitation energy:                0.17403935 [au]  /   4.735852e+00 [eV]  /   3.819722e+04 [cm-1]
+            t_ia:          (  7, 13)    0.10148
+            t_ia:          (  8, 14)    0.48015
+            t_ia:          (  9, 13)    0.34168
+            t_ia:          ( 11, 17)   -0.48015
+            t_ia:          ( 12, 16)   -0.34170
+            t_ia:          ( 12, 18)   -0.10148
+          t_iaia:  ( 11, 13, 11, 13)   -0.14560
+          t_iaia:  ( 11, 14, 11, 14)    0.40929
+          t_iaia:  ( 12, 13, 12, 13)   -0.18999
+          t_iaia:  ( 12, 14, 12, 14)   -0.14560
+          weight(s):  0.73874
+          weight(p):  0.26125
+Excitation energy:                0.17412701 [au]  /   4.738237e+00 [eV]  /   3.821646e+04 [cm-1]
+            t_ia:          (  9, 14)   -0.49529
+            t_ia:          ( 10, 13)   -0.49556
+            t_ia:          ( 11, 16)   -0.49528
+            t_ia:          ( 12, 15)    0.49556
+          weight(s):  0.99967
+          weight(p):  0.00033
+Excitation energy:                0.17769641 [au]  /   4.835365e+00 [eV]  /   3.899985e+04 [cm-1]
+            t_ia:          (  9, 14)   -0.49627
+            t_ia:          ( 10, 13)   -0.49913
+            t_ia:          ( 11, 16)    0.49627
+            t_ia:          ( 12, 15)   -0.49914
+          weight(s):  0.99957
+          weight(p):  0.00043
+Excitation energy:                0.18000393 [au]  /   4.898156e+00 [eV]  /   3.950630e+04 [cm-1]
+            t_ia:          (  9, 13)   -0.48684
+            t_ia:          ( 10, 14)   -0.48758
+            t_ia:          ( 11, 15)    0.48758
+            t_ia:          ( 12, 16)   -0.48683
+          weight(s):  0.96394
+          weight(p):  0.03606
+Excitation energy:                0.18281167 [au]  /   4.974558e+00 [eV]  /   4.012252e+04 [cm-1]
+            t_ia:          (  8, 13)    0.13660
+            t_ia:          (  9, 14)    0.48509
+            t_ia:          ( 10, 13)   -0.48686
+            t_ia:          ( 11, 16)    0.48509
+            t_ia:          ( 12, 15)    0.48686
+            t_ia:          ( 12, 17)    0.13660
+          weight(s):  0.99959
+          weight(p):  0.00041
+Excitation energy:                0.18695065 [au]  /   5.087186e+00 [eV]  /   4.103093e+04 [cm-1]
+            t_ia:          (  7, 14)   -0.23984
+            t_ia:          (  8, 13)    0.55093
+            t_ia:          (  9, 14)    0.22814
+            t_ia:          ( 10, 13)   -0.23385
+            t_ia:          ( 11, 16)   -0.22814
+            t_ia:          ( 11, 18)    0.23984
+            t_ia:          ( 12, 15)   -0.23385
+            t_ia:          ( 12, 17)   -0.55097
+          t_iaia:  ( 12, 13, 12, 13)    0.13500
+          weight(s):  0.97349
+          weight(p):  0.02646
+Excitation energy:                0.18973061 [au]  /   5.162832e+00 [eV]  /   4.164106e+04 [cm-1]
+            t_ia:          (  7, 13)   -0.20321
+            t_ia:          (  8, 14)   -0.61495
+            t_ia:          ( 11, 17)   -0.61498
+            t_ia:          ( 12, 18)   -0.20317
+          t_iaia:  ( 11, 13, 11, 13)   -0.23841
+          t_iaia:  ( 12, 14, 12, 14)    0.23839
+          weight(s):  0.87979
+          weight(p):  0.12021
+Excitation energy:                0.19375570 [au]  /   5.272361e+00 [eV]  /   4.252446e+04 [cm-1]
+            t_ia:          (  9, 13)   -0.48971
+            t_ia:          ( 10, 14)    0.48974
+            t_ia:          ( 11, 15)   -0.48974
+            t_ia:          ( 12, 16)   -0.48972
+          weight(s):  0.98143
+          weight(p):  0.01857
+Excitation energy:                0.19405689 [au]  /   5.280557e+00 [eV]  /   4.259057e+04 [cm-1]
+            t_ia:          (  7, 13)   -0.59609
+            t_ia:          (  7, 14)    0.12542
+            t_ia:          (  8, 14)    0.13665
+            t_ia:          ( 11, 17)   -0.13665
+            t_ia:          ( 11, 18)   -0.12542
+            t_ia:          ( 12, 18)    0.59608
+          t_iaia:  ( 11, 13, 11, 13)   -0.16802
+          t_iaia:  ( 11, 14, 11, 14)    0.11242
+          t_iaia:  ( 12, 13, 12, 13)    0.32953
+          t_iaia:  ( 12, 14, 12, 14)   -0.16802
+          weight(s):  0.81916
+          weight(p):  0.18045
+Excitation energy:                0.19599366 [au]  /   5.333259e+00 [eV]  /   4.301564e+04 [cm-1]
+            t_ia:          (  7, 14)    0.19153
+            t_ia:          (  8, 13)   -0.65223
+            t_ia:          (  8, 14)   -0.10124
+            t_ia:          (  9, 14)    0.10253
+            t_ia:          ( 11, 16)    0.10253
+            t_ia:          ( 11, 17)   -0.10121
+            t_ia:          ( 11, 18)    0.19155
+            t_ia:          ( 12, 17)   -0.65223
+          weight(s):  0.99977
+          weight(p):  0.00023
+Excitation energy:                0.20213924 [au]  /   5.500488e+00 [eV]  /   4.436444e+04 [cm-1]
+            t_ia:          (  7, 14)   -0.60861
+            t_ia:          (  8, 13)   -0.33085
+            t_ia:          ( 11, 18)    0.60861
+            t_ia:          ( 12, 17)    0.33085
+          weight(s):  0.99942
+          weight(p):  0.00058
+Excitation energy:                0.21430345 [au]  /   5.831493e+00 [eV]  /   4.703417e+04 [cm-1]
+            t_ia:          (  7, 13)    0.66055
+            t_ia:          (  8, 14)   -0.22370
+            t_ia:          ( 11, 17)   -0.22370
+            t_ia:          ( 12, 18)    0.66055
+          weight(s):  0.98395
+          weight(p):  0.01605
+Excitation energy:                0.21504738 [au]  /   5.851737e+00 [eV]  /   4.719745e+04 [cm-1]
+            t_ia:          (  7, 14)   -0.67838
+            t_ia:          (  8, 13)   -0.18790
+            t_ia:          ( 11, 18)   -0.67838
+            t_ia:          ( 12, 17)   -0.18790
+          weight(s):  0.99937
+          weight(p):  0.00063
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+Entering Transition Matrix for Linear Response pair Coupled Cluster Doubles + Singles module:
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OPTIMIZATION PARAMETERS:
+Number of frozen cores:        0
+Number of active occupied:     12
+Number of active virtuals:     12
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+Calculating Left and Right Transition Matrices
+	 Excited state: 1
+
+!WARNING! Neglecting negative values in DS/OS due to numerical issues. Setting DS -0.0000 for root
+          1 to 0.0
+
+	 Excited state: 2
+	 Excited state: 3
+	 Excited state: 4
+	 Excited state: 5
+	 Excited state: 6
+	 Excited state: 7
+	 Excited state: 8
+	 Excited state: 9
+
+!WARNING! Neglecting negative values in DS/OS due to numerical issues. Setting DS -0.0000 for root
+          9 to 0.0
+
+	 Excited state: 10
+	 Excited state: 11
+	 Excited state: 12
+
+!WARNING! Neglecting negative values in DS/OS due to numerical issues. Setting DS -0.0000 for root
+          12 to 0.0
+
+	 Excited state: 13
+
+!WARNING! Neglecting negative values in DS/OS due to numerical issues. Setting DS -0.0005 for root
+          13 to 0.0
+
+	 Excited state: 14
+	 Excited state: 15
+	 Excited state: 16
+
+!WARNING! Neglecting negative values in DS/OS due to numerical issues. Setting DS -0.0008 for root
+          16 to 0.0
+
+	 Excited state: 17
+	 Excited state: 18
+	 Excited state: 19
+	 Excited state: 20
+----------------------------------------------------------------------------------------------------
+Root 0:
+LR excitation energy:      -0.0000444 [au]  /  -0.0012 [eV]  /       -9.74 [cm^-1]
+                                                                                                    
+
+!WARNING! No basis information found. We assume that the dipole moment is calculated for the center
+          of charge. Setting nuclear part to [0.0, 0.0, 0.0].
+
+Unfolding DM from OneIndex to TwoIndex object
+Dipole moment components:             mu_x      mu_y      mu_z      |mu|     OS(f)
+Nuclear dipole moment    (a.u.):     0.0000    0.0000    0.0000    0.0000    0.0000
+Nuclear dipole moment    ( db ):     0.0000    0.0000    0.0000    0.0000    0.0000
+                                                                                                    
+Electronic dipole moment (a.u.):    -0.0000   -0.0000   -0.0000    0.0000    0.0000
+Electronic dipole moment ( db ):    -0.0000   -0.0000   -0.0000    0.0000    0.0000
+                                                                                                    
+Total dipole moment      (a.u.):    -0.0000   -0.0000   -0.0000    0.0000    0.0000
+Total dipole moment      ( db ):    -0.0000   -0.0000   -0.0000    0.0000    0.0000
+                                                                                                    
+----------------------------------------------------------------------------------------------------
+Root 1:
+LR excitation energy:       0.1203330 [au]  /   3.2744 [eV]  /    26410.04 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	 -0.0946   0.0043  -0.0019
+Right Transition Matrix:  	  0.0000  -0.0000   0.0000
+LTM*RTM:                  	 -0.0000  -0.0000  -0.0000
+                                                                                                    
+Dipole Strength (DS):    	  0.0000
+Oscillator Strength (OS):	  0.0000
+ 
+----------------------------------------------------------------------------------------------------
+Root 2:
+LR excitation energy:       0.1353976 [au]  /   3.6844 [eV]  /    29716.34 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	 -0.0003   0.0036  -0.0014
+Right Transition Matrix:  	 -0.0004   0.0001  -0.0006
+LTM*RTM:                  	  0.0000   0.0000   0.0000
+                                                                                                    
+Dipole Strength (DS):    	  0.0000
+Oscillator Strength (OS):	  0.0000
+ 
+----------------------------------------------------------------------------------------------------
+Root 3:
+LR excitation energy:       0.1478315 [au]  /   4.0227 [eV]  /    32445.26 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  6.8611  -0.2682   0.1402
+Right Transition Matrix:  	  3.4139  -0.1332   0.0699
+LTM*RTM:                  	  23.4232   0.0357   0.0098
+                                                                                                    
+Dipole Strength (DS):    	  23.4687
+Oscillator Strength (OS):	  2.3129
+ 
+----------------------------------------------------------------------------------------------------
+Root 4:
+LR excitation energy:       0.1487724 [au]  /   4.0483 [eV]  /    32651.77 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	 -0.2578  -6.7279   0.0765
+Right Transition Matrix:  	 -0.1849  -3.4031   0.0377
+LTM*RTM:                  	  0.0477   22.8954   0.0029
+                                                                                                    
+Dipole Strength (DS):    	  22.9460
+Oscillator Strength (OS):	  2.2758
+ 
+----------------------------------------------------------------------------------------------------
+Root 5:
+LR excitation energy:       0.1655285 [au]  /   4.5043 [eV]  /    36329.32 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0476  -0.0009  -0.0007
+Right Transition Matrix:  	  0.0129   0.0058   0.0001
+LTM*RTM:                  	  0.0006  -0.0000  -0.0000
+                                                                                                    
+Dipole Strength (DS):    	  0.0006
+Oscillator Strength (OS):	  0.0001
+ 
+----------------------------------------------------------------------------------------------------
+Root 6:
+LR excitation energy:       0.1684240 [au]  /   4.5831 [eV]  /    36964.80 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0434  -0.0008  -0.0007
+Right Transition Matrix:  	  0.0045   0.0012   0.0001
+LTM*RTM:                  	  0.0002  -0.0000  -0.0000
+                                                                                                    
+Dipole Strength (DS):    	  0.0002
+Oscillator Strength (OS):	  0.0000
+ 
+----------------------------------------------------------------------------------------------------
+Root 7:
+LR excitation energy:       0.1701267 [au]  /   4.6294 [eV]  /    37338.49 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0411  -0.0007   0.0003
+Right Transition Matrix:  	  0.0281  -0.0064   0.0006
+LTM*RTM:                  	  0.0012   0.0000   0.0000
+                                                                                                    
+Dipole Strength (DS):    	  0.0012
+Oscillator Strength (OS):	  0.0001
+ 
+----------------------------------------------------------------------------------------------------
+Root 8:
+LR excitation energy:       0.1740394 [au]  /   4.7359 [eV]  /    38197.22 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0375  -0.0015  -0.0014
+Right Transition Matrix:  	  0.0896   0.0126   0.0016
+LTM*RTM:                  	  0.0034  -0.0000  -0.0000
+                                                                                                    
+Dipole Strength (DS):    	  0.0033
+Oscillator Strength (OS):	  0.0004
+ 
+----------------------------------------------------------------------------------------------------
+Root 9:
+LR excitation energy:       0.1741270 [au]  /   4.7382 [eV]  /    38216.46 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0367  -0.0005  -0.0012
+Right Transition Matrix:  	 -0.0002   0.0001   0.0002
+LTM*RTM:                  	 -0.0000  -0.0000  -0.0000
+                                                                                                    
+Dipole Strength (DS):    	  0.0000
+Oscillator Strength (OS):	  0.0000
+ 
+----------------------------------------------------------------------------------------------------
+Root 10:
+LR excitation energy:       0.1776964 [au]  /   4.8354 [eV]  /    38999.85 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0340  -0.0005  -0.0032
+Right Transition Matrix:  	  0.0013   0.0001   0.0000
+LTM*RTM:                  	  0.0000  -0.0000  -0.0000
+                                                                                                    
+Dipole Strength (DS):    	  0.0000
+Oscillator Strength (OS):	  0.0000
+ 
+----------------------------------------------------------------------------------------------------
+Root 11:
+LR excitation energy:       0.1800039 [au]  /   4.8982 [eV]  /    39506.30 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0328  -0.0009  -0.0061
+Right Transition Matrix:  	  0.0004   0.0008  -0.0014
+LTM*RTM:                  	  0.0000  -0.0000   0.0000
+                                                                                                    
+Dipole Strength (DS):    	  0.0000
+Oscillator Strength (OS):	  0.0000
+ 
+----------------------------------------------------------------------------------------------------
+Root 12:
+LR excitation energy:       0.1828117 [au]  /   4.9746 [eV]  /    40122.52 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0305  -0.0006  -0.0017
+Right Transition Matrix:  	  0.0001  -0.0001   0.0021
+LTM*RTM:                  	  0.0000   0.0000  -0.0000
+                                                                                                    
+Dipole Strength (DS):    	  0.0000
+Oscillator Strength (OS):	  0.0000
+ 
+----------------------------------------------------------------------------------------------------
+Root 13:
+LR excitation energy:       0.1869507 [au]  /   5.0872 [eV]  /    41030.93 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0280  -0.0004  -0.0156
+Right Transition Matrix:  	 -0.0177   0.0078  -0.0004
+LTM*RTM:                  	 -0.0005  -0.0000   0.0000
+                                                                                                    
+Dipole Strength (DS):    	  0.0000
+Oscillator Strength (OS):	  0.0000
+ 
+----------------------------------------------------------------------------------------------------
+Root 14:
+LR excitation energy:       0.1897306 [au]  /   5.1628 [eV]  /    41641.06 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0253   0.0002   0.0418
+Right Transition Matrix:  	 -0.0004   0.0005   0.0170
+LTM*RTM:                  	 -0.0000   0.0000   0.0007
+                                                                                                    
+Dipole Strength (DS):    	  0.0007
+Oscillator Strength (OS):	  0.0001
+ 
+----------------------------------------------------------------------------------------------------
+Root 15:
+LR excitation energy:       0.1937557 [au]  /   5.2724 [eV]  /    42524.46 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0233   0.0001   0.0433
+Right Transition Matrix:  	 -0.0004   0.0000   0.0114
+LTM*RTM:                  	 -0.0000   0.0000   0.0005
+                                                                                                    
+Dipole Strength (DS):    	  0.0005
+Oscillator Strength (OS):	  0.0001
+ 
+----------------------------------------------------------------------------------------------------
+Root 16:
+LR excitation energy:       0.1940569 [au]  /   5.2806 [eV]  /    42590.57 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0241  -0.0003   0.0199
+Right Transition Matrix:  	 -0.0321   0.0208  -0.0009
+LTM*RTM:                  	 -0.0008  -0.0000  -0.0000
+                                                                                                    
+Dipole Strength (DS):    	  0.0000
+Oscillator Strength (OS):	  0.0000
+ 
+----------------------------------------------------------------------------------------------------
+Root 17:
+LR excitation energy:       0.1959937 [au]  /   5.3333 [eV]  /    43015.64 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0242  -0.0007  -0.0222
+Right Transition Matrix:  	  0.0005  -0.0002  -0.0193
+LTM*RTM:                  	  0.0000   0.0000   0.0004
+                                                                                                    
+Dipole Strength (DS):    	  0.0004
+Oscillator Strength (OS):	  0.0001
+ 
+----------------------------------------------------------------------------------------------------
+Root 18:
+LR excitation energy:       0.2021392 [au]  /   5.5005 [eV]  /    44364.44 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0211  -0.0003   0.0136
+Right Transition Matrix:  	  0.0003  -0.0002  -0.0000
+LTM*RTM:                  	  0.0000   0.0000  -0.0000
+                                                                                                    
+Dipole Strength (DS):    	  0.0000
+Oscillator Strength (OS):	  0.0000
+ 
+----------------------------------------------------------------------------------------------------
+Root 19:
+LR excitation energy:       0.2143035 [au]  /   5.8315 [eV]  /    47034.17 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0146   0.0011   0.1640
+Right Transition Matrix:  	 -0.0004   0.0004   0.0287
+LTM*RTM:                  	 -0.0000   0.0000   0.0047
+                                                                                                    
+Dipole Strength (DS):    	  0.0047
+Oscillator Strength (OS):	  0.0007
+ 
+----------------------------------------------------------------------------------------------------
+Root 20:
+LR excitation energy:       0.2150474 [au]  /   5.8517 [eV]  /    47197.45 [cm^-1]
+                                                                                                    
+                                     x        y        z
+Left Transition Matrix:   	  0.0201  -0.0012  -0.0987
+Right Transition Matrix:  	  0.0008  -0.0004  -0.0365
+LTM*RTM:                  	  0.0000   0.0000   0.0036
+                                                                                                    
+Dipole Strength (DS):    	  0.0036
+Oscillator Strength (OS):	  0.0005
+ 
+----------------------------------------------------------------------------------------------------
+Summary of results:
+ 
+	  E [eV] 	 OS [a.u.] 	 OS (scaled)
+	   3.2744 	    0.000	    0.000
+	   3.6844 	    0.000	    0.000
+	   4.0227 	    2.313	    1.000
+	   4.0483 	    2.276	    0.984
+	   4.5043 	    0.000	    0.000
+	   4.5831 	    0.000	    0.000
+	   4.6294 	    0.000	    0.000
+	   4.7359 	    0.000	    0.000
+	   4.7382 	    0.000	    0.000
+	   4.8354 	    0.000	    0.000
+	   4.8982 	    0.000	    0.000
+	   4.9746 	    0.000	    0.000
+	   5.0872 	    0.000	    0.000
+	   5.1628 	    0.000	    0.000
+	   5.2724 	    0.000	    0.000
+	   5.2806 	    0.000	    0.000
+	   5.3333 	    0.000	    0.000
+	   5.5005 	    0.000	    0.000
+	   5.8315 	    0.001	    0.000
+	   5.8517 	    0.001	    0.000
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Please, cite the following references:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ * For Entering the property module
+
+ * For model Hamiltonians
+   - Karimi, Z.; Ahmadkhani, S.; Boguslawski, K.; Tecmer, P.; XX X, X--X (2025); X
+
+ * For pCCD dipole moments using Linear response method
+   - Ahmadkhani, S.; Boguslawski, K.; Tecmer, P.; J. Chem. Theory Comput. 20, 10443--10452 (2024);
+     https://doi.org/10.1021/acs.jctc.4c01017
+
+ * For the EOM-pCCD-based methods
+   - Boguslawski, K.; J. Chem. Phys. 145, 234105 (2016); http://dx.doi.org/10.1063/1.4972053
+
+   - Boguslawski, K.; J. Chem. Phys. 147, 139901 (2017); http://dx.doi.org/10.1063/1.5006124
+
+ * For the commutator DIIS SCF algorithm
+   - Pulay, P.; Chem. Phys. Lett. 73, 393--398 (1980);
+     http://dx.doi.org/10.1016/0009-2614(80)80396-4
+
+ * For the pCCD method
+   - Boguslawski, K.; Tecmer, P.; Ayers, P. W.; Bultinck, P.; De Baerdemacker, S.; Van Neck, D.;
+     Phys. Rev. B 89, 201106(R) (2014); http://dx.doi.org/10.1103/PhysRevB.89.201106
+
+   - Boguslawski, K.; Tecmer, P.; Ayers, P. W.; Bultinck, P.; De Baerdemacker, S.; Van Neck, D.; J.
+     Chem. Theory Comput. 10, 4873--4882 (2014); http://dx.doi.org/10.1021/ct500759q
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Details can be found in the file /Users/zahrakarimi/my_pybest/pybest/src/pybest/data/references.bib
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+User:            zahrakarimi
+Machine info:    Darwin host-105.42.fizyka.umk.pl 24.6.0 Darwin Kernel Version 24.6.0: Mon Jan 19
+                 22:00:10 PST 2026; root:xnu-11417.140.69.708.3~1/RELEASE_X86_64 x86_64
+Time:            2026-04-23T11:12:23.317303
+Python version:  3.12.8 (main, Dec  7 2024, 10:37:29) [Clang 17.0.0 (clang-1700.0.13.3)]
+PyBEST version:  2.1.0.dev60+g74c4c368
+Current Dir:     /Users/zahrakarimi/my_pybest/pybest/src/pybest/data/examples/properties
+Command line:    lr_pccd_ppp.py
+PyBEST module:   /Users/zahrakarimi/my_pybest/pybest/src/pybest/log.py
+
+Overview of CPU time usage.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Label                    Total     Own
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Base: contract            0.9      0.9 WWWWWWWWWWWWWW                                               
+Base: expand              0.0      0.0                                                              
+Davidson                  1.0      0.6 WWWWWWWWWW                                                   
+EOMCC: Diagonalize        1.0      0.0                                                              
+EOMCC: call               1.0      0.0                                                              
+EOMpCCD+S: H_diag         0.0      0.0                                                              
+EOMpCCD+S: H_eff          0.0      0.0                                                              
+EOMpCCD+S: H_sub          0.3      0.1                                                              
+Geminal: solver           0.4      0.0                                                              
+H_eff: Fock_diag          0.0      0.0                                                              
+H_eff: Fock_full          0.0      0.0                                                              
+Index Trans               0.0      0.0                                                              
+LR: TDM/DM                0.4      0.0                                                              
+LR: TDM/Dipole            0.4      0.0                                                              
+LR: pCCDS/F_nm            0.0      0.0                                                              
+LR: pCCDS/Xi_pq           0.2      0.0                                                              
+LR: pCCDS/eta_pq          0.0      0.0                                                              
+PT2: Epsilon              0.0      0.0                                                              
+RpCCD: 1DM                0.0      0.0                                                              
+RpCCD: 2DM                0.0      0.0                                                              
+RpCCD: Hamiltonian        0.0      0.0                                                              
+RpCCD: Lambda VecFct      0.1      0.0                                                              
+RpCCD: Lambda eqs         0.1      0.0                                                              
+RpCCD: Solver             0.3      0.0                                                              
+RpCCD: T_p VecFct         0.2      0.0                                                              
+RpCCD: T_p eqs            0.2      0.0                                                              
+RpCCD: nDM                0.0      0.0                                                              
+SCF                       0.1      0.1                                                              
+SCF: Initial Guess        0.0      0.0                                                              
+Total                     5.5      3.6 WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CPU user time  :       5.36
+  CPU sysem time :       0.48
+  Page swaps     :       0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+====================================================================================================
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*                          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@        @@              @@@@@           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@            @@@       @@@       @@,       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@               @@@   @@           @@   @@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                   @@@             @@@               @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                     @@           @@                  @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@                     @@,       @@@                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@.                     @@@@@@@                     @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @@\     @@\  @@@  @@@@@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @  @    @  @     @   @        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          @@/ @ @ @@:  @@@ \@  @         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @    @  @  @       @ @          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@            @    @  @@/  @@@ @@/ @           @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                 @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@               @@@@@@@@@@@@@@&              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ End of PyBEST. Program finished SUCCESSFULLY. Please read this output file carefully and watch out
+ for possible WARNINGS!
+
+ Thank you for using PyBEST 2.1.0.dev60+g74c4c368! See you soon!
+====================================================================================================
+zahrakarimi@host-105 properties % 
