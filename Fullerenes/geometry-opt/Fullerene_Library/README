@@ -1,0 +1,75 @@
+#!/bin/bash
+
+# This is the script used to generate this fullerene library.
+# It requires the Fullerene 4.5 generator code from:
+# http://ctcp.massey.ac.nz/index.php?group=&page=fullerenes
+# with the fullerene database file downloaded and put in the correct directory:
+# http://ctcp.massey.ac.nz/data/databaseAll.C020-110.tar
+# It also uses obminimize from Open Babel to pre-optimise the structures
+# https://openbabel.org/wiki/Obminimize
+# and requires xTB to be installed for the final geometry optimise step
+# https://github.com/grimme-lab/xtb
+# Some of the paths will need to be modified depending on where you install these.
+#
+# Script (c) Chris Ewels 1/9/2021
+#
+# The library is free for use, if you use the data for a publication, please cite:
+# Methodological Investigation for Hydrogen Addition to Small Cage Carbon Fullerenes
+# [1] Y. Tanuma, T. Maekawa, C. Ewels, MDPI Crystals (2021)
+# link via doi: 10.20944/preprints202109.0361.v1
+
+cd $HOME/codes/fullerene
+
+rm sum_en.pure.txt
+mkdir library
+cd library
+
+for i in `seq -w 20 2 80`
+do
+
+mkdir $i
+cd $i
+
+pwd
+isotot=`wc -l ../../database/All/c0${i}all.database | awk '{print $1}'`
+isotot="$(($isotot-1))"
+
+echo $isotot " " $i
+
+for j in `seq 1 $isotot`
+do
+mkdir $j
+cd $j
+
+echo "Blah" > ../../../inp.inp
+echo "Blah" >> ../../../inp.inp
+echo "&General NA=$i IP=2 iwext=3 /" >> ../../../inp.inp
+echo "&Coord ICart=2, isonum=$j iwext=1 R5=1.30 R6=1.20 ScaleRad=3/" >> ../../../inp.inp
+echo "&FFChoice Iopt=1 /" >> ../../../inp.inp
+echo "&FFParameters /" >> ../../../inp.inp
+echo "&Hamilton /" >> ../../../inp.inp
+echo "&Isomers /" >> ../../../inp.inp
+echo "&Graph /" >> ../../../inp.inp
+
+cd ../../../
+./fullerene < inp.inp > out.out 
+obabel -imol2 Fullerene-3D.mol -omol > F.mol
+obminimize F.mol > F.pdb
+obabel -ipdb F.pdb -oxyz > F.xyz
+xtb F.xyz --opt --ceasefiles > res.xtb
+xtbenergy=`grep "TOTAL ENERGY" res.xtb | awk '{print $4}'`
+enperat=`echo "$xtbenergy / $i" | bc -l`
+echo "$i $j $xtbenergy $enperat" >> sum_en.pure.txt
+mv xtbopt.xyz library/$i/$j/pure.xyz
+cd -
+
+cd ..
+done
+cd ..
+done
+
+cd ..
+rm out.out inp.inp res.xtb Fullerene-3D.xyz gaudifullerene.xyz
+Echo "Finished, fullerene xyz library created. xTB Energies in sum_en.pure.txt"
+
+

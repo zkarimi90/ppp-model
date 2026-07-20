@@ -1,0 +1,2326 @@
+zahrakarimi@host-105 hamiltonian % python ppp.py
+
+
+====================================================================================================
+
+ Welcome to
+
+                                 ____        ____  _____ ____ _____
+                                |  _ \ _   _| __ )| ____/ ___|_   _|
+                                | |_) | | | |  _ \|  _| \___ \ | |
+                                |  __/| |_| | |_) | |___ ___) || |
+                                |_|    \__, |____/|_____|____/ |_|
+                                       |___/
+
+ version 2.1.0.dev60+g74c4c368!
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@        @@              @@@@@             #@@        @@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@            @@@       @@@       @@,       @@@           @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@               @@@   @@           @@   @@@               @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                   @@@             @@@                   @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                     @@           @@                     @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@                     @@,       @@@                     @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@.                     @@@@@@@                     @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @@\     @@\  @@@  @@@@@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @  @    @  @     @   @        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          @@/ @ @ @@:  @@@ \@  @         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @    @  @  @       @ @          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@            @    @  @@/  @@@ @@/ @           @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                 @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@               @@@@@@@@@@@@@@&              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ PyBEST is written and maintained at Nicolaus Copernicus University (NCU) in Torun.
+ It contains contributions from (in alphabetic order)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         Developers                             Affiliation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Somayeh Ahmadkhani             Institute of Physics, NCU in Torun, Poland
+ Saman Behjou                   Institute of Physics, NCU in Torun, Poland
+ Katharina Boguslawski          Institute of Physics, NCU in Torun, Poland
+ Iulia Brumboiu                 Institute of Physics, NCU in Torun, Poland
+ Filip Brzęk                    Institute of Physics, NCU in Torun, Poland
+ Rahul Chakraborty              Institute of Physics, NCU in Torun, Poland
+ Kacper Cieślak                 Institute of Engineering and Technology, NCU in Torun, Poland
+ Marta Gałyńska                 Faculty of Chemistry, NCU in Torun, Poland
+ Antonina Dobrowolska           Institute of Engineering and Technology, NCU in Torun, Poland
+ Seyedehdelaram Jahani          Institute of Physics, NCU in Torun, Poland
+ Zahra Karimi                   Institute of Physics, NCU in Torun, Poland
+ Dariusz Kędziera               Faculty of Chemistry, NCU in Torun, Poland
+ Michał Kopczyński              Institute of Engineering and Technology, NCU in Torun, Poland
+ Maximilian Kriebel             Institute of Physics, NCU in Torun, Poland
+ Aleksandra Leszczyk            Institute of Physics, NCU in Torun, Poland
+ Artur Nowak                    Institute of Physics, NCU in Torun, Poland
+ Ram Dhari Pandey               Institute of Physics, NCU in Torun, Poland
+ Julia Szczuczko                Institute of Engineering and Technology, NCU in Torun, Poland
+ Lena Szczuczko                 Institute of Physics, NCU in Torun, Poland
+ Emil Sujkowski                 Institute of Engineering and Technology, NCU in Torun, Poland
+ Julian Świerczyński            Institute of Engineering and Technology, NCU in Torun, Poland
+ Paweł Tecmer                   Institute of Physics, NCU in Torun, Poland
+ Piotr Żuchowski                Institute of Physics, NCU in Torun, Poland
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         Contributors                           Affiliation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ More information about PyBEST can be found on this website: https://hd.fizyka.umk.pl/~pybest/
+
+ This log file allows you to track the progress of a calculation. It does not contain any data
+ that can be used for restarting. Useful numerical data is written to checkpoint files during
+ the calculation and can be accessed through the Python scripting interface.
+
+====================================================================================================
+User:            zahrakarimi
+Machine info:    Darwin host-105.22.fizyka.umk.pl 24.6.0 Darwin Kernel Version 24.6.0: Tue Apr 21
+                 20:17:54 PDT 2026; root:xnu-11417.140.69.710.16~1/RELEASE_X86_64 x86_64
+Time:            2026-05-22T15:36:40.232570
+Python version:  3.12.8 (main, Dec  7 2024, 10:37:29) [Clang 17.0.0 (clang-1700.0.13.3)]
+PyBEST version:  2.1.0.dev60+g74c4c368
+Current Dir:     /Users/zahrakarimi/my_pybest/pybest/src/pybest/data/examples/hamiltonian
+Command line:    ppp.py
+PyBEST module:   /Users/zahrakarimi/my_pybest/pybest/src/pybest/log.py
+
+!WARNING! The opt_einsum module has not been detected.
+
+====================================================================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Occupation Module:
+ 
+Aufbau occupation number model.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+              Total number of electrons: 60
+                Total electronic charge: 0
+                                         alpha
+        Total number of basis functions: 60   
+      Total number of occupied orbitals: 30   
+       Total number of virtual orbitals: 30   
+         Number of frozen core orbitals: 0    
+   Number of active core orbitals (CVS): 0    
+     Number of active occupied orbitals: 30   
+      Number of active virtual orbitals: 30   
+              Number of active orbitals: 60   
+      Number of electrons for each spin: 30   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+                                                                                                    
+Entering the PPP Model Hamiltonian
+ 
+          Total number of atoms: 60
+      Structure information for: Coordinates from ORCA-job c60 E -2286.469460938471
+ 
+     Symbols of supported atoms: C60
+        On-site value (epsilon): -11.22 eV
+              Hubbard value (U):  11.13 eV   |    0.41 a.u.
+              Hopping value (t):  -2.40 eV   |   -0.09 a.u.
+        Dielectric constant (k):   1.00 eV
+                   Hubbard term: True
+====================================================================================================
+Bonds per atom: [3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3.
+ 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3.
+ 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3.]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Performing a core Hamiltonian guess.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting restricted closed-shell CDIIS-SCF
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Iter         Error        CN         Last nv Method          Energy       Change
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   0      6.84907e-02     1  
+   0      3.28958e-02     2  
+   0                  1.369e+02   1.81250  2 C  
+   1      4.85725e-03     3  
+   1                  8.204e+03   1.48904  3 C  
+   2      3.12243e-04     4  
+   2                  1.943e+05   0.86831  4 C  
+   3      7.25013e-05     5  
+   3                  4.828e+06   1.43688  5 C  
+   4      4.00540e-05     6  
+   4                  2.351e+08   2.76011  6 C  
+   5      1.10087e-05     6  
+   5                  9.753e+07   1.22282  6 C  
+   6      1.64225e-06     6  
+   6                  1.403e+07   1.10869  6 C  
+   7      7.25147e-07     6  
+   7                  6.138e+05   1.33090  6 C  
+   8      3.15394e-07     6  
+   8                  2.619e+05   1.22941  6 C  
+   9      1.11787e-07     6  
+   9                  1.394e+06   1.62800  6 C  
+  10      3.79037e-08     6  
+  10                  1.062e+06   1.72123  6 C  
+  11      1.52074e-08     6  
+  11                  4.364e+04   1.28982  6 C  
+  12      8.66538e-09 (converged)
+
+Contributions to the energy:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          term           Value
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           one    -450.682052293078
+                       hartree     221.143292491801
+                          x_hf      -9.896878161503
+                      external       0.000000000000
+                         total    -239.435637962780
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Print orbital information:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+               orb_index        Energy[E_h]     Energy[eV]
+		   1     	-0.6343445       -17.261
+		   2     	-0.6085299       -16.559
+		   3     	-0.6085278       -16.559
+		   4     	-0.6085252       -16.559
+		   5     	-0.5587365       -15.204
+		   6     	-0.5587327       -15.204
+		   7     	-0.5587324       -15.204
+		   8     	-0.5587308       -15.204
+		   9     	-0.5587297       -15.204
+		  10     	-0.4979465       -13.550
+		  11     	-0.4979458       -13.550
+		  12     	-0.4979442       -13.550
+		  13     	-0.4795131       -13.048
+		  14     	-0.4795067       -13.048
+		  15     	-0.4795063       -13.048
+		  16     	-0.4795040       -13.048
+		  17     	-0.4120761       -11.213
+		  18     	-0.4120758       -11.213
+		  19     	-0.4120748       -11.213
+		  20     	-0.4120708       -11.213
+		  21     	-0.3983928       -10.841
+		  22     	-0.3983915       -10.841
+		  23     	-0.3983895       -10.841
+		  24     	-0.3983871       -10.841
+		  25     	-0.3983866       -10.841
+		  26     	-0.3577865        -9.736
+		  27     	-0.3577828        -9.736
+		  28     	-0.3577824        -9.736
+		  29     	-0.3577803        -9.736
+		HOMO	        -0.3577787        -9.736
+		LUMO	        -0.1120632        -3.049
+		  32     	-0.1120620        -3.049
+		  33     	-0.1120606        -3.049
+		  34     	-0.0822522        -2.238
+		  35     	-0.0822502        -2.238
+		  36     	-0.0822450        -2.238
+		  37     	 0.0214781         0.584
+		  38     	 0.0214796         0.584
+		  39     	 0.0214808         0.585
+		  40     	 0.0214814         0.585
+		  41     	 0.0214841         0.585
+		  42     	 0.0403837         1.099
+		  43     	 0.0403866         1.099
+		  44     	 0.0403879         1.099
+		  45     	 0.0636142         1.731
+		  46     	 0.0636159         1.731
+		  47     	 0.0636175         1.731
+		  48     	 0.0636189         1.731
+		  49     	 0.0636225         1.731
+		  50     	 0.1095594         2.981
+		  51     	 0.1095611         2.981
+		  52     	 0.1095624         2.981
+		  53     	 0.1095647         2.981
+		  54     	 0.1721912         4.686
+		  55     	 0.1721937         4.686
+		  56     	 0.1721941         4.686
+		  57     	 0.1721964         4.686
+		  58     	 0.1782733         4.851
+		  59     	 0.1782744         4.851
+		  60     	 0.1782765         4.851
+----------------------------------------------------------------------------------------------------
+       LUMO-HOMO gap 		 0.2457156         6.686
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+Entering RpCCD module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+Entering RpCCD optimization (restricted):
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OPTIMIZATION PARAMETERS:
+Number of frozen cores:      0
+Number of active pairs:      30
+Number of active virtuals:   30
+4-index transformation:      optimal
+Initial guess:
+  type:                        mp2
+  scaling factor:              -0.100
+Solvers:
+  wavefunction amplitudes:   krylov
+  lambda amplitudes:         krylov
+Optimization thresholds:
+  wavefunction:              1.00e-12
+Printing options:
+  threshold:                   1.00e-02
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Generating initial mp2 guess
+----------------------------------------------------------------------------------------------------
+Final reference Energy:         -239.435637962780
+            (Core Energy:          0.000000000000)
+     (determinant Energy:       -239.435637962780)
+Final correlation Energy:         -0.009588314066
+====================================================================================================
+Final total Energy:             -239.445226276846
+====================================================================================================
+----------------------------------------------------------------------------------------------------
+Leading electron-pair excitation amplitudes (i,a = alpha spin; I, A = beta spin)
+ 
+    amplitude    i    I  ->    a    A
+ 
+    -0.025821   22   22  ->   31   31
+    -0.022787   21   21  ->   32   32
+    -0.019873   25   25  ->   31   31
+    -0.019404   30   30  ->   35   35
+    -0.019349   28   28  ->   36   36
+    -0.019138   23   23  ->   32   32
+    -0.017726   21   21  ->   33   33
+    -0.017416   26   26  ->   36   36
+    -0.017363   24   24  ->   32   32
+    -0.017164   29   29  ->   34   34
+    -0.016001   25   25  ->   33   33
+    -0.015911   27   27  ->   32   32
+    -0.015762   27   27  ->   35   35
+    -0.014774   26   26  ->   35   35
+    -0.014508   24   24  ->   33   33
+    -0.014004   23   23  ->   33   33
+    -0.013828   28   28  ->   34   34
+    -0.013756   27   27  ->   34   34
+    -0.013203   29   29  ->   33   33
+    -0.013147   30   30  ->   34   34
+----------------------------------------------------------------------------------------------------
+Natural occupation numbers (for spatial orbitals):
+     1:  1.999958     2:  1.999937     3:  1.999938     4:  1.999935     5:  1.999862
+     6:  1.999868     7:  1.999869     8:  1.999875     9:  1.999868    10:  1.999610
+    11:  1.999601    12:  1.999601    13:  1.999586    14:  1.999711    15:  1.999727
+    16:  1.999685    17:  1.999235    18:  1.999189    19:  1.999284    20:  1.999276
+    21:  1.997604    22:  1.997594    23:  1.997918    24:  1.997950    25:  1.997830
+    26:  1.997756    27:  1.997701    28:  1.997744    29:  1.997803    30:  1.997762
+    31:  0.004089    32:  0.004026    33:  0.003744    34:  0.002801    35:  0.002899
+    36:  0.003040    37:  0.000762    38:  0.000723    39:  0.000713    40:  0.000729
+    41:  0.000710    42:  0.000454    43:  0.000451    44:  0.000447    45:  0.000381
+    46:  0.000371    47:  0.000367    48:  0.000358    49:  0.000387    50:  0.000189
+    51:  0.000175    52:  0.000180    53:  0.000183    54:  0.000084    55:  0.000079
+    56:  0.000080    57:  0.000080    58:  0.000075    59:  0.000073    60:  0.000073
+====================================================================================================
+====================================================================================================
+====================================================================================================
+ 
+ 
+====================================================================================================
+ 
+RCC module
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PARAMETERS
+Wave function model            RfpCCSD
+Full name of model             Restricted frozen-pair Coupled Cluster Singles and Doubles
+Cluster operator               T1 + T2 - Tp
+Total number of electrons      60
+Total number of electron pairs 30
+Total number of orbitals       60
+Number of active orbitals      60
+Number of core orbitals        0
+Number of active occupied      30
+Number of active virtual       30
+Initial guess                  mp2
+Solver:                        krylov
+     inner_maxiter             18
+     Jacobian method           lgmres
+Optimization thresholds:
+     energy threshold          1e-06
+     residual threshold        1e-05
+Maximum number of iterations   501
+Tensor contraction engine      automatic
+....................................................................................................
+Performing an MP2 calculations for an initial guess.
+   Generating MP2 guess for T_1.
+   Generating MP2 guess for T_2.
+Resuming CC calculation.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Iter     Total energy        Diff    Corr. energy  |Residual|    max(Residual)         Time
+     1  -239.7372269474    2.40e+02   -0.3015889846    1.34e-03         6.86e-05          16.7233
+     2  -239.7362504988   -9.76e-04   -0.3006125360    4.68e-07         3.61e-08          30.3343
+ 
+Amplitudes converged in 1 iterations.
+ 
+----------------------------------------------------------------------------------------------------
+RfpCCSD energy
+Total energy             -239.73625050 a.u.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Reference determinant    -239.43563796 a.u.
+Correlation energy         -0.30061254 a.u.
+....................................................................................................
+Singles                    -0.00001937 a.u.
+Doubles                    -0.30059316 a.u.
+....................................................................................................
+Doubles w/o Pairs          -0.29100485 a.u.
+Pairs                      -0.00958831 a.u.
+----------------------------------------------------------------------------------------------------
+ 
+Leading double excitation amplitudes
+
+    amplitude   i   j  ->   a   b
+
+    -0.025821  22  22  ->  31  31
+    -0.022787  21  21  ->  32  32
+    -0.019873  25  25  ->  31  31
+    -0.019404  30  30  ->  35  35
+    -0.019349  28  28  ->  36  36
+    -0.019138  23  23  ->  32  32
+    -0.017726  21  21  ->  33  33
+    -0.017416  26  26  ->  36  36
+    -0.017363  24  24  ->  32  32
+    -0.017164  29  29  ->  34  34
+    -0.017129  26  21  ->  36  33
+    -0.017129  21  26  ->  33  36
+    -0.016001  25  25  ->  33  33
+    -0.015911  27  27  ->  32  32
+    -0.015762  27  27  ->  35  35
+     0.015643  21  28  ->  32  36
+     0.015643  28  21  ->  36  32
+    -0.015038  23  30  ->  32  35
+    -0.015038  30  23  ->  35  32
+     0.015000  21  27  ->  32  35
+----------------------------------------------------------------------------------------------------
+
+Leading single excitation amplitudes
+
+    amplitude   i  ->   a
+
+    -0.009999  23  ->  41
+     0.009093  21  ->  40
+    -0.009086  22  ->  39
+    -0.008975  25  ->  38
+     0.008136  24  ->  37
+    -0.005992  10  ->  43
+    -0.005898  11  ->  42
+     0.005882  12  ->  44
+    -0.005363  22  ->  37
+    -0.005251  24  ->  38
+     0.005030  25  ->  40
+     0.004623  21  ->  37
+    -0.004414  24  ->  39
+    -0.003855  23  ->  39
+     0.003848  22  ->  41
+     0.003681  21  ->  38
+    -0.003016  30  ->  49
+    -0.002954  24  ->  40
+    -0.002919  28  ->  48
+    -0.002885  25  ->  37
+----------------------------------------------------------------------------------------------------
+T1 diagnostic: 0.003855
+D1 diagnostic: 0.011491
+ 
+Entering IP-EOM-CC module
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+IP-EOM-fpCCSD framework selected
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OPTIMIZATION PARAMETERS:
+Reference Function:            fpCCSD
+Number of frozen cores:        0
+Number of active occupied:     30
+Number of active virtuals:     30
+Number of hole operators:      1
+Number of unpaired electrons:  1
+Spin-free implementation:      False
+Number of roots:               10
+Total number of roots:         30
+Diagonalization:               Davidson
+Tensor contraction engine:     automatic
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Building effective Hamiltonian...
+...done.
+Starting diagonalization...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting diagonalization for 1 unpaired electrons
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+!WARNING! Maximum number of guess vectors reached: 30
+
+====================================================================================================
+Davidson diagonalization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             maxiter: 200
+              nroots: 10
+              nguess: 50
+             to disk: False
+    Energy tolerance: 1e-06
+    Vector tolerance: 1e-05
+             restart: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    0      0    5.429202e-16     3.751562e-01   3.751562e-01  
+    0      1    5.397599e-16     3.751700e-01   3.751700e-01  
+    0      2    4.032006e-06     3.751807e-01   3.751807e-01  
+    0      3    1.422880e-05     3.751807e-01   3.751807e-01  
+    0      4    7.878867e-16     3.751913e-01   3.751913e-01  
+    0      5    5.535779e-16     4.135477e-01   4.135477e-01  
+    0      6    3.068780e-06     4.135593e-01   4.135593e-01  
+    0      7    1.218704e-05     4.135593e-01   4.135593e-01  
+    0      8    5.483246e-16     4.135750e-01   4.135750e-01  
+    0      9    6.253137e-16     4.135885e-01   4.135885e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    1      0    5.429202e-16     0.000000e+00   3.751562e-01  converged
+    1      1    5.397599e-16     0.000000e+00   3.751700e-01  converged
+    1      2    4.032006e-06     0.000000e+00   3.751807e-01  converged
+    1      3    1.422880e-05     0.000000e+00   3.751807e-01  
+    1      4    7.878867e-16     0.000000e+00   3.751913e-01  converged
+    1      5    5.535779e-16     0.000000e+00   4.135477e-01  converged
+    1      6    3.068780e-06     0.000000e+00   4.135593e-01  converged
+    1      7    1.218704e-05     0.000000e+00   4.135593e-01  
+    1      8    5.483246e-16     0.000000e+00   4.135750e-01  converged
+    1      9    6.253137e-16     0.000000e+00   4.135885e-01  converged
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    2      3    1.422880e-05     0.000000e+00   3.751807e-01  
+    2      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    3      3    1.422880e-05     0.000000e+00   3.751807e-01  
+    3      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    4      3    1.422880e-05     0.000000e+00   3.751807e-01  
+    4      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    5      3    1.422880e-05     0.000000e+00   3.751807e-01  
+    5      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    6      3    1.422880e-05     0.000000e+00   3.751807e-01  
+    6      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    7      3    1.422880e-05     0.000000e+00   3.751807e-01  
+    7      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    8      3    1.422880e-05     0.000000e+00   3.751807e-01  
+    8      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    9      3    1.422880e-05     0.000000e+00   3.751807e-01  
+    9      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   10      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   10      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   11      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   11      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   12      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   12      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   13      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   13      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   14      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   14      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   15      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   15      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   16      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   16      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   17      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   17      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   18      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   18      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   19      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   19      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   20      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   20      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   21      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   21      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   22      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   22      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   23      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   23      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   24      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   24      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   25      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   25      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   26      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   26      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   27      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   27      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   28      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   28      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   29      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   29      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   30      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   30      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   31      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   31      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   32      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   32      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   33      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   33      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   34      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   34      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   35      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   35      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   36      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   36      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   37      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   37      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   38      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   38      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   39      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   39      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   40      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   40      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   41      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   41      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   42      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   42      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   43      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   43      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   44      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   44      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   45      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   45      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   46      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   46      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   47      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   47      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   48      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   48      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   49      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   49      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   50      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   50      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   51      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   51      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   52      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   52      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   53      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   53      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   54      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   54      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   55      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   55      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   56      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   56      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   57      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   57      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   58      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   58      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   59      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   59      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   60      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   60      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   61      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   61      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   62      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   62      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   63      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   63      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   64      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   64      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   65      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   65      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   66      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   66      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   67      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   67      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   68      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   68      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   69      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   69      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   70      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   70      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   71      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   71      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   72      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   72      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   73      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   73      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   74      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   74      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   75      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   75      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   76      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   76      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   77      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   77      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   78      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   78      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   79      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   79      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   80      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   80      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   81      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   81      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   82      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   82      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   83      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   83      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   84      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   84      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   85      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   85      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   86      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   86      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   87      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   87      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   88      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   88      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   89      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   89      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   90      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   90      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   91      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   91      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   92      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   92      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   93      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   93      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   94      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   94      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   95      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   95      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   96      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   96      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   97      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   97      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   98      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   98      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   99      3    1.422880e-05     0.000000e+00   3.751807e-01  
+   99      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  100      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  100      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  101      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  101      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  102      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  102      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  103      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  103      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  104      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  104      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  105      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  105      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  106      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  106      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  107      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  107      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  108      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  108      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  109      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  109      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  110      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  110      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  111      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  111      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  112      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  112      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  113      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  113      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  114      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  114      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  115      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  115      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  116      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  116      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  117      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  117      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  118      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  118      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  119      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  119      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  120      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  120      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  121      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  121      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  122      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  122      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  123      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  123      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  124      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  124      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  125      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  125      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  126      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  126      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  127      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  127      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  128      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  128      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  129      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  129      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  130      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  130      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  131      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  131      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  132      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  132      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  133      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  133      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  134      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  134      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  135      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  135      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  136      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  136      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  137      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  137      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  138      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  138      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  139      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  139      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  140      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  140      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  141      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  141      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  142      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  142      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  143      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  143      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  144      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  144      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  145      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  145      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  146      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  146      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  147      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  147      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  148      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  148      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  149      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  149      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  150      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  150      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  151      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  151      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  152      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  152      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  153      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  153      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  154      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  154      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  155      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  155      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  156      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  156      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  157      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  157      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  158      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  158      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  159      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  159      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  160      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  160      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  161      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  161      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  162      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  162      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  163      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  163      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  164      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  164      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  165      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  165      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  166      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  166      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  167      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  167      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  168      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  168      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  169      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  169      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  170      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  170      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  171      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  171      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  172      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  172      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  173      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  173      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  174      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  174      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  175      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  175      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  176      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  176      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  177      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  177      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  178      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  178      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  179      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  179      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  180      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  180      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  181      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  181      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  182      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  182      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  183      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  183      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  184      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  184      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  185      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  185      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  186      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  186      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  187      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  187      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  188      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  188      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  189      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  189      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  190      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  190      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  191      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  191      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  192      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  192      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  193      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  193      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  194      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  194      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  195      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  195      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  196      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  196      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  197      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  197      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  198      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  198      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  199      3    1.422880e-05     0.000000e+00   3.751807e-01  
+  199      7    1.218704e-05     0.000000e+00   4.135593e-01  
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Davidson NOT converged
+====================================================================================================
+Final results for spin projection 0.5:
+ 
+Ionization energy:           3.751562e-01 [au]  /   1.020852e+01 [eV]  /   8.233727e+04 [cm-1]
+Energy of ionized state:    -239.3610943123 [au]  /  -6513.3465 [eV]  /  -52533687.890 [cm-1]
+              r_i:           ( 29)    0.60801
+              r_i:           ( 26)    0.58289
+              r_i:           ( 28)    0.38672
+              r_i:           ( 27)   -0.37388
+      weight(r_i):  1.00000
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           3.751700e-01 [au]  /   1.020890e+01 [eV]  /   8.234030e+04 [cm-1]
+Energy of ionized state:    -239.3610804767 [au]  /  -6513.3461 [eV]  /  -52533684.853 [cm-1]
+              r_i:           ( 30)   -0.73424
+              r_i:           ( 26)    0.55021
+              r_i:           ( 28)   -0.24915
+              r_i:           ( 29)    0.23445
+              r_i:           ( 27)   -0.20280
+      weight(r_i):  1.00000
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           3.751807e-01 [au]  /   1.020919e+01 [eV]  /   8.234265e+04 [cm-1]
+Energy of ionized state:    -239.3610698002 [au]  /  -6513.3459 [eV]  /  -52533682.510 [cm-1]
+              r_i:           ( 30)   -0.63896
+              r_i:           ( 27)   -0.59398
+              r_i:           ( 26)   -0.32276
+              r_i:           ( 28)   -0.26716
+              r_i:           ( 29)    0.25173
+      weight(r_i):  1.00000
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           3.751807e-01 [au]  /   1.020919e+01 [eV]  /   8.234265e+04 [cm-1]
+Energy of ionized state:    -239.3610698002 [au]  /  -6513.3459 [eV]  /  -52533682.510 [cm-1]
+              r_i:           ( 26)    0.83253
+              r_i:           ( 29)   -0.37581
+              r_i:           ( 30)   -0.33302
+              r_i:           ( 27)   -0.19569
+              r_i:           ( 28)   -0.12833
+      weight(r_i):  1.00000
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           3.751913e-01 [au]  /   1.020947e+01 [eV]  /   8.234496e+04 [cm-1]
+Energy of ionized state:    -239.3610592481 [au]  /  -6513.3456 [eV]  /  -52533680.194 [cm-1]
+              r_i:           ( 28)    0.90233
+              r_i:           ( 29)   -0.29720
+              r_i:           ( 30)   -0.24782
+              r_i:           ( 26)   -0.18282
+      weight(r_i):  1.00000
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           4.135477e-01 [au]  /   1.125321e+01 [eV]  /   9.076323e+04 [cm-1]
+Energy of ionized state:    -239.3227027758 [au]  /  -6512.3018 [eV]  /  -52525261.922 [cm-1]
+              r_i:           ( 25)   -0.66521
+              r_i:           ( 23)   -0.63820
+              r_i:           ( 24)   -0.31795
+              r_i:           ( 21)   -0.22137
+      weight(r_i):  1.00000
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           4.135593e-01 [au]  /   1.125352e+01 [eV]  /   9.076577e+04 [cm-1]
+Energy of ionized state:    -239.3226912335 [au]  /  -6512.3015 [eV]  /  -52525259.388 [cm-1]
+              r_i:           ( 23)   -0.78109
+              r_i:           ( 21)    0.52665
+              r_i:           ( 25)    0.25010
+              r_i:           ( 22)    0.20812
+      weight(r_i):  1.00000
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           4.135593e-01 [au]  /   1.125352e+01 [eV]  /   9.076577e+04 [cm-1]
+Energy of ionized state:    -239.3226912335 [au]  /  -6512.3015 [eV]  /  -52525259.388 [cm-1]
+              r_i:           ( 24)   -0.79685
+              r_i:           ( 25)    0.52944
+              r_i:           ( 23)    0.21280
+              r_i:           ( 22)    0.15220
+              r_i:           ( 21)    0.12752
+      weight(r_i):  1.00000
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           4.135750e-01 [au]  /   1.125395e+01 [eV]  /   9.076923e+04 [cm-1]
+Energy of ionized state:    -239.3226754686 [au]  /  -6512.3011 [eV]  /  -52525255.928 [cm-1]
+              r_i:           ( 22)   -0.61878
+              r_i:           ( 24)    0.60174
+              r_i:           ( 21)   -0.41423
+              r_i:           ( 23)   -0.28759
+      weight(r_i):  1.00000
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           4.135885e-01 [au]  /   1.125431e+01 [eV]  /   9.077217e+04 [cm-1]
+Energy of ionized state:    -239.3226620437 [au]  /  -6512.3007 [eV]  /  -52525252.982 [cm-1]
+              r_i:           ( 22)   -0.90919
+              r_i:           ( 24)    0.38201
+              r_i:           ( 25)   -0.15602
+      weight(r_i):  1.00000
+Suggested spin multiplicity: doublet
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Please, cite the following references:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ * For IP-EOM-CC-based methods
+   - Gałyńska, M.; Boguslawski, K.; J. Chem. Theory Comput. 20, 4182--4195 (2024);
+     http://dx.doi.org/10.1021/acs.jctc.4c00172
+
+ * For model Hamiltonians
+   - Karimi, Z.; Ahmadkhani, S.; Boguslawski, K.; Tecmer, P.; XX X, X--X (2025); X
+
+ * For the (D)IP-EOM-pCCD-based methods
+   - Boguslawski, K.; Chem. Commun. 57, 12277--12280 (2021); http://dx.doi.org/10.1039/D1CC04539C
+
+   - Pandey, R. D.; de Moraes, M. M. F.; Boguslawski, K.; Tecmer, P.; J. Chem. Theory Comput. 21,
+     5049--5061 (2025); https://doi.org/10.1021/acs.jctc.5c00057
+
+ * For the commutator DIIS SCF algorithm
+   - Pulay, P.; Chem. Phys. Lett. 73, 393--398 (1980);
+     http://dx.doi.org/10.1016/0009-2614(80)80396-4
+
+ * For the fpCC methods
+   - Leszczyk, A.; Máté, M.;  Legeza, Ö.; Boguslawski, K.; J. Chem. Theory Comput. 18, 96--117
+     (2022); http://dx.doi.org/10.1021/acs.jctc.1c00284
+
+ * For the pCCD method
+   - Boguslawski, K.; Tecmer, P.; Ayers, P. W.; Bultinck, P.; De Baerdemacker, S.; Van Neck, D.;
+     Phys. Rev. B 89, 201106(R) (2014); http://dx.doi.org/10.1103/PhysRevB.89.201106
+
+   - Boguslawski, K.; Tecmer, P.; Ayers, P. W.; Bultinck, P.; De Baerdemacker, S.; Van Neck, D.; J.
+     Chem. Theory Comput. 10, 4873--4882 (2014); http://dx.doi.org/10.1021/ct500759q
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Details can be found in the file /Users/zahrakarimi/my_pybest/pybest/src/pybest/data/references.bib
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+User:            zahrakarimi
+Machine info:    Darwin host-105.22.fizyka.umk.pl 24.6.0 Darwin Kernel Version 24.6.0: Tue Apr 21
+                 20:17:54 PDT 2026; root:xnu-11417.140.69.710.16~1/RELEASE_X86_64 x86_64
+Time:            2026-05-22T15:37:40.193467
+Python version:  3.12.8 (main, Dec  7 2024, 10:37:29) [Clang 17.0.0 (clang-1700.0.13.3)]
+PyBEST version:  2.1.0.dev60+g74c4c368
+Current Dir:     /Users/zahrakarimi/my_pybest/pybest/src/pybest/data/examples/hamiltonian
+Command line:    ppp.py
+PyBEST module:   /Users/zahrakarimi/my_pybest/pybest/src/pybest/log.py
+
+Overview of CPU time usage.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Label                    Total     Own
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Base: contract           44.9     44.9 WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+Base: expand              0.0      0.0                                                              
+Davidson                  3.4      3.4 WWWW                                                         
+Geminal: solver           1.6      0.1                                                              
+H_eff: Fock_diag          0.0      0.0                                                              
+H_eff: Fock_full          0.0      0.0                                                              
+IPCCSD1: H_diag           0.0      0.0                                                              
+IPCCSD1: H_eff            0.1      0.0                                                              
+IPCCSD1: H_sub            0.0      0.0                                                              
+Index Trans               1.7      1.7 WW                                                           
+PT2: Epsilon              0.0      0.0                                                              
+RCCSD: Energy             0.0      0.0                                                              
+RCCSD: MP2 guess          0.0      0.0                                                              
+RCCSD: Residual          44.2      1.2 W                                                            
+RCCSD: T_1 MP2 guess      0.0      0.0                                                              
+RCCSD: T_2 MP2 guess      0.0      0.0                                                              
+RCCSD: unravel            1.5      1.5 WW                                                           
+RpCCD: 1DM                0.0      0.0                                                              
+RpCCD: 2DM                0.0      0.0                                                              
+RpCCD: Hamiltonian        0.0      0.0                                                              
+RpCCD: Lambda VecFct      0.2      0.0                                                              
+RpCCD: Lambda eqs         0.2      0.0                                                              
+RpCCD: Solver             1.1      0.1                                                              
+RpCCD: T_p VecFct         0.2      0.0                                                              
+RpCCD: T_p eqs            0.3      0.0                                                              
+RpCCD: nDM                0.0      0.0                                                              
+SCF                       1.5      0.1                                                              
+SCF: Initial Guess        0.0      0.0                                                              
+Total                    60.2      6.8 WWWWWWWWW                                                    
+XIPCC: Diagonalize        3.4      0.0                                                              
+XIPCC: call               4.0      0.1                                                              
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CPU user time  :     114.41
+  CPU sysem time :       8.22
+  Page swaps     :       0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+====================================================================================================
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*                          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@        @@              @@@@@           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@            @@@       @@@       @@,       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@               @@@   @@           @@   @@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                   @@@             @@@               @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                     @@           @@                  @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@                     @@,       @@@                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@.                     @@@@@@@                     @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @@\     @@\  @@@  @@@@@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @  @    @  @     @   @        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          @@/ @ @ @@:  @@@ \@  @         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @    @  @  @       @ @          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@            @    @  @@/  @@@ @@/ @           @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                 @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@               @@@@@@@@@@@@@@&              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ End of PyBEST. Program finished SUCCESSFULLY. Please read this output file carefully and watch out
+ for possible WARNINGS!
+
+ Thank you for using PyBEST 2.1.0.dev60+g74c4c368! See you soon!
+====================================================================================================
+zahrakarimi@host-105 hamiltonian % 
+zahrakarimi@host-105 hamiltonian % 
+zahrakarimi@host-105 hamiltonian % 

@@ -1,0 +1,778 @@
+zahrakarimi@158-75-44-28 hamiltonian % python ppp.py
+
+
+====================================================================================================
+
+ Welcome to
+
+                                 ____        ____  _____ ____ _____
+                                |  _ \ _   _| __ )| ____/ ___|_   _|
+                                | |_) | | | |  _ \|  _| \___ \ | |
+                                |  __/| |_| | |_) | |___ ___) || |
+                                |_|    \__, |____/|_____|____/ |_|
+                                       |___/
+
+ version 2.1.0.dev60+g74c4c368!
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@        @@              @@@@@             #@@        @@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@            @@@       @@@       @@,       @@@           @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@               @@@   @@           @@   @@@               @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                   @@@             @@@                   @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                     @@           @@                     @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@                     @@,       @@@                     @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@.                     @@@@@@@                     @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @@\     @@\  @@@  @@@@@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @  @    @  @     @   @        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          @@/ @ @ @@:  @@@ \@  @         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @    @  @  @       @ @          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@            @    @  @@/  @@@ @@/ @           @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                 @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@               @@@@@@@@@@@@@@&              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ PyBEST is written and maintained at Nicolaus Copernicus University (NCU) in Torun.
+ It contains contributions from (in alphabetic order)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         Developers                             Affiliation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Somayeh Ahmadkhani             Institute of Physics, NCU in Torun, Poland
+ Saman Behjou                   Institute of Physics, NCU in Torun, Poland
+ Katharina Boguslawski          Institute of Physics, NCU in Torun, Poland
+ Iulia Brumboiu                 Institute of Physics, NCU in Torun, Poland
+ Filip Brzęk                    Institute of Physics, NCU in Torun, Poland
+ Rahul Chakraborty              Institute of Physics, NCU in Torun, Poland
+ Kacper Cieślak                 Institute of Engineering and Technology, NCU in Torun, Poland
+ Marta Gałyńska                 Faculty of Chemistry, NCU in Torun, Poland
+ Antonina Dobrowolska           Institute of Engineering and Technology, NCU in Torun, Poland
+ Seyedehdelaram Jahani          Institute of Physics, NCU in Torun, Poland
+ Zahra Karimi                   Institute of Physics, NCU in Torun, Poland
+ Dariusz Kędziera               Faculty of Chemistry, NCU in Torun, Poland
+ Michał Kopczyński              Institute of Engineering and Technology, NCU in Torun, Poland
+ Maximilian Kriebel             Institute of Physics, NCU in Torun, Poland
+ Aleksandra Leszczyk            Institute of Physics, NCU in Torun, Poland
+ Artur Nowak                    Institute of Physics, NCU in Torun, Poland
+ Ram Dhari Pandey               Institute of Physics, NCU in Torun, Poland
+ Julia Szczuczko                Institute of Engineering and Technology, NCU in Torun, Poland
+ Lena Szczuczko                 Institute of Physics, NCU in Torun, Poland
+ Emil Sujkowski                 Institute of Engineering and Technology, NCU in Torun, Poland
+ Julian Świerczyński            Institute of Engineering and Technology, NCU in Torun, Poland
+ Paweł Tecmer                   Institute of Physics, NCU in Torun, Poland
+ Piotr Żuchowski                Institute of Physics, NCU in Torun, Poland
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         Contributors                           Affiliation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ More information about PyBEST can be found on this website: https://hd.fizyka.umk.pl/~pybest/
+
+ This log file allows you to track the progress of a calculation. It does not contain any data
+ that can be used for restarting. Useful numerical data is written to checkpoint files during
+ the calculation and can be accessed through the Python scripting interface.
+
+====================================================================================================
+User:            zahrakarimi
+Machine info:    Darwin 158-75-44-28.stud.eduroam.umk.pl 24.6.0 Darwin Kernel Version 24.6.0: Tue
+                 Apr 21 20:17:54 PDT 2026; root:xnu-11417.140.69.710.16~1/RELEASE_X86_64 x86_64
+Time:            2026-05-24T12:52:21.748762
+Python version:  3.12.8 (main, Dec  7 2024, 10:37:29) [Clang 17.0.0 (clang-1700.0.13.3)]
+PyBEST version:  2.1.0.dev60+g74c4c368
+Current Dir:     /Users/zahrakarimi/my_pybest/pybest/src/pybest/data/examples/hamiltonian
+Command line:    ppp.py
+PyBEST module:   /Users/zahrakarimi/my_pybest/pybest/src/pybest/log.py
+
+!WARNING! The opt_einsum module has not been detected.
+
+====================================================================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Occupation Module:
+ 
+Aufbau occupation number model.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+              Total number of electrons: 70
+                Total electronic charge: 0
+                                         alpha
+        Total number of basis functions: 70   
+      Total number of occupied orbitals: 35   
+       Total number of virtual orbitals: 35   
+         Number of frozen core orbitals: 0    
+   Number of active core orbitals (CVS): 0    
+     Number of active occupied orbitals: 35   
+      Number of active virtual orbitals: 35   
+              Number of active orbitals: 70   
+      Number of electrons for each spin: 35   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+                                                                                                    
+Entering the PPP Model Hamiltonian
+ 
+          Total number of atoms: 70
+      Structure information for: Coordinates from ORCA-job c70 E -2667.645480391877
+ 
+     Symbols of supported atoms: C70
+        On-site value (epsilon): -11.22 eV
+              Hubbard value (U):  11.13 eV   |    0.41 a.u.
+              Hopping value (t):  -2.40 eV   |   -0.09 a.u.
+        Dielectric constant (k):   1.00 eV
+                   Hubbard term: True
+====================================================================================================
+Bonds per atom: [3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3.
+ 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3.
+ 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3. 3.]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Performing a core Hamiltonian guess.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting restricted closed-shell CDIIS-SCF
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Iter         Error        CN         Last nv Method          Energy       Change
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   0      1.27331e+00     1  
+   0      1.82254e+00     2  
+   0                  2.855e+00   0.37131  2 C  
+   1      3.43501e-01     3  
+   1                  4.504e+01   1.02441  3 C  
+   2      1.95468e-01     4  
+   2                  2.135e+02   0.69449  4 C  
+   3      4.73023e-02     5  
+   3                  4.271e+03   1.24244  5 C  
+   4      2.35450e-02     6  
+   4                  8.045e+04   1.78521  6 C  
+   5      6.34007e-03     6  
+   5                  2.721e+05   1.22769  6 C  
+   6      2.29778e-03     6  
+   6                  7.570e+04   1.24255  6 C  
+   7      8.47038e-04     6  
+   7                  1.827e+05   1.21407  6 C  
+   8      2.63178e-04     6  
+   8                  1.072e+05   1.20219  6 C  
+   9      1.03030e-04     6  
+   9                  1.487e+05   1.11411  6 C  
+  10      4.91808e-05     6  
+  10                  1.059e+05   1.53021  6 C  
+  11      2.88569e-05     6  
+  11                  6.876e+04   1.76976  6 C  
+  12      1.43598e-05     6  
+  12                  4.566e+04   1.72355  6 C  
+  13      6.97041e-06     6  
+  13                  6.421e+03   1.26448  6 C  
+  14      3.54639e-06     6  
+  14                  6.698e+03   1.54206  6 C  
+  15      1.75773e-06     6  
+  15                  8.696e+03   1.57821  6 C  
+  16      6.48871e-07     6  
+  16                  1.089e+04   1.34811  6 C  
+  17      2.46089e-07     6  
+  17                  1.648e+04   1.24478  6 C  
+  18      8.09463e-08     6  
+  18                  2.279e+04   1.19734  6 C  
+  19      4.12192e-08     6  
+  19                  3.346e+04   1.33074  6 C  
+  20      2.41220e-08     6  
+  20                  2.396e+04   1.28568  6 C  
+  21      1.57552e-08     6  
+  21                  1.981e+04   1.78748  6 C  
+  22      8.95021e-09 (converged)
+
+Contributions to the energy:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          term           Value
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           one    -574.487744517104
+                       hartree     282.340544066181
+                          x_hf     -11.528294798438
+                      external       0.000000000000
+                         total    -303.675495249360
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Print orbital information:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+               orb_index        Energy[E_h]     Energy[eV]
+		   1     	-0.6344869       -17.265
+		   2     	-0.6149031       -16.732
+		   3     	-0.6110581       -16.628
+		   4     	-0.6110552       -16.628
+		   5     	-0.5734161       -15.603
+		   6     	-0.5734126       -15.603
+		   7     	-0.5726427       -15.582
+		   8     	-0.5638820       -15.344
+		   9     	-0.5638799       -15.344
+		  10     	-0.5222109       -14.210
+		  11     	-0.5133512       -13.969
+		  12     	-0.5133489       -13.969
+		  13     	-0.5095249       -13.865
+		  14     	-0.5095217       -13.865
+		  15     	-0.4940423       -13.444
+		  16     	-0.4940384       -13.443
+		  17     	-0.4531686       -12.331
+		  18     	-0.4439444       -12.080
+		  19     	-0.4439400       -12.080
+		  20     	-0.4366839       -11.883
+		  21     	-0.4366799       -11.883
+		  22     	-0.4268640       -11.616
+		  23     	-0.4268616       -11.615
+		  24     	-0.4147375       -11.286
+		  25     	-0.4147362       -11.286
+		  26     	-0.3796359       -10.330
+		  27     	-0.3796339       -10.330
+		  28     	-0.3795276       -10.327
+		  29     	-0.3795244       -10.327
+		  30     	-0.3693170       -10.050
+		  31     	-0.3693150       -10.050
+		  32     	-0.3652737        -9.940
+		  33     	-0.3503421        -9.533
+		  34     	-0.3503405        -9.533
+		HOMO	        -0.3363216        -9.152
+		LUMO	        -0.1374957        -3.741
+		  37     	-0.1241108        -3.377
+		  38     	-0.1241096        -3.377
+		  39     	-0.0854075        -2.324
+		  40     	-0.0801084        -2.180
+		  41     	-0.0801073        -2.180
+		  42     	-0.0062311        -0.170
+		  43     	-0.0062298        -0.170
+		  44     	-0.0055782        -0.152
+		  45     	 0.0200339         0.545
+		  46     	 0.0200350         0.545
+		  47     	 0.0245996         0.669
+		  48     	 0.0246038         0.670
+		  49     	 0.0248437         0.676
+		  50     	 0.0356587         0.970
+		  51     	 0.0393643         1.071
+		  52     	 0.0393660         1.071
+		  53     	 0.0633526         1.724
+		  54     	 0.0633541         1.724
+		  55     	 0.0718699         1.956
+		  56     	 0.0718726         1.956
+		  57     	 0.0852027         2.318
+		  58     	 0.0852033         2.318
+		  59     	 0.1091250         2.969
+		  60     	 0.1235549         3.362
+		  61     	 0.1235580         3.362
+		  62     	 0.1254322         3.413
+		  63     	 0.1254357         3.413
+		  64     	 0.1716381         4.671
+		  65     	 0.1716383         4.671
+		  66     	 0.1791314         4.874
+		  67     	 0.1791317         4.874
+		  68     	 0.1810604         4.927
+		  69     	 0.1810632         4.927
+		  70     	 0.1904944         5.184
+----------------------------------------------------------------------------------------------------
+       LUMO-HOMO gap 		 0.1988259         5.410
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+Entering RpCCD module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+Entering RpCCD optimization (restricted):
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OPTIMIZATION PARAMETERS:
+Number of frozen cores:      0
+Number of active pairs:      35
+Number of active virtuals:   35
+4-index transformation:      optimal
+Initial guess:
+  type:                        mp2
+  scaling factor:              -0.100
+Solvers:
+  wavefunction amplitudes:   krylov
+  lambda amplitudes:         krylov
+Optimization thresholds:
+  wavefunction:              1.00e-12
+Printing options:
+  threshold:                   1.00e-02
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Generating initial mp2 guess
+----------------------------------------------------------------------------------------------------
+Final reference Energy:         -303.675495249360
+            (Core Energy:          0.000000000000)
+     (determinant Energy:       -303.675495249360)
+Final correlation Energy:         -0.012219260389
+====================================================================================================
+Final total Energy:             -303.687714509749
+====================================================================================================
+----------------------------------------------------------------------------------------------------
+Leading electron-pair excitation amplitudes (i,a = alpha spin; I, A = beta spin)
+ 
+    amplitude    i    I  ->    a    A
+ 
+    -0.051726   34   34  ->   36   36
+    -0.051726   33   33  ->   36   36
+    -0.042154   32   32  ->   36   36
+    -0.033594   35   35  ->   39   39
+    -0.032426   35   35  ->   37   37
+    -0.032426   35   35  ->   38   38
+    -0.020879   28   28  ->   37   37
+    -0.020878   29   29  ->   38   38
+    -0.017818   22   22  ->   36   36
+    -0.017814   23   23  ->   36   36
+    -0.017434   29   29  ->   41   41
+    -0.017434   28   28  ->   40   40
+    -0.016868   31   31  ->   40   40
+    -0.016867   30   30  ->   40   40
+    -0.016866   31   31  ->   41   41
+    -0.016866   30   30  ->   41   41
+    -0.015138   25   25  ->   36   36
+    -0.015137   24   24  ->   36   36
+    -0.013960   32   32  ->   42   42
+    -0.013957   32   32  ->   43   43
+----------------------------------------------------------------------------------------------------
+Natural occupation numbers (for spatial orbitals):
+     1:  1.999965     2:  1.999941     3:  1.999949     4:  1.999949     5:  1.999911
+     6:  1.999911     7:  1.999907     8:  1.999894     9:  1.999894    10:  1.999774
+    11:  1.999756    12:  1.999756    13:  1.999815    14:  1.999815    15:  1.999663
+    16:  1.999663    17:  1.999441    18:  1.999607    19:  1.999607    20:  1.999305
+    21:  1.999304    22:  1.998840    23:  1.998840    24:  1.998889    25:  1.998889
+    26:  1.998823    27:  1.998823    28:  1.997601    29:  1.997601    30:  1.998064
+    31:  1.998064    32:  1.994900    33:  1.993446    34:  1.993446    35:  1.992354
+    36:  0.016867    37:  0.005114    38:  0.005114    39:  0.003839    40:  0.002638
+    41:  0.002638    42:  0.001096    43:  0.001095    44:  0.000836    45:  0.000551
+    46:  0.000551    47:  0.000618    48:  0.000618    49:  0.000722    50:  0.000488
+    51:  0.000506    52:  0.000506    53:  0.000318    54:  0.000318    55:  0.000286
+    56:  0.000286    57:  0.000203    58:  0.000203    59:  0.000173    60:  0.000133
+    61:  0.000133    62:  0.000127    63:  0.000127    64:  0.000081    65:  0.000081
+    66:  0.000066    67:  0.000066    68:  0.000069    69:  0.000069    70:  0.000058
+====================================================================================================
+====================================================================================================
+====================================================================================================
+ 
+ 
+====================================================================================================
+ 
+RCC module
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PARAMETERS
+Wave function model            RfpLCCSD
+Full name of model             Restricted frozen-pair Linearized Coupled Cluster Singles and Doubles
+Cluster operator               T1 + T2 - Tp
+Total number of electrons      70
+Total number of electron pairs 35
+Total number of orbitals       70
+Number of active orbitals      70
+Number of core orbitals        0
+Number of active occupied      35
+Number of active virtual       35
+Initial guess                  mp2
+Solver:                        krylov
+     inner_maxiter             18
+     Jacobian method           lgmres
+Optimization thresholds:
+     energy threshold          1e-06
+     residual threshold        1e-05
+Maximum number of iterations   201
+Tensor contraction engine      automatic
+....................................................................................................
+Computing auxiliary matrices and effective Hamiltonian.
+Performing an MP2 calculations for an initial guess.
+   Generating MP2 guess for T_1.
+   Generating MP2 guess for T_2.
+Resuming CC calculation.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Iter     Total energy        Diff    Corr. energy  |Residual|    max(Residual)         Time
+     1  -304.0503998301    3.04e+02   -0.3626853204    6.55e-06         2.72e-06          68.9562
+ 
+Amplitudes converged in 0 iterations.
+ 
+----------------------------------------------------------------------------------------------------
+RfpLCCSD energy
+Total energy              -304.05039983 a.u.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Reference wavefunction    -303.68771451 a.u.
+Total correlation energy    -0.36268532 a.u.
+....................................................................................................
+Singles                      0.00000000 a.u.
+Doubles                     -0.36268532 a.u.
+....................................................................................................
+Seniority 2                 -0.35064327 a.u.
+Seniority 4                 -0.01204205 a.u.
+----------------------------------------------------------------------------------------------------
+ 
+Leading double excitation amplitudes
+
+    amplitude   i   j  ->   a   b
+
+     0.049906  35  34  ->  37  36
+     0.049906  34  35  ->  36  37
+     0.049905  33  35  ->  36  38
+     0.049905  35  33  ->  38  36
+     0.042972  32  35  ->  36  39
+     0.042972  35  32  ->  39  36
+    -0.021414  34  32  ->  42  36
+    -0.021414  32  34  ->  36  42
+    -0.021411  32  33  ->  36  43
+    -0.021411  33  32  ->  43  36
+     0.020147  28  29  ->  37  38
+     0.020147  29  28  ->  38  37
+     0.019594  30  33  ->  40  36
+     0.019594  33  30  ->  36  40
+     0.019593  30  34  ->  41  36
+     0.019593  34  30  ->  36  41
+    -0.019560  31  34  ->  40  36
+    -0.019560  34  31  ->  36  40
+     0.019559  31  33  ->  41  36
+     0.019559  33  31  ->  36  41
+----------------------------------------------------------------------------------------------------
+
+Leading single excitation amplitudes
+
+    amplitude   i  ->   a
+
+    -0.080879  34  ->  38
+     0.080872  33  ->  37
+     0.017979  20  ->  37
+    -0.017979  21  ->  38
+     0.015010  23  ->  48
+     0.015002  22  ->  47
+    -0.014819  32  ->  44
+     0.014603  35  ->  49
+    -0.013271  28  ->  40
+     0.013264  29  ->  41
+     0.010230  17  ->  50
+     0.010101  24  ->  41
+    -0.010101  25  ->  40
+     0.009272  29  ->  43
+    -0.009271  28  ->  42
+     0.009163  31  ->  45
+     0.009155  30  ->  46
+    -0.008348  28  ->  43
+    -0.008348  29  ->  42
+    -0.008214  21  ->  37
+----------------------------------------------------------------------------------------------------
+T1 diagnostic: 0.015537
+D1 diagnostic: 0.083808
+ 
+Entering IP-EOM-CC module
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+IP-EOM-fpLCCSD framework selected
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OPTIMIZATION PARAMETERS:
+Reference Function:            fpLCCSD
+Number of frozen cores:        0
+Number of active occupied:     35
+Number of active virtuals:     35
+Number of hole operators:      2
+Number of unpaired electrons:  1
+Spin-free implementation:      False
+Number of roots:               4
+Total number of roots:         63735
+Diagonalization:               Davidson
+Tensor contraction engine:     automatic
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Building effective Hamiltonian...
+...done.
+Starting diagonalization...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting diagonalization for 1 unpaired electrons
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+Davidson diagonalization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             maxiter: 200
+              nroots: 4
+              nguess: 20
+             to disk: False
+    Energy tolerance: 1e-06
+    Vector tolerance: 1e-05
+             restart: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 9 8
+Orthogonalization of (almost) degenerate vectors 11 10
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    0      0    1.117774e-01     3.579129e-01   3.579129e-01  
+    0      1    1.119892e-01     3.702598e-01   3.702598e-01  
+    0      2    1.119906e-01     3.702598e-01   3.702598e-01  
+    0      3    1.139186e-01     3.844560e-01   3.844560e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 9 8
+Orthogonalization of (almost) degenerate vectors 11 10
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    1      0    3.599808e-02    -3.405081e-02   3.238621e-01  
+    1      1    3.478210e-02    -3.536716e-02   3.348926e-01  
+    1      2    3.478093e-02    -3.536716e-02   3.348926e-01  
+    1      3    3.736484e-02    -3.608582e-02   3.483702e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 9 8
+Orthogonalization of (almost) degenerate vectors 11 10
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    2      0    1.359625e-02    -2.990054e-03   3.208721e-01  
+    2      1    1.344176e-02    -3.167536e-03   3.317251e-01  
+    2      2    1.344299e-02    -3.166656e-03   3.317259e-01  
+    2      3    1.480187e-02    -3.839850e-03   3.445303e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 9 8
+Orthogonalization of (almost) degenerate vectors 11 10
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    3      0    5.149053e-03    -3.840835e-04   3.204880e-01  
+    3      1    5.180064e-03    -3.556533e-04   3.313694e-01  
+    3      2    5.178730e-03    -3.565341e-04   3.313694e-01  
+    3      3    5.560571e-03    -4.124129e-04   3.441179e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 9 8
+Orthogonalization of (almost) degenerate vectors 11 10
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    4      0    2.034237e-03    -8.255769e-05   3.204054e-01  
+    4      1    2.102510e-03    -8.342164e-05   3.312860e-01  
+    4      2    2.102332e-03    -8.342164e-05   3.312860e-01  
+    4      3    1.895066e-03    -1.143816e-04   3.440035e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 9 8
+Orthogonalization of (almost) degenerate vectors 11 10
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    5      0    8.569249e-04    -1.627783e-06   3.204038e-01  
+    5      1    9.198619e-04    -4.509076e-06   3.312815e-01  
+    5      2    9.197762e-04    -4.509076e-06   3.312815e-01  
+    5      3    7.416257e-04    -1.053243e-05   3.439930e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 9 8
+Orthogonalization of (almost) degenerate vectors 11 10
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    6      0    3.437528e-04    -2.593087e-06   3.204012e-01  
+    6      1    3.740932e-04    -7.603184e-07   3.312807e-01  
+    6      2    3.740172e-04    -7.603184e-07   3.312807e-01  
+    6      3    3.147704e-04     4.517388e-08   3.439930e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 9 8
+Orthogonalization of (almost) degenerate vectors 11 10
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    7      0    1.307459e-04     1.486482e-06   3.204027e-01  
+    7      1    1.554357e-04     1.393343e-06   3.312821e-01  
+    7      2    1.554907e-04     1.393343e-06   3.312821e-01  
+    7      3    1.209532e-04    -2.703508e-08   3.439930e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 9 8
+Orthogonalization of (almost) degenerate vectors 11 10
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    8      0    4.891723e-05     3.123507e-07   3.204030e-01  
+    8      1    6.913969e-05     4.201435e-07   3.312825e-01  
+    8      2    6.920856e-05     4.201435e-07   3.312825e-01  
+    8      3    4.434443e-05     3.129713e-07   3.439933e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 11 10
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    9      0    1.887755e-05    -1.061105e-08   3.204030e-01  
+    9      1    2.878500e-05    -4.699127e-08   3.312825e-01  
+    9      2    2.889597e-05    -4.699127e-08   3.312825e-01  
+    9      3    1.751757e-05     5.065689e-08   3.439934e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 11 10
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   10      0    8.798995e-06    -1.059027e-07   3.204029e-01  converged
+   10      1    1.431367e-05    -8.718783e-08   3.312824e-01  
+   10      2    1.452912e-05    -8.718783e-08   3.312824e-01  
+   10      3    8.316147e-06    -2.926451e-08   3.439933e-01  converged
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   11      1    7.288271e-06    -4.040118e-08   3.312824e-01  converged
+   11      2    7.703964e-06    -4.040118e-08   3.312824e-01  converged
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Davidson converged
+====================================================================================================
+Final results for spin projection 0.5:
+ 
+Ionization energy:           3.204028e-01 [au]  /   8.718604e+00 [eV]  /   7.032029e+04 [cm-1]
+Energy of ionized state:    -303.7299969968 [au]  /  -8264.9134 [eV]  /  -66661029.065 [cm-1]
+              r_i:           ( 35)    0.95802
+      weight(r_i):  0.91801
+    weight(r_ijb):  0.03346
+    weight(r_iJB):  0.04853
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           3.312824e-01 [au]  /   9.014651e+00 [eV]  /   7.270807e+04 [cm-1]
+Energy of ionized state:    -303.7191174664 [au]  /  -8264.6174 [eV]  /  -66658641.284 [cm-1]
+              r_i:           ( 34)    0.93714
+              r_i:           ( 33)    0.17520
+      weight(r_i):  0.90936
+    weight(r_ijb):  0.03399
+    weight(r_iJB):  0.05665
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           3.312824e-01 [au]  /   9.014651e+00 [eV]  /   7.270807e+04 [cm-1]
+Energy of ionized state:    -303.7191174664 [au]  /  -8264.6174 [eV]  /  -66658641.284 [cm-1]
+              r_i:           ( 33)   -0.93714
+              r_i:           ( 34)    0.17520
+      weight(r_i):  0.90936
+    weight(r_ijb):  0.03399
+    weight(r_iJB):  0.05665
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           3.439933e-01 [au]  /   9.360534e+00 [eV]  /   7.549780e+04 [cm-1]
+Energy of ionized state:    -303.7064065259 [au]  /  -8264.2715 [eV]  /  -66655851.555 [cm-1]
+              r_i:           ( 32)    0.95382
+      weight(r_i):  0.90977
+    weight(r_ijb):  0.03150
+    weight(r_iJB):  0.05873
+Suggested spin multiplicity: doublet
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Please, cite the following references:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ * For IP-EOM-CC-based methods
+   - Gałyńska, M.; Boguslawski, K.; J. Chem. Theory Comput. 20, 4182--4195 (2024);
+     http://dx.doi.org/10.1021/acs.jctc.4c00172
+
+ * For model Hamiltonians
+   - Karimi, Z.; Ahmadkhani, S.; Boguslawski, K.; Tecmer, P.; XX X, X--X (2025); X
+
+ * For the (D)IP-EOM-pCCD-based methods
+   - Boguslawski, K.; Chem. Commun. 57, 12277--12280 (2021); http://dx.doi.org/10.1039/D1CC04539C
+
+   - Pandey, R. D.; de Moraes, M. M. F.; Boguslawski, K.; Tecmer, P.; J. Chem. Theory Comput. 21,
+     5049--5061 (2025); https://doi.org/10.1021/acs.jctc.5c00057
+
+ * For the commutator DIIS SCF algorithm
+   - Pulay, P.; Chem. Phys. Lett. 73, 393--398 (1980);
+     http://dx.doi.org/10.1016/0009-2614(80)80396-4
+
+ * For the pCCD method
+   - Boguslawski, K.; Tecmer, P.; Ayers, P. W.; Bultinck, P.; De Baerdemacker, S.; Van Neck, D.;
+     Phys. Rev. B 89, 201106(R) (2014); http://dx.doi.org/10.1103/PhysRevB.89.201106
+
+   - Boguslawski, K.; Tecmer, P.; Ayers, P. W.; Bultinck, P.; De Baerdemacker, S.; Van Neck, D.; J.
+     Chem. Theory Comput. 10, 4873--4882 (2014); http://dx.doi.org/10.1021/ct500759q
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Details can be found in the file /Users/zahrakarimi/my_pybest/pybest/src/pybest/data/references.bib
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+User:            zahrakarimi
+Machine info:    Darwin 158-75-44-28.stud.eduroam.umk.pl 24.6.0 Darwin Kernel Version 24.6.0: Tue
+                 Apr 21 20:17:54 PDT 2026; root:xnu-11417.140.69.710.16~1/RELEASE_X86_64 x86_64
+Time:            2026-05-24T12:54:32.091877
+Python version:  3.12.8 (main, Dec  7 2024, 10:37:29) [Clang 17.0.0 (clang-1700.0.13.3)]
+PyBEST version:  2.1.0.dev60+g74c4c368
+Current Dir:     /Users/zahrakarimi/my_pybest/pybest/src/pybest/data/examples/hamiltonian
+Command line:    ppp.py
+PyBEST module:   /Users/zahrakarimi/my_pybest/pybest/src/pybest/log.py
+
+Overview of CPU time usage.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Label                    Total     Own
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Base: contract           95.0     94.9 WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+Base: expand              0.1      0.1                                                              
+Davidson                 12.2      3.9 WW                                                           
+Geminal: solver           6.4      0.5                                                              
+H_eff: Fock_diag          0.0      0.0                                                              
+H_eff: Fock_full          0.0      0.0                                                              
+IPCCSD1: H_diag           0.0      0.0                                                              
+IPCCSD1: H_eff            4.8      0.1                                                              
+IPCCSD1: H_sub            8.2      0.4                                                              
+Index Trans               8.8      8.8 WWWWW                                                        
+PT2: Epsilon              0.0      0.0                                                              
+RCCSD: MP2 guess          0.1      0.0                                                              
+RCCSD: T_1 MP2 guess      0.0      0.0                                                              
+RCCSD: T_2 MP2 guess      0.1      0.0                                                              
+RCCSD: unravel            2.1      2.0 W                                                            
+RLCCSD: Energy            0.0      0.0                                                              
+RLCCSD: Residual         28.9      0.7                                                              
+RfpLCCSD: Ham             0.0      0.0                                                              
+RfpLCCSD: Residual       36.2      1.2                                                              
+RfpLCCSD: VecFct         67.7      0.7                                                              
+RpCCD: 1DM                0.0      0.0                                                              
+RpCCD: 2DM                0.0      0.0                                                              
+RpCCD: Hamiltonian        0.2      0.2                                                              
+RpCCD: Lambda VecFct      0.5      0.1                                                              
+RpCCD: Lambda eqs         0.6      0.0                                                              
+RpCCD: Solver             3.9      0.3                                                              
+RpCCD: T_p VecFct         0.5      0.1                                                              
+RpCCD: T_p eqs            0.5      0.1                                                              
+RpCCD: nDM                0.0      0.0                                                              
+SCF                      18.7      0.4                                                              
+SCF: Initial Guess        0.0      0.0                                                              
+Total                   130.7     15.7 WWWWWWWWWW                                                   
+XIPCC: Diagonalize       12.2      0.0                                                              
+XIPCC: call              19.6      0.4                                                              
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CPU user time  :     205.78
+  CPU sysem time :      23.64
+  Page swaps     :       0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+====================================================================================================
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*                          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@        @@              @@@@@           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@            @@@       @@@       @@,       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@               @@@   @@           @@   @@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                   @@@             @@@               @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                     @@           @@                  @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@                     @@,       @@@                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@.                     @@@@@@@                     @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @@\     @@\  @@@  @@@@@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @  @    @  @     @   @        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          @@/ @ @ @@:  @@@ \@  @         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @    @  @  @       @ @          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@            @    @  @@/  @@@ @@/ @           @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                 @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@               @@@@@@@@@@@@@@&              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ End of PyBEST. Program finished SUCCESSFULLY. Please read this output file carefully and watch out
+ for possible WARNINGS!
+
+ Thank you for using PyBEST 2.1.0.dev60+g74c4c368! See you soon!
+====================================================================================================
+zahrakarimi@158-75-44-28 hamiltonian % 

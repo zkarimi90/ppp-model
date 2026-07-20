@@ -1,0 +1,1390 @@
+------------------------------------------------------
+Job is running on node p05
+p05
+p05
+p05
+p05
+p05
+------------------------------------------------------
+PBS: originating queue is medium
+PBS: executing queue is medium
+PBS: working directory is /home/zkarimi/calculations/c70/u11.13-t2.7-ktopo
+PBS: execution mode is PBS_BATCH
+PBS: job identifier is 296399.gateway
+PBS: job name is IP-RIPfpLCCD
+PBS: node file is /var/spool/torque/aux//296399.gateway
+PBS: current home directory is /home/zkarimi
+PBS: PATH = /home/k.boguslawski/.pybest210dev0env/bin:/opt/intel/oneapi/compiler/2023.0.0/linux/bin/intel64:/opt/intel/oneapi/compiler/2023.0.0/linux/bin:/opt/intel/oneapi/compiler/2023.0.0/linux/lib/oclfpga/bin:/opt/gcc/gcc-12.2.0/bin:/home/zkarimi/bin:/home/zkarimi/software/mypybest/oneapi2023.0/bin:/home/zkarimi/software/mypybest/oneapi2023.0/bin:/usr/local/bin:/usr/local/sbin:/opt/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+------------------------------------------------------
+unlimited
+MKL_DOMAIN_ALL=6
+6
+
+
+====================================================================================================
+
+ Welcome to
+
+                                 ____        ____  _____ ____ _____
+                                |  _ \ _   _| __ )| ____/ ___|_   _|
+                                | |_) | | | |  _ \|  _| \___ \ | |
+                                |  __/| |_| | |_) | |___ ___) || |
+                                |_|    \__, |____/|_____|____/ |_|
+                                       |___/
+
+ version 2.1.1.dev32+gf69596a1!
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@        @@              @@@@@             #@@        @@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@            @@@       @@@       @@,       @@@           @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@               @@@   @@           @@   @@@               @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                   @@@             @@@                   @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                     @@           @@                     @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@                     @@,       @@@                     @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@.                     @@@@@@@                     @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @@\     @@\  @@@  @@@@@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @  @    @  @     @   @        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          @@/ @ @ @@:  @@@ \@  @         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @    @  @  @       @ @          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@            @    @  @@/  @@@ @@/ @           @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                 @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@               @@@@@@@@@@@@@@&              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ PyBEST is written and maintained at Nicolaus Copernicus University (NCU) in Torun.
+ It contains contributions from (in alphabetic order)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         Developers                             Affiliation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Somayeh Ahmadkhani             Institute of Physics, NCU in Torun, Poland
+ Saman Behjou                   Institute of Physics, NCU in Torun, Poland
+ Katharina Boguslawski          Institute of Physics, NCU in Torun, Poland
+ Iulia Brumboiu                 Institute of Physics, NCU in Torun, Poland
+ Filip Brzęk                    Institute of Physics, NCU in Torun, Poland
+ Rahul Chakraborty              Institute of Physics, NCU in Torun, Poland
+ Kacper Cieślak                 Institute of Engineering and Technology, NCU in Torun, Poland
+ Marta Gałyńska                 Faculty of Chemistry, NCU in Torun, Poland
+ Antonina Dobrowolska           Institute of Engineering and Technology, NCU in Torun, Poland
+ Seyedehdelaram Jahani          Institute of Physics, NCU in Torun, Poland
+ Zahra Karimi                   Institute of Physics, NCU in Torun, Poland
+ Dariusz Kędziera               Faculty of Chemistry, NCU in Torun, Poland
+ Michał Kopczyński              Institute of Engineering and Technology, NCU in Torun, Poland
+ Maximilian Kriebel             Institute of Physics, NCU in Torun, Poland
+ Aleksandra Leszczyk            Institute of Physics, NCU in Torun, Poland
+ Artur Nowak                    Institute of Physics, NCU in Torun, Poland
+ Ram Dhari Pandey               Institute of Physics, NCU in Torun, Poland
+ Julia Szczuczko                Institute of Engineering and Technology, NCU in Torun, Poland
+ Lena Szczuczko                 Institute of Physics, NCU in Torun, Poland
+ Emil Sujkowski                 Institute of Engineering and Technology, NCU in Torun, Poland
+ Julian Świerczyński            Institute of Engineering and Technology, NCU in Torun, Poland
+ Paweł Tecmer                   Institute of Physics, NCU in Torun, Poland
+ Piotr Żuchowski                Institute of Physics, NCU in Torun, Poland
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         Contributors                           Affiliation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ More information about PyBEST can be found on this website: https://hd.fizyka.umk.pl/~pybest/
+
+ This log file allows you to track the progress of a calculation. It does not contain any data
+ that can be used for restarting. Useful numerical data is written to checkpoint files during
+ the calculation and can be accessed through the Python scripting interface.
+
+====================================================================================================
+User:            zkarimi
+Machine info:    Linux p05 5.14.0-611.49.2.el9_7.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Apr 30 09:05:08
+                 EDT 2026 x86_64
+Time:            2026-05-29T16:53:02.194814
+Python version:  3.11.3 (main, Oct 10 2023, 20:47:43) [GCC 12.2.0]
+PyBEST version:  2.1.1.dev32+gf69596a1
+Current Dir:     /scratch/296399.gateway
+Command line:    IP-RIPfpLCCD.py
+PyBEST module:   /home/zkarimi/software/mypybest/oneapi2023.0/pybest/log.py
+
+!WARNING! Warning
+
+!WARNING! Cupy CUDA not available.
+
+!WARNING! Defaulting to numpy.tensordot if select=None.
+
+====================================================================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Occupation Module:
+ 
+Aufbau occupation number model.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+              Total number of electrons: 70
+                Total electronic charge: 0
+                                         alpha
+        Total number of basis functions: 70   
+      Total number of occupied orbitals: 35   
+       Total number of virtual orbitals: 35   
+         Number of frozen core orbitals: 0    
+   Number of active core orbitals (CVS): 0    
+     Number of active occupied orbitals: 35   
+      Number of active virtual orbitals: 35   
+              Number of active orbitals: 70   
+      Number of electrons for each spin: 35   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+                                                                                                    
+Entering the PPP Model Hamiltonian
+ 
+          Total number of atoms: 70
+      Structure information for: Coordinates from ORCA-job c70 E -2667.645480391877
+ 
+     Symbols of supported atoms: C70
+        On-site value (epsilon): -11.22 eV
+              Hubbard value (U):  11.13 eV   |    0.41 a.u.
+              Hopping value (t):  -2.70 eV   |   -0.10 a.u.
+        Dielectric constant (k): [topology screening]
+                   Hubbard term: True
+====================================================================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Performing a core Hamiltonian guess.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting restricted closed-shell CDIIS-SCF
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Iter         Error        CN         Last nv Method          Energy       Change
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   0      2.77970e-02     1  
+   0      1.69563e-02     2  
+   0                  1.783e+01   0.62943  2 C  
+   1      2.65559e-03     3  
+   1                  1.691e+03   0.69570  3 C  
+   2      9.14981e-05     4  
+   2                  2.466e+05   0.98846  4 C  
+   3      3.97317e-05     5  
+   3                  8.315e+06   0.63834  5 C  
+   4      7.97895e-06     6  
+   4                  5.985e+07   0.51191  6 C  
+   5      8.98259e-07     6  
+   5                  1.646e+09   0.92589  6 C  
+   6      2.29859e-07     6  
+   6                  8.060e+08   0.64162  6 C  
+   7      5.49151e-08     6  
+   7                  5.963e+06   0.63520  6 C  
+   8      2.33742e-08     6  
+   8                  6.594e+07   0.65494  6 C  
+   9      2.88996e-09 (converged)
+
+Contributions to the energy:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          term           Value
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           one     -69.439920717184
+                       hartree      29.206666490823
+                          x_hf      -7.398439165989
+                      external       0.000000000000
+                         total     -47.631693392350
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Print orbital information:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+               orb_index        Energy[E_h]     Energy[eV]
+		   1     	-0.5145081       -14.000
+		   2     	-0.4958301       -13.492
+		   3     	-0.4924167       -13.399
+		   4     	-0.4924166       -13.399
+		   5     	-0.4574167       -12.447
+		   6     	-0.4574165       -12.447
+		   7     	-0.4564932       -12.422
+		   8     	-0.4493652       -12.228
+		   9     	-0.4493651       -12.228
+		  10     	-0.4142235       -11.272
+		  11     	-0.4060495       -11.049
+		  12     	-0.4060494       -11.049
+		  13     	-0.3970502       -10.804
+		  14     	-0.3970500       -10.804
+		  15     	-0.3891032       -10.588
+		  16     	-0.3891030       -10.588
+		  17     	-0.3557305        -9.680
+		  18     	-0.3407899        -9.273
+		  19     	-0.3407897        -9.273
+		  20     	-0.3351707        -9.120
+		  21     	-0.3351705        -9.120
+		  22     	-0.3328465        -9.057
+		  23     	-0.3328464        -9.057
+		  24     	-0.3227202        -8.782
+		  25     	-0.3227202        -8.782
+		  26     	-0.2948629        -8.024
+		  27     	-0.2948627        -8.024
+		  28     	-0.2866863        -7.801
+		  29     	-0.2866862        -7.801
+		  30     	-0.2858558        -7.779
+		  31     	-0.2849167        -7.753
+		  32     	-0.2849166        -7.753
+		  33     	-0.2734276        -7.440
+		  34     	-0.2734275        -7.440
+		HOMO	        -0.2634489        -7.169
+		LUMO	        -0.2039759        -5.550
+		  37     	-0.1944280        -5.291
+		  38     	-0.1944280        -5.291
+		  39     	-0.1629348        -4.434
+		  40     	-0.1629347        -4.434
+		  41     	-0.1623160        -4.417
+		  42     	-0.1035248        -2.817
+		  43     	-0.0982017        -2.672
+		  44     	-0.0982016        -2.672
+		  45     	-0.0781898        -2.128
+		  46     	-0.0781898        -2.128
+		  47     	-0.0696976        -1.897
+		  48     	-0.0696974        -1.897
+		  49     	-0.0673308        -1.832
+		  50     	-0.0601455        -1.637
+		  51     	-0.0576559        -1.569
+		  52     	-0.0576558        -1.569
+		  53     	-0.0401734        -1.093
+		  54     	-0.0401733        -1.093
+		  55     	-0.0333812        -0.908
+		  56     	-0.0333811        -0.908
+		  57     	-0.0226162        -0.615
+		  58     	-0.0226162        -0.615
+		  59     	-0.0009648        -0.026
+		  60     	 0.0114104         0.310
+		  61     	 0.0114106         0.310
+		  62     	 0.0121801         0.331
+		  63     	 0.0121803         0.331
+		  64     	 0.0544702         1.482
+		  65     	 0.0544703         1.482
+		  66     	 0.0614677         1.673
+		  67     	 0.0614677         1.673
+		  68     	 0.0631057         1.717
+		  69     	 0.0631058         1.717
+		  70     	 0.0717752         1.953
+----------------------------------------------------------------------------------------------------
+       LUMO-HOMO gap 		 0.0594729         1.618
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+Entering orbital-optimized ROOpCCD module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+Entering OOROOpCCD optimization (restricted, orbital optimized):
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OPTIMIZATION PARAMETERS:
+Number of frozen cores:        0
+Number of active pairs:        35
+Number of active virtuals:     35
+Initial guess:
+  type:                        mp2
+  scaling factor:              -0.100
+Solvers:
+  wavefunction amplitudes:     krylov
+  Lagrange multipliers:        krylov
+  orbital optimization:        variational
+Number of iterations:          1000
+Checkpointing:                 1
+Checkpoint file:               checkpoint_pccd.h5
+4-index transformation:        optimal
+Level shift:                   1.000e-08
+Sorting natural orbitals:      True (only in last iteration or for different Aufbau occupation)
+Apply trust region:
+  initial trust radius:        0.750
+  maximum trust radius:        0.750
+  upper trust ratio bound:     7.50e-01
+  lower trust ratio bound:     2.50e-01
+  upper scaling factor:        2.00e+00
+  lower scaling factor:        2.50e-01
+  max number of iterations:    10
+  reset after # of iterations: 10
+  max number of optimizations: 500
+  optimization threshold:      1.00e-08
+  optimizer:                   ddl
+Optimization thresholds:
+  wavefunction:                1.00e-12
+  energy:                      1.00e-08
+  gradient:                    5.00e-05
+  gradient norm:               1.00e-04
+Printing options:
+  threshold:                   1.00e-02
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Generating initial mp2 guess
+ 
+Starting optimization of ROOpCCD wave function...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Initial step:
+----------------------------------------------------------------------------------------------------
+Initial reference Energy:        -47.631693392350
+            (Core Energy:          0.000000000000)
+     (determinant Energy:        -47.631693392350)
+Initial correlation Energy:       -0.051285155936
+====================================================================================================
+Initial total Energy:            -47.682978548286
+====================================================================================================
+Entering orbital optimization of ROOpCCD...
+                                                                                                    
+  step       Etot        D(Etot)        Ecorr       D(Ecorr)    Max(Grad)   |Grad|    TrustRegion
+    1   -47.68620817  -0.00322962    -0.05451520  -0.00323005    0.00154   7.74e-03   7.50e-01
+    2   -47.69313391  -0.00692574    -0.06144306  -0.00692785    0.00197   1.04e-02   7.50e-01
+    3   -47.70402725  -0.01089334    -0.07234248  -0.01089942    0.00276   1.59e-02   7.50e-01
+    4   -47.71791803  -0.01389078    -0.08624802  -0.01390555    0.00432   2.21e-02   7.50e-01
+    5   -47.73535870  -0.01744067    -0.10371487  -0.01746684    0.00488   2.84e-02   7.50e-01
+    6   -47.75857903  -0.02322033    -0.12698513  -0.02327026    0.00597   3.91e-02   7.50e-01
+    7   -47.78688220  -0.02830317    -0.15538248  -0.02839736    0.00844   5.36e-02   7.50e-01
+    8   -47.82147299  -0.03459079    -0.19015085  -0.03476837    0.01002   6.83e-02   7.50e-01
+    9   -47.86418881  -0.04271582    -0.23321770  -0.04306685    0.01204   8.19e-02   7.50e-01
+   10   -47.90857060  -0.04438179    -0.27805084  -0.04483314    0.01472   9.47e-02   7.50e-01
+   11   -47.96344120  -0.05487061    -0.33404610  -0.05599526    0.01884   1.10e-01   7.50e-01
+   12   -48.00750118  -0.04405997    -0.38000376  -0.04595766    0.01942   1.11e-01   7.50e-01
+   13   -48.04947348  -0.04197230    -0.42442258  -0.04441882    0.01769   1.03e-01   7.50e-01
+   14   -48.09122632  -0.04175284    -0.47016511  -0.04574252    0.01917   9.93e-02   7.50e-01
+   15   -48.11379749  -0.02257117    -0.49786443  -0.02769932    0.01916   9.04e-02   7.50e-01
+   16   -48.12245350  -0.00865601    -0.51076077  -0.01289635    0.01664   6.32e-02   7.50e-01
+   17   -48.12837819  -0.00592469    -0.51952782  -0.00876705    0.00688   3.72e-02   7.50e-01
+   18   -48.15080025  -0.02242206    -0.54236116  -0.02283334    0.00724   2.86e-02   7.50e-01
+   19   -48.16654759  -0.01574734    -0.56399461  -0.02163344    0.05535   7.74e-02   7.50e-01
+   20   -48.19646249  -0.02991490    -0.59421225  -0.03021765    0.02852   6.00e-02   7.50e-01
+   21   -48.24729676  -0.05083427    -0.64583620  -0.05162395    0.04788   1.05e-01   7.50e-01
+   22   -48.37179040  -0.12449364    -0.78839058  -0.14255438    0.05444   1.55e-01   7.50e-01
+   23   -48.45102107  -0.07923067    -0.88709289  -0.09870231    0.05665   1.36e-01   7.50e-01
+   24   -48.48683331  -0.03581224    -0.94175012  -0.05465724    0.05762   1.42e-01   7.50e-01
+   25   -48.49644977  -0.00961646    -0.96861774  -0.02686761    0.03273   9.47e-02   7.50e-01
+   26   -48.49930996  -0.00286019    -0.98272275  -0.01410501    0.00825   5.40e-02   7.50e-01
+   27   -48.50041211  -0.00110214    -0.99043344  -0.00771069    0.00484   3.19e-02   7.50e-01
+   28   -48.50091591  -0.00050380    -0.99459323  -0.00415979    0.00268   1.92e-02   7.50e-01
+   29   -48.50143319  -0.00051728    -0.99709194  -0.00249871    0.00278   1.40e-02   7.50e-01
+   30   -48.50261069  -0.00117751    -0.99940978  -0.00231785    0.00472   1.66e-02   7.50e-01
+   31   -48.50580500  -0.00319431    -1.00352566  -0.00411587    0.00796   2.65e-02   7.50e-01
+   32   -48.51367847  -0.00787347    -1.01283706  -0.00931140    0.01346   4.47e-02   7.50e-01
+   33   -48.52708006  -0.01340159    -1.02952555  -0.01668849    0.02099   7.06e-02   7.50e-01
+   34   -48.53977594  -0.01269588    -1.04853895  -0.01901341    0.02525   8.71e-02   7.50e-01
+   35   -48.54973855  -0.00996261    -1.06621620  -0.01767725    0.02047   8.02e-02   7.50e-01
+   36   -48.55852988  -0.00879133    -1.08255767  -0.01634147    0.02418   7.49e-02   7.50e-01
+   37   -48.56595820  -0.00742832    -1.09712877  -0.01457110    0.02297   6.92e-02   7.50e-01
+   38   -48.57390455  -0.00794635    -1.11146929  -0.01434052    0.02186   6.63e-02   7.50e-01
+   39   -48.58039539  -0.00649083    -1.12422514  -0.01275584    0.02703   6.93e-02   7.50e-01
+   40   -48.58424421  -0.00384882    -1.13386936  -0.00964423    0.02195   5.83e-02   7.50e-01
+   41   -48.58817428  -0.00393007    -1.14238191  -0.00851254    0.01404   4.68e-02   7.50e-01
+   42   -48.59424591  -0.00607163    -1.15234164  -0.00995974    0.01990   5.04e-02   7.50e-01
+   43   -48.60054572  -0.00629980    -1.16284264  -0.01050100    0.02736   6.09e-02   7.50e-01
+   44   -48.60400912  -0.00346340    -1.17088833  -0.00804569    0.02788   5.69e-02   7.50e-01
+   45   -48.60536118  -0.00135207    -1.17615458  -0.00526624    0.01867   4.04e-02   7.50e-01
+   46   -48.60588031  -0.00051912    -1.17951740  -0.00336283    0.01074   2.63e-02   7.50e-01
+   47   -48.60609057  -0.00021026    -1.18167117  -0.00215377    0.00611   1.70e-02   7.50e-01
+   48   -48.60617862  -0.00008805    -1.18306247  -0.00139130    0.00353   1.11e-02   7.50e-01
+   49   -48.60621633  -0.00003771    -1.18397051  -0.00090804    0.00221   7.37e-03   7.50e-01
+   50   -48.60623280  -0.00001647    -1.18457064  -0.00060013    0.00134   4.91e-03   7.50e-01
+   51   -48.60624012  -0.00000732    -1.18497147  -0.00040083    0.00087   3.30e-03   7.50e-01
+   52   -48.60624343  -0.00000330    -1.18524198  -0.00027051    0.00055   2.23e-03   7.50e-01
+   53   -48.60624494  -0.00000151    -1.18542587  -0.00018389    0.00037   1.52e-03   7.50e-01
+   54   -48.60624563  -0.00000070    -1.18555173  -0.00012586    0.00024   1.03e-03   7.50e-01
+   55   -48.60624596  -0.00000032    -1.18563824  -0.00008651    0.00016   7.08e-04   7.50e-01
+   56   -48.60624611  -0.00000015    -1.18569794  -0.00005970    0.00010   4.86e-04   7.50e-01
+   57   -48.60624618  -0.00000007    -1.18573925  -0.00004130    0.00007   3.34e-04   7.50e-01
+   58   -48.60624622  -0.00000003    -1.18576788  -0.00002864    0.00005   2.30e-04   7.50e-01
+   59   -48.60624623  -0.00000002    -1.18578777  -0.00001988    0.00003   1.59e-04   7.50e-01
+   60   -48.60624624  -0.00000001    -1.18580159  -0.00001382    0.00002   1.10e-04   7.50e-01
+   61   -48.60624624  -0.00000000    -1.18581121  -0.00000962    0.00001   7.59e-05   7.50e-01
+                                                                                                    
+Orbital optimization converged in 61 iterations
+                                                                                                    
+Resorting orbitals according to occupation numbers and recalculating wavefunction and energies
+ 
+----------------------------------------------------------------------------------------------------
+Final reference Energy:          -47.420435035116
+            (Core Energy:          0.000000000000)
+     (determinant Energy:        -47.420435035116)
+Final correlation Energy:         -1.185811207572
+====================================================================================================
+Final total Energy:              -48.606246242688
+====================================================================================================
+Writing pCCD output to file pybest-results/checkpoint_pccd.h5
+----------------------------------------------------------------------------------------------------
+Final solution for coefficients: (only printed if |c_i| > 0.01)
+----------------------------------------------------------------------------------------------------
+Leading electron-pair excitation amplitudes (i,a = alpha spin; I, A = beta spin)
+ 
+    amplitude    i    I  ->    a    A
+ 
+    -0.243380   35   35  ->   36   36
+    -0.243380   34   34  ->   37   37
+    -0.243380   33   33  ->   38   38
+    -0.243380   32   32  ->   39   39
+    -0.243380   31   31  ->   40   40
+    -0.231918   30   30  ->   41   41
+    -0.231917   29   29  ->   42   42
+    -0.231913   28   28  ->   43   43
+    -0.231913   27   27  ->   44   44
+    -0.231907   26   26  ->   45   45
+    -0.230126   25   25  ->   46   46
+    -0.230126   24   24  ->   47   47
+    -0.230125   23   23  ->   48   48
+    -0.230125   22   22  ->   49   49
+    -0.230124   21   21  ->   50   50
+    -0.229795   20   20  ->   51   51
+    -0.229795   19   19  ->   52   52
+    -0.229795   18   18  ->   53   53
+    -0.229794   17   17  ->   54   54
+    -0.229794   16   16  ->   55   55
+----------------------------------------------------------------------------------------------------
+Natural occupation numbers (for spatial orbitals):
+     1:  1.907325     2:  1.907325     3:  1.907322     4:  1.907322     5:  1.907321
+     6:  1.907321     7:  1.907321     8:  1.907320     9:  1.907320    10:  1.907319
+    11:  1.901382    12:  1.901382    13:  1.901381    14:  1.901380    15:  1.901379
+    16:  1.899290    17:  1.899290    18:  1.899290    19:  1.899290    20:  1.899290
+    21:  1.899026    22:  1.899025    23:  1.899025    24:  1.899024    25:  1.899024
+    26:  1.897540    27:  1.897536    28:  1.897536    29:  1.897532    30:  1.897532
+    31:  1.887833    32:  1.887833    33:  1.887833    34:  1.887833    35:  1.887833
+    36:  0.112126    37:  0.112126    38:  0.112126    39:  0.112126    40:  0.112126
+    41:  0.102478    42:  0.102478    43:  0.102475    44:  0.102474    45:  0.102470
+    46:  0.100986    47:  0.100986    48:  0.100985    49:  0.100985    50:  0.100984
+    51:  0.100708    52:  0.100708    53:  0.100708    54:  0.100708    55:  0.100708
+    56:  0.098615    57:  0.098613    58:  0.098613    59:  0.098612    60:  0.098611
+    61:  0.092695    62:  0.092695    63:  0.092695    64:  0.092694    65:  0.092694
+    66:  0.092693    67:  0.092693    68:  0.092692    69:  0.092690    70:  0.092690
+====================================================================================================
+====================================================================================================
+====================================================================================================
+ 
+ 
+====================================================================================================
+ 
+RCC module
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PARAMETERS
+Wave function model            RfpLCCD
+Full name of model             Restricted frozen-pair Linearized Coupled Cluster Doubles
+Cluster operator               T2 - Tp
+Total number of electrons      70
+Total number of electron pairs 35
+Total number of orbitals       70
+Number of active orbitals      70
+Number of core orbitals        0
+Number of active occupied      35
+Number of active virtual       35
+Initial guess                  mp2
+Solver:                        krylov
+     inner_maxiter             18
+     Jacobian method           lgmres
+Optimization thresholds:
+     energy threshold          1e-06
+     residual threshold        1e-05
+Maximum number of iterations   101
+Tensor contraction engine      automatic
+....................................................................................................
+Computing auxiliary matrices and effective Hamiltonian.
+Performing an MP2 calculations for an initial guess.
+   Generating guess for T_2.
+Resuming CC calculation.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Iter     Total energy        Diff    Corr. energy  |Residual|    max(Residual)         Time
+     1   -48.8641960154    4.89e+01   -0.2579497727    2.84e-05         2.03e-06           9.3157
+ 
+Amplitudes converged in 0 iterations.
+ 
+----------------------------------------------------------------------------------------------------
+RfpLCCD energy
+Total energy               -48.86419602 a.u.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Reference wavefunction     -48.60624624 a.u.
+Total correlation energy    -0.25794977 a.u.
+....................................................................................................
+Doubles                     -0.25794977 a.u.
+....................................................................................................
+Seniority 2                 -0.22741163 a.u.
+Seniority 4                 -0.03053814 a.u.
+----------------------------------------------------------------------------------------------------
+ 
+Leading double excitation amplitudes
+ 
+    amplitude   i   j  ->   a   b
+ 
+     0.064245   1  26  ->  45  70
+     0.064245  26   1  ->  70  45
+     0.064245  26   2  ->  69  45
+     0.064245   2  26  ->  45  69
+     0.064244  27   6  ->  65  44
+     0.064244   6  27  ->  44  65
+     0.064244   5  28  ->  43  66
+     0.064244  28   5  ->  66  43
+    -0.064244  27   3  ->  68  44
+    -0.064244   3  27  ->  44  68
+     0.064243  28   4  ->  67  43
+     0.064243   4  28  ->  43  67
+     0.064243  29   9  ->  62  42
+     0.064243   9  29  ->  42  62
+    -0.064243  10  30  ->  41  61
+    -0.064243  30  10  ->  61  41
+    -0.064243  29   7  ->  64  42
+    -0.064243   7  29  ->  42  64
+    -0.064243  30   8  ->  63  41
+    -0.064243   8  30  ->  41  63
+----------------------------------------------------------------------------------------------------
+ 
+Entering IP-EOM-CC module
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+IP-EOM-fpLCCD framework selected
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OPTIMIZATION PARAMETERS:
+Reference Function:            fpLCCD
+Number of frozen cores:        0
+Number of active occupied:     35
+Number of active virtuals:     35
+Number of hole operators:      2
+Number of unpaired electrons:  1
+Spin-free implementation:      False
+Number of roots:               5
+Total number of roots:         63735
+Diagonalization:               Davidson
+Tensor contraction engine:     automatic
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Building effective Hamiltonian...
+...done.
+Starting diagonalization...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting diagonalization for 1 unpaired electrons
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+Davidson diagonalization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             maxiter: 200
+              nroots: 5
+              nguess: 25
+             to disk: False
+    Energy tolerance: 1e-06
+    Vector tolerance: 1e-05
+             restart: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Orthogonalization of (almost) degenerate vectors 1 0
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 10 9
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 14 13
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    0      0    1.219970e-01     3.290123e-01   3.290123e-01  
+    0      1    1.219971e-01     3.290124e-01   3.290124e-01  
+    0      2    1.316579e-01     3.327409e-01   3.327409e-01  
+    0      3    1.179083e-01     3.380926e-01   3.380926e-01  
+    0      4    1.179080e-01     3.380929e-01   3.380929e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 10 9
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 15 14
+Orthogonalization of (almost) degenerate vectors 17 16
+Orthogonalization of (almost) degenerate vectors 20 19
+Orthogonalization of (almost) degenerate vectors 22 21
+Orthogonalization of (almost) degenerate vectors 29 28
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    1      0    7.791538e-02    -4.543674e-02   2.835756e-01  
+    1      1    6.398392e-02    -4.200040e-02   2.870120e-01  
+    1      2    6.398388e-02    -4.572884e-02   2.870120e-01  
+    1      3    5.723735e-02    -3.758307e-02   3.005096e-01  
+    1      4    5.723735e-02    -3.758294e-02   3.005100e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 10 9
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 17 16
+Orthogonalization of (almost) degenerate vectors 20 19
+Orthogonalization of (almost) degenerate vectors 22 21
+Orthogonalization of (almost) degenerate vectors 31 30
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    2      0    3.222847e-02    -1.705149e-02   2.665241e-01  
+    2      1    3.016269e-02    -1.118428e-02   2.758277e-01  
+    2      2    3.016267e-02    -1.118427e-02   2.758278e-01  
+    2      3    2.599771e-02    -1.085190e-02   2.896577e-01  
+    2      4    2.599751e-02    -1.085191e-02   2.896581e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 10 9
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 19 18
+Orthogonalization of (almost) degenerate vectors 22 21
+Orthogonalization of (almost) degenerate vectors 27 26
+Orthogonalization of (almost) degenerate vectors 34 33
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    3      0    1.659947e-02    -3.028263e-03   2.634958e-01  
+    3      1    1.730172e-02    -2.956873e-03   2.728708e-01  
+    3      2    1.730170e-02    -2.956881e-03   2.728709e-01  
+    3      3    1.357702e-02    -2.426809e-03   2.872309e-01  
+    3      4    1.357686e-02    -2.426820e-03   2.872312e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 17 16
+Orthogonalization of (almost) degenerate vectors 19 18
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 27 26
+Orthogonalization of (almost) degenerate vectors 34 33
+Orthogonalization of (almost) degenerate vectors 38 37
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    4      0    8.326284e-03    -6.417119e-04   2.628541e-01  
+    4      1    1.035625e-02    -8.084664e-04   2.720623e-01  
+    4      2    1.035625e-02    -8.084695e-04   2.720624e-01  
+    4      3    7.940719e-03    -3.083363e-04   2.869225e-01  
+    4      4    7.940610e-03    -3.083475e-04   2.869229e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 10 9
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 17 16
+Orthogonalization of (almost) degenerate vectors 22 21
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 27 26
+Orthogonalization of (almost) degenerate vectors 30 29
+Orthogonalization of (almost) degenerate vectors 36 35
+Orthogonalization of (almost) degenerate vectors 38 37
+Orthogonalization of (almost) degenerate vectors 41 40
+Orthogonalization of (almost) degenerate vectors 48 47
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    5      0    4.143655e-03    -1.225560e-04   2.627315e-01  
+    5      1    5.878836e-03    -2.462535e-04   2.718161e-01  
+    5      2    5.878833e-03    -2.462543e-04   2.718161e-01  
+    5      3    4.688435e-03    -3.727662e-05   2.868853e-01  
+    5      4    4.688373e-03    -3.728158e-05   2.868856e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 10 9
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 22 21
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 27 26
+Orthogonalization of (almost) degenerate vectors 32 31
+Orthogonalization of (almost) degenerate vectors 39 38
+Orthogonalization of (almost) degenerate vectors 41 40
+Orthogonalization of (almost) degenerate vectors 43 42
+Orthogonalization of (almost) degenerate vectors 46 45
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    6      0    1.967702e-03    -1.587421e-05   2.627157e-01  
+    6      1    3.119224e-03    -5.714069e-05   2.717590e-01  
+    6      2    3.119223e-03    -5.714068e-05   2.717590e-01  
+    6      3    2.694815e-03    -3.220283e-05   2.868530e-01  
+    6      4    2.694807e-03    -3.220502e-05   2.868534e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 10 9
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 31 30
+Orthogonalization of (almost) degenerate vectors 36 35
+Orthogonalization of (almost) degenerate vectors 39 38
+Orthogonalization of (almost) degenerate vectors 43 42
+Orthogonalization of (almost) degenerate vectors 59 58
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    7      0    9.274290e-04    -3.303109e-06   2.627124e-01  
+    7      1    1.711898e-03     5.833707e-06   2.717648e-01  
+    7      2    1.711898e-03     5.833484e-06   2.717648e-01  
+    7      3    1.892486e-03    -3.132062e-05   2.868217e-01  
+    7      4    1.892510e-03    -3.132288e-05   2.868221e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 10 9
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 17 16
+Orthogonalization of (almost) degenerate vectors 22 21
+Orthogonalization of (almost) degenerate vectors 24 23
+Orthogonalization of (almost) degenerate vectors 32 31
+Orthogonalization of (almost) degenerate vectors 43 42
+Orthogonalization of (almost) degenerate vectors 48 47
+Orthogonalization of (almost) degenerate vectors 51 50
+Orthogonalization of (almost) degenerate vectors 53 52
+Orthogonalization of (almost) degenerate vectors 58 57
+Orthogonalization of (almost) degenerate vectors 64 63
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    8      0    4.508317e-04    -6.277302e-06   2.627061e-01  
+    8      1    9.522212e-04     1.229000e-05   2.717771e-01  
+    8      2    9.522211e-04     1.228969e-05   2.717771e-01  
+    8      3    1.788063e-03    -3.306317e-05   2.867887e-01  
+    8      4    1.788120e-03    -3.306567e-05   2.867890e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 10 9
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 15 14
+Orthogonalization of (almost) degenerate vectors 24 23
+Orthogonalization of (almost) degenerate vectors 32 31
+Orthogonalization of (almost) degenerate vectors 37 36
+Orthogonalization of (almost) degenerate vectors 44 43
+Orthogonalization of (almost) degenerate vectors 48 47
+Orthogonalization of (almost) degenerate vectors 51 50
+Orthogonalization of (almost) degenerate vectors 58 57
+Orthogonalization of (almost) degenerate vectors 64 63
+Orthogonalization of (almost) degenerate vectors 66 65
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    9      0    2.337978e-04    -6.919850e-06   2.626992e-01  
+    9      1    5.237428e-04     4.024917e-06   2.717811e-01  
+    9      2    5.237424e-04     4.024871e-06   2.717812e-01  
+    9      3    2.191242e-03    -4.007996e-05   2.867486e-01  
+    9      4    2.191345e-03    -4.008329e-05   2.867489e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 14 13
+Orthogonalization of (almost) degenerate vectors 22 21
+Orthogonalization of (almost) degenerate vectors 28 27
+Orthogonalization of (almost) degenerate vectors 37 36
+Orthogonalization of (almost) degenerate vectors 48 47
+Orthogonalization of (almost) degenerate vectors 51 50
+Orthogonalization of (almost) degenerate vectors 53 52
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   10      0    1.261014e-04    -5.412520e-06   2.626938e-01  
+   10      1    2.981018e-04    -2.505054e-06   2.717786e-01  
+   10      2    2.981013e-04    -2.505009e-06   2.717786e-01  
+   10      3    3.218938e-03    -4.753197e-05   2.867011e-01  
+   10      4    3.219150e-03    -4.753711e-05   2.867014e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 14 13
+Orthogonalization of (almost) degenerate vectors 28 27
+Orthogonalization of (almost) degenerate vectors 30 29
+Orthogonalization of (almost) degenerate vectors 32 31
+Orthogonalization of (almost) degenerate vectors 36 35
+Orthogonalization of (almost) degenerate vectors 40 39
+Orthogonalization of (almost) degenerate vectors 44 43
+Orthogonalization of (almost) degenerate vectors 48 47
+Orthogonalization of (almost) degenerate vectors 51 50
+Orthogonalization of (almost) degenerate vectors 53 52
+Orthogonalization of (almost) degenerate vectors 56 55
+Orthogonalization of (almost) degenerate vectors 63 62
+Orthogonalization of (almost) degenerate vectors 69 68
+Orthogonalization of (almost) degenerate vectors 74 73
+Orthogonalization of (almost) degenerate vectors 76 75
+Orthogonalization of (almost) degenerate vectors 79 78
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   11      0    7.162233e-05    -3.433327e-06   2.626903e-01  
+   11      1    1.788131e-04    -3.890549e-06   2.717747e-01  
+   11      2    1.788126e-04    -3.890497e-06   2.717748e-01  
+   11      3    5.221526e-03    -5.889775e-05   2.866422e-01  
+   11      4    5.222072e-03    -5.890838e-05   2.866425e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 14 13
+Orthogonalization of (almost) degenerate vectors 27 26
+Orthogonalization of (almost) degenerate vectors 30 29
+Orthogonalization of (almost) degenerate vectors 32 31
+Orthogonalization of (almost) degenerate vectors 37 36
+Orthogonalization of (almost) degenerate vectors 40 39
+Orthogonalization of (almost) degenerate vectors 43 42
+Orthogonalization of (almost) degenerate vectors 49 48
+Orthogonalization of (almost) degenerate vectors 51 50
+Orthogonalization of (almost) degenerate vectors 53 52
+Orthogonalization of (almost) degenerate vectors 58 57
+Orthogonalization of (almost) degenerate vectors 63 62
+Orthogonalization of (almost) degenerate vectors 68 67
+Orthogonalization of (almost) degenerate vectors 74 73
+Orthogonalization of (almost) degenerate vectors 77 76
+Orthogonalization of (almost) degenerate vectors 79 78
+Orthogonalization of (almost) degenerate vectors 81 80
+Orthogonalization of (almost) degenerate vectors 83 82
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   12      0    3.832890e-05    -1.809637e-06   2.626885e-01  
+   12      1    1.068901e-04    -2.977885e-06   2.717717e-01  
+   12      2    1.068898e-04    -2.977842e-06   2.717718e-01  
+   12      3    7.428675e-03    -1.123637e-04   2.865298e-01  
+   12      4    7.429672e-03    -1.124012e-04   2.865301e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 15 14
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 27 26
+Orthogonalization of (almost) degenerate vectors 30 29
+Orthogonalization of (almost) degenerate vectors 33 32
+Orthogonalization of (almost) degenerate vectors 40 39
+Orthogonalization of (almost) degenerate vectors 42 41
+Orthogonalization of (almost) degenerate vectors 49 48
+Orthogonalization of (almost) degenerate vectors 51 50
+Orthogonalization of (almost) degenerate vectors 53 52
+Orthogonalization of (almost) degenerate vectors 56 55
+Orthogonalization of (almost) degenerate vectors 58 57
+Orthogonalization of (almost) degenerate vectors 61 60
+Orthogonalization of (almost) degenerate vectors 63 62
+Orthogonalization of (almost) degenerate vectors 73 72
+Orthogonalization of (almost) degenerate vectors 79 78
+Orthogonalization of (almost) degenerate vectors 84 83
+Orthogonalization of (almost) degenerate vectors 88 87
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   13      0    1.963464e-05    -5.351199e-07   2.626880e-01  
+   13      1    6.172485e-05    -1.464171e-06   2.717703e-01  
+   13      2    6.172463e-05    -1.464151e-06   2.717703e-01  
+   13      3    5.604205e-03    -1.522535e-04   2.863775e-01  
+   13      4    5.604553e-03    -1.523053e-04   2.863778e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 15 14
+Orthogonalization of (almost) degenerate vectors 27 26
+Orthogonalization of (almost) degenerate vectors 30 29
+Orthogonalization of (almost) degenerate vectors 33 32
+Orthogonalization of (almost) degenerate vectors 37 36
+Orthogonalization of (almost) degenerate vectors 42 41
+Orthogonalization of (almost) degenerate vectors 49 48
+Orthogonalization of (almost) degenerate vectors 51 50
+Orthogonalization of (almost) degenerate vectors 56 55
+Orthogonalization of (almost) degenerate vectors 61 60
+Orthogonalization of (almost) degenerate vectors 63 62
+Orthogonalization of (almost) degenerate vectors 68 67
+Orthogonalization of (almost) degenerate vectors 79 78
+Orthogonalization of (almost) degenerate vectors 82 81
+Orthogonalization of (almost) degenerate vectors 84 83
+Orthogonalization of (almost) degenerate vectors 87 86
+Orthogonalization of (almost) degenerate vectors 89 88
+Orthogonalization of (almost) degenerate vectors 93 92
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   14      0    9.882194e-06     8.933151e-08   2.626881e-01  converged
+   14      1    3.635382e-05    -6.235764e-07   2.717696e-01  
+   14      2    3.635371e-05    -6.235695e-07   2.717697e-01  
+   14      3    3.194419e-03    -1.101016e-04   2.862674e-01  
+   14      4    3.194536e-03    -1.101221e-04   2.862677e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 15 14
+Orthogonalization of (almost) degenerate vectors 35 34
+Orthogonalization of (almost) degenerate vectors 37 36
+Orthogonalization of (almost) degenerate vectors 41 40
+Orthogonalization of (almost) degenerate vectors 50 49
+Orthogonalization of (almost) degenerate vectors 56 55
+Orthogonalization of (almost) degenerate vectors 58 57
+Orthogonalization of (almost) degenerate vectors 63 62
+Orthogonalization of (almost) degenerate vectors 66 65
+Orthogonalization of (almost) degenerate vectors 68 67
+Orthogonalization of (almost) degenerate vectors 73 72
+Orthogonalization of (almost) degenerate vectors 78 77
+Orthogonalization of (almost) degenerate vectors 84 83
+Orthogonalization of (almost) degenerate vectors 92 91
+Orthogonalization of (almost) degenerate vectors 94 93
+Orthogonalization of (almost) degenerate vectors 98 97
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   15      1    2.171597e-05    -3.017618e-07   2.717693e-01  
+   15      2    2.171594e-05    -3.017594e-07   2.717694e-01  
+   15      3    1.897542e-03    -6.613886e-05   2.862013e-01  
+   15      4    1.897609e-03    -6.614604e-05   2.862015e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 15 14
+Orthogonalization of (almost) degenerate vectors 32 31
+Orthogonalization of (almost) degenerate vectors 42 41
+Orthogonalization of (almost) degenerate vectors 45 44
+Orthogonalization of (almost) degenerate vectors 47 46
+Orthogonalization of (almost) degenerate vectors 54 53
+Orthogonalization of (almost) degenerate vectors 56 55
+Orthogonalization of (almost) degenerate vectors 66 65
+Orthogonalization of (almost) degenerate vectors 68 67
+Orthogonalization of (almost) degenerate vectors 71 70
+Orthogonalization of (almost) degenerate vectors 78 77
+Orthogonalization of (almost) degenerate vectors 87 86
+Orthogonalization of (almost) degenerate vectors 89 88
+Orthogonalization of (almost) degenerate vectors 99 98
+Orthogonalization of (almost) degenerate vectors 103 102
+Maximum number of Davidson vectors reached. Performing subspace collapse.
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   16      1    1.224909e-05    -2.956408e-07   2.717690e-01  
+   16      2    1.224912e-05    -2.956374e-07   2.717691e-01  
+   16      3    1.193629e-03    -3.066697e-05   2.861706e-01  
+   16      4    1.193676e-03    -3.067137e-05   2.861708e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   17      1    7.210292e-06    -1.259223e-07   2.717689e-01  converged
+   17      2    7.210314e-06    -1.259200e-07   2.717690e-01  converged
+   17      3    7.443217e-04    -1.577134e-06   2.861691e-01  
+   17      4    7.443502e-04    -1.577714e-06   2.861693e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   18      3    5.620092e-04    -1.470704e-06   2.861676e-01  
+   18      4    5.620313e-04    -1.471180e-06   2.861678e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   19      3    3.708911e-04    -2.757121e-06   2.861648e-01  
+   19      4    3.709063e-04    -2.757368e-06   2.861650e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   20      3    2.232602e-04    -2.725876e-06   2.861621e-01  
+   20      4    2.232697e-04    -2.726284e-06   2.861623e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   21      3    1.339010e-04    -1.629055e-06   2.861605e-01  
+   21      4    1.339074e-04    -1.629484e-06   2.861607e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   22      3    8.239511e-05    -9.655616e-07   2.861595e-01  
+   22      4    8.239908e-05    -9.658461e-07   2.861597e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   23      3    5.032245e-05    -5.760123e-07   2.861589e-01  
+   23      4    5.032449e-05    -5.761344e-07   2.861591e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   24      3    3.477021e-05    -2.125075e-07   2.861587e-01  
+   24      4    3.477129e-05    -2.125357e-07   2.861589e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   25      3    2.848363e-05     5.119973e-08   2.861588e-01  
+   25      4    2.848403e-05     5.119462e-08   2.861590e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   26      3    2.846664e-05     1.375097e-07   2.861589e-01  
+   26      4    2.846784e-05     1.375063e-07   2.861591e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   27      3    3.451118e-05     4.100710e-08   2.861589e-01  
+   27      4    3.451749e-05     4.103800e-08   2.861591e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   28      3    4.700816e-05    -1.753779e-07   2.861588e-01  
+   28      4    4.702761e-05    -1.753729e-07   2.861590e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 69 68
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   29      3    6.003943e-05    -2.367903e-07   2.861585e-01  
+   29      4    6.009983e-05    -2.370093e-07   2.861587e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   30      3    8.349005e-05     1.078683e-07   2.861586e-01  
+   30      4    8.369886e-05     1.075327e-07   2.861588e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   31      3    1.035899e-04     8.095262e-07   2.861595e-01  
+   31      4    1.043686e-04     8.122513e-07   2.861597e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 4 3
+Orthogonalization of (almost) degenerate vectors 84 83
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   32      3    9.406468e-05     4.384684e-07   2.861599e-01  
+   32      4    1.089887e-04     4.659015e-07   2.861601e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 5 4
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   33      3    2.554101e-02    -2.140216e-03   2.840197e-01  
+   33      4    9.535727e-05     8.646572e-08   2.861602e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 43 42
+Orthogonalization of (almost) degenerate vectors 94 93
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   34      3    1.394489e-02    -2.080886e-03   2.819388e-01  
+   34      4    7.150891e-05     9.139464e-08   2.861603e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 5 4
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   35      3    6.943729e-03    -4.997734e-04   2.814390e-01  
+   35      4    6.543442e-05     8.293418e-07   2.861611e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 11 10
+Orthogonalization of (almost) degenerate vectors 15 14
+Orthogonalization of (almost) degenerate vectors 104 103
+Maximum number of Davidson vectors reached. Performing subspace collapse.
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   36      3    3.724994e-03    -1.385328e-04   2.813005e-01  
+   36      4    6.439656e-05     7.486332e-08   2.861612e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   37      3    2.125038e-03    -2.898949e-05   2.812715e-01  
+   37      4    3.801578e-05     1.409198e-07   2.861613e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   38      3    1.408935e-03    -1.422952e-05   2.812573e-01  
+   38      4    2.817796e-05     1.852579e-07   2.861615e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   39      3    7.624879e-04    -4.197028e-06   2.812531e-01  
+   39      4    1.897404e-05     6.362946e-08   2.861616e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   40      3    3.533435e-04    -1.049563e-06   2.812520e-01  
+   40      4    1.281291e-05     8.354806e-10   2.861616e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   41      3    1.905027e-04    -6.272847e-07   2.812514e-01  
+   41      4    9.734638e-06     1.607429e-08   2.861616e-01  converged
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   42      3    1.121581e-04    -5.632744e-07   2.812508e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   43      3    7.306623e-05    -4.323264e-07   2.812504e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   44      3    4.480780e-05    -2.219792e-07   2.812502e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   45      3    2.738468e-05    -5.974133e-08   2.812501e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   46      3    1.688636e-05    -1.509297e-08   2.812501e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   47      3    1.060708e-05    -2.726789e-08   2.812501e-01  
+ 
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   48      3    7.694791e-06    -4.332778e-08   2.812500e-01  converged
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Davidson converged
+====================================================================================================
+Final results for spin projection 0.5:
+ 
+Ionization energy:           2.626883e-01 [au]  /   7.148112e+00 [eV]  /   5.765342e+04 [cm-1]
+Energy of ionized state:    -48.6015077099 [au]  /  -1322.5143 [eV]  /  -10666797.979 [cm-1]
+              r_i:           ( 27)    0.30113
+              r_i:           ( 26)    0.30112
+              r_i:           ( 29)    0.30112
+              r_i:           ( 28)    0.30112
+              r_i:           ( 30)    0.30111
+              r_i:           ( 31)   -0.18191
+              r_i:           ( 34)    0.18190
+              r_i:           ( 32)    0.18190
+              r_i:           ( 33)    0.18189
+              r_i:           ( 35)   -0.18189
+              r_i:           ( 25)   -0.13045
+              r_i:           ( 24)   -0.13045
+              r_i:           ( 23)    0.13045
+              r_i:           ( 21)   -0.13044
+              r_i:           ( 22)   -0.13044
+              r_i:           (  6)   -0.12403
+              r_i:           (  2)    0.12403
+              r_i:           (  3)    0.12403
+              r_i:           (  7)    0.12403
+              r_i:           (  1)    0.12403
+              r_i:           (  4)    0.12403
+              r_i:           (  9)   -0.12403
+              r_i:           ( 10)   -0.12403
+              r_i:           (  5)   -0.12403
+              r_i:           (  8)    0.12403
+      weight(r_i):  0.86004
+    weight(r_ijb):  0.01029
+    weight(r_iJB):  0.12967
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           2.717685e-01 [au]  /   7.395198e+00 [eV]  /   5.964630e+04 [cm-1]
+Energy of ionized state:    -48.5924274780 [au]  /  -1322.2672 [eV]  /  -10664805.098 [cm-1]
+              r_i:           ( 30)   -0.33229
+              r_i:           ( 26)    0.29712
+              r_i:           ( 31)   -0.29296
+              r_i:           ( 35)    0.26197
+              r_i:           ( 27)    0.24052
+              r_i:           ( 25)   -0.23583
+              r_i:           ( 33)   -0.21207
+              r_i:           ( 21)    0.21088
+              r_i:           (  2)    0.17077
+              r_i:           ( 22)    0.17071
+              r_i:           ( 10)    0.16693
+              r_i:           (  3)    0.15868
+              r_i:           (  8)   -0.14865
+              r_i:           ( 29)   -0.14848
+              r_i:           ( 34)    0.13090
+              r_i:           (  9)    0.12767
+              r_i:           ( 11)    0.11958
+              r_i:           (  1)    0.11140
+              r_i:           ( 15)    0.10692
+              r_i:           ( 20)    0.10553
+              r_i:           ( 24)   -0.10537
+      weight(r_i):  0.85520
+    weight(r_ijb):  0.00980
+    weight(r_iJB):  0.13501
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           2.717686e-01 [au]  /   7.395199e+00 [eV]  /   5.964631e+04 [cm-1]
+Energy of ionized state:    -48.5924274224 [au]  /  -1322.2672 [eV]  /  -10664805.086 [cm-1]
+              r_i:           ( 28)    0.33090
+              r_i:           ( 29)   -0.30114
+              r_i:           ( 32)   -0.29175
+              r_i:           ( 34)    0.26551
+              r_i:           ( 23)   -0.23485
+              r_i:           ( 27)   -0.23427
+              r_i:           ( 24)   -0.21373
+              r_i:           ( 33)    0.20654
+              r_i:           (  7)   -0.17118
+              r_i:           (  4)    0.16793
+              r_i:           ( 22)   -0.16627
+              r_i:           (  6)    0.15690
+              r_i:           ( 26)    0.15637
+              r_i:           (  5)   -0.14633
+              r_i:           ( 35)    0.13786
+              r_i:           (  1)    0.13066
+              r_i:           ( 13)    0.11908
+              r_i:           (  9)    0.11482
+              r_i:           ( 21)    0.11098
+              r_i:           ( 12)    0.10837
+              r_i:           ( 18)   -0.10508
+      weight(r_i):  0.85520
+    weight(r_ijb):  0.00980
+    weight(r_iJB):  0.13501
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           2.812500e-01 [au]  /   7.653202e+00 [eV]  /   6.172725e+04 [cm-1]
+Energy of ionized state:    -48.5829459897 [au]  /  -1322.0092 [eV]  /  -10662724.152 [cm-1]
+              r_i:           (  7)    0.29537
+              r_i:           (  2)   -0.29537
+              r_i:           (  8)   -0.29535
+              r_i:           (  9)    0.29535
+              r_i:           (  5)   -0.29533
+              r_i:           ( 10)   -0.29526
+              r_i:           (  3)    0.29525
+              r_i:           (  1)    0.29525
+              r_i:           (  4)   -0.29520
+              r_i:           (  6)    0.29519
+      weight(r_i):  0.87197
+    weight(r_ijb):  0.00659
+    weight(r_iJB):  0.12144
+Suggested spin multiplicity: doublet
+ 
+Ionization energy:           2.861618e-01 [au]  /   7.786857e+00 [eV]  /   6.280525e+04 [cm-1]
+Energy of ionized state:    -48.5780342546 [au]  /  -1321.8755 [eV]  /  -10661646.151 [cm-1]
+              r_i:           ( 17)   -0.43317
+              r_i:           ( 16)    0.39578
+              r_i:           ( 19)   -0.30512
+              r_i:           ( 22)   -0.25111
+              r_i:           ( 24)    0.22942
+              r_i:           ( 20)   -0.20720
+              r_i:           ( 21)    0.17688
+              r_i:           (  1)    0.16445
+              r_i:           (  8)   -0.15815
+              r_i:           (  9)   -0.15447
+              r_i:           ( 33)   -0.14344
+              r_i:           (  3)   -0.13325
+              r_i:           (  5)    0.13284
+              r_i:           ( 34)    0.13105
+              r_i:           ( 25)   -0.12011
+              r_i:           (  4)    0.10140
+              r_i:           ( 35)   -0.10105
+      weight(r_i):  0.86095
+    weight(r_ijb):  0.01040
+    weight(r_iJB):  0.12865
+Suggested spin multiplicity: doublet
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Please, cite the following references:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ * For IP-EOM-CC-based methods
+   - Gałyńska, M.; Boguslawski, K.; J. Chem. Theory Comput. 20, 4182--4195 (2024);
+     http://dx.doi.org/10.1021/acs.jctc.4c00172
+
+ * For model Hamiltonians
+   - Karimi, Z.; Ahmadkhani, S.; Boguslawski, K.; Tecmer, P.; XX X, X--X (2025); X
+
+ * For the (D)IP-EOM-pCCD-based methods
+   - Boguslawski, K.; Chem. Commun. 57, 12277--12280 (2021); http://dx.doi.org/10.1039/D1CC04539C
+
+   - Pandey, R. D.; de Moraes, M. M. F.; Boguslawski, K.; Tecmer, P.; J. Chem. Theory Comput. 21,
+     5049--5061 (2025); https://doi.org/10.1021/acs.jctc.5c00057
+
+ * For the commutator DIIS SCF algorithm
+   - Pulay, P.; Chem. Phys. Lett. 73, 393--398 (1980);
+     http://dx.doi.org/10.1016/0009-2614(80)80396-4
+
+ * For the pCCD method
+   - Boguslawski, K.; Tecmer, P.; Ayers, P. W.; Bultinck, P.; De Baerdemacker, S.; Van Neck, D.;
+     Phys. Rev. B 89, 201106(R) (2014); http://dx.doi.org/10.1103/PhysRevB.89.201106
+
+   - Boguslawski, K.; Tecmer, P.; Ayers, P. W.; Bultinck, P.; De Baerdemacker, S.; Van Neck, D.; J.
+     Chem. Theory Comput. 10, 4873--4882 (2014); http://dx.doi.org/10.1021/ct500759q
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Details can be found in the file
+/home/zkarimi/software/mypybest/oneapi2023.0/pybest/data/references.bib
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+User:            zkarimi
+Machine info:    Linux p05 5.14.0-611.49.2.el9_7.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Apr 30 09:05:08
+                 EDT 2026 x86_64
+Time:            2026-05-29T16:54:24.195177
+Python version:  3.11.3 (main, Oct 10 2023, 20:47:43) [GCC 12.2.0]
+PyBEST version:  2.1.1.dev32+gf69596a1
+Current Dir:     /scratch/296399.gateway
+Command line:    IP-RIPfpLCCD.py
+PyBEST module:   /home/zkarimi/software/mypybest/oneapi2023.0/pybest/log.py
+
+Overview of CPU time usage.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Label                    Total     Own
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Base: contract           32.1     31.9 WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+Base: expand              0.0      0.0                                                              
+Davidson                 15.1      7.6 WWWWWWWWWWWWWW                                               
+H_eff: Fock_diag          0.0      0.0                                                              
+H_eff: Fock_full          0.0      0.0                                                              
+IPCCD1: H_diag            0.0      0.0                                                              
+IPCCD1: H_eff             0.7      0.0                                                              
+IPCCD1: H_sub             7.5      0.4                                                              
+Index Trans              29.4     29.4 WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW     
+Linesearch               50.1      0.0                                                              
+OOGeminal: Solver        53.3      0.4                                                              
+OOGeminal: gradient       0.3      0.0                                                              
+PT2: Epsilon              0.0      0.0                                                              
+RCCD: MP2 guess           0.0      0.0                                                              
+RCCD: unravel             0.6      0.6 W                                                            
+RLCCD: Energy             0.0      0.0                                                              
+RLCCD: Hamiltonian        0.0      0.0                                                              
+RLCCD: Residual           3.0      0.2                                                              
+RfpLCCD: Hamiltonian      0.0      0.0                                                              
+RfpLCCD: Residual         5.5      0.2                                                              
+RfpLCCD: VectFct          9.1      0.1                                                              
+RpCCD: 1DM                0.0      0.0                                                              
+RpCCD: 2DM                0.4      0.2                                                              
+RpCCD: Hamiltonian        3.3      3.1 WWWWW                                                        
+RpCCD: Lambda VecFct      9.2      1.0 W                                                            
+RpCCD: Lambda eqs         9.8      0.7 W                                                            
+RpCCD: Solver            51.8      3.4 WWWWWW                                                       
+RpCCD: T_p VecFct         6.5      0.7 W                                                            
+RpCCD: T_p eqs            7.1      0.6 W                                                            
+RpCCD: nDM                0.4      0.0                                                              
+SCF                       1.6      0.0                                                              
+SCF: Initial Guess        0.0      0.0                                                              
+Total                    82.1      1.1 WW                                                           
+XIPCC: Diagonalize       15.1      0.0                                                              
+XIPCC: call              16.5      0.2                                                              
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CPU user time  :     384.23
+  CPU sysem time :      15.92
+  Page swaps     :       0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+====================================================================================================
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*                          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@        @@              @@@@@           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@            @@@       @@@       @@,       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@               @@@   @@           @@   @@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                   @@@             @@@               @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                     @@           @@                  @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@                     @@,       @@@                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@.                     @@@@@@@                     @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @@\     @@\  @@@  @@@@@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @  @    @  @     @   @        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          @@/ @ @ @@:  @@@ \@  @         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @    @  @  @       @ @          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@            @    @  @@/  @@@ @@/ @           @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                 @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@               @@@@@@@@@@@@@@&              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ End of PyBEST. Program finished SUCCESSFULLY. Please read this output file carefully and watch out
+ for possible WARNINGS!
+
+ Thank you for using PyBEST 2.1.1.dev32+gf69596a1! See you soon!
+====================================================================================================

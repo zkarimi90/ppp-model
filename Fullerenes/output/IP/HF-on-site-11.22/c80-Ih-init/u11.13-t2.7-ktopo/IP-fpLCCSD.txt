@@ -1,0 +1,2491 @@
+zahrakarimi@host-105 hamiltonian % python ppp.py
+
+
+====================================================================================================
+
+ Welcome to
+
+                                 ____        ____  _____ ____ _____
+                                |  _ \ _   _| __ )| ____/ ___|_   _|
+                                | |_) | | | |  _ \|  _| \___ \ | |
+                                |  __/| |_| | |_) | |___ ___) || |
+                                |_|    \__, |____/|_____|____/ |_|
+                                       |___/
+
+ version 2.1.0.dev60+g74c4c368!
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@        @@              @@@@@             #@@        @@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@            @@@       @@@       @@,       @@@           @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@               @@@   @@           @@   @@@               @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                   @@@             @@@                   @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                     @@           @@                     @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@                     @@,       @@@                     @@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@.                     @@@@@@@                     @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @@\     @@\  @@@  @@@@@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @  @    @  @     @   @        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          @@/ @ @ @@:  @@@ \@  @         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @    @  @  @       @ @          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@            @    @  @@/  @@@ @@/ @           @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                 @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@               @@@@@@@@@@@@@@&              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ PyBEST is written and maintained at Nicolaus Copernicus University (NCU) in Torun.
+ It contains contributions from (in alphabetic order)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         Developers                             Affiliation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Somayeh Ahmadkhani             Institute of Physics, NCU in Torun, Poland
+ Saman Behjou                   Institute of Physics, NCU in Torun, Poland
+ Katharina Boguslawski          Institute of Physics, NCU in Torun, Poland
+ Iulia Brumboiu                 Institute of Physics, NCU in Torun, Poland
+ Filip Brzęk                    Institute of Physics, NCU in Torun, Poland
+ Rahul Chakraborty              Institute of Physics, NCU in Torun, Poland
+ Kacper Cieślak                 Institute of Engineering and Technology, NCU in Torun, Poland
+ Marta Gałyńska                 Faculty of Chemistry, NCU in Torun, Poland
+ Antonina Dobrowolska           Institute of Engineering and Technology, NCU in Torun, Poland
+ Seyedehdelaram Jahani          Institute of Physics, NCU in Torun, Poland
+ Zahra Karimi                   Institute of Physics, NCU in Torun, Poland
+ Dariusz Kędziera               Faculty of Chemistry, NCU in Torun, Poland
+ Michał Kopczyński              Institute of Engineering and Technology, NCU in Torun, Poland
+ Maximilian Kriebel             Institute of Physics, NCU in Torun, Poland
+ Aleksandra Leszczyk            Institute of Physics, NCU in Torun, Poland
+ Artur Nowak                    Institute of Physics, NCU in Torun, Poland
+ Ram Dhari Pandey               Institute of Physics, NCU in Torun, Poland
+ Julia Szczuczko                Institute of Engineering and Technology, NCU in Torun, Poland
+ Lena Szczuczko                 Institute of Physics, NCU in Torun, Poland
+ Emil Sujkowski                 Institute of Engineering and Technology, NCU in Torun, Poland
+ Julian Świerczyński            Institute of Engineering and Technology, NCU in Torun, Poland
+ Paweł Tecmer                   Institute of Physics, NCU in Torun, Poland
+ Piotr Żuchowski                Institute of Physics, NCU in Torun, Poland
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         Contributors                           Affiliation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ More information about PyBEST can be found on this website: https://hd.fizyka.umk.pl/~pybest/
+
+ This log file allows you to track the progress of a calculation. It does not contain any data
+ that can be used for restarting. Useful numerical data is written to checkpoint files during
+ the calculation and can be accessed through the Python scripting interface.
+
+====================================================================================================
+User:            zahrakarimi
+Machine info:    Darwin host-105.55.fizyka.umk.pl 24.6.0 Darwin Kernel Version 24.6.0: Tue Apr 21
+                 20:17:54 PDT 2026; root:xnu-11417.140.69.710.16~1/RELEASE_X86_64 x86_64
+Time:            2026-06-10T09:55:16.474321
+Python version:  3.12.8 (main, Dec  7 2024, 10:37:29) [Clang 17.0.0 (clang-1700.0.13.3)]
+PyBEST version:  2.1.0.dev60+g74c4c368
+Current Dir:     /Users/zahrakarimi/my_pybest/pybest/src/pybest/data/examples/hamiltonian
+Command line:    ppp.py
+PyBEST module:   /Users/zahrakarimi/my_pybest/pybest/src/pybest/log.py
+
+!WARNING! The opt_einsum module has not been detected.
+
+====================================================================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Occupation Module:
+ 
+Aufbau occupation number model.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+              Total number of electrons: 80
+                Total electronic charge: 0
+                                         alpha
+        Total number of basis functions: 80   
+      Total number of occupied orbitals: 40   
+       Total number of virtual orbitals: 40   
+         Number of frozen core orbitals: 0    
+   Number of active core orbitals (CVS): 0    
+     Number of active occupied orbitals: 40   
+      Number of active virtual orbitals: 40   
+              Number of active orbitals: 80   
+      Number of electrons for each spin: 40   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+                                                                                                    
+Entering the PPP Model Hamiltonian
+ 
+          Total number of atoms: 80
+      Structure information for: C80 Isomer 31924 Symmetry Ih
+ 
+     Symbols of supported atoms: C80
+        On-site value (epsilon): -11.22 eV
+              Hubbard value (U):  11.13 eV   |    0.41 a.u.
+              Hopping value (t):  -2.70 eV   |   -0.10 a.u.
+        Dielectric constant (k): [topology screening]
+                   Hubbard term: True
+====================================================================================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Performing a core Hamiltonian guess.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting restricted closed-shell CDIIS-SCF
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Iter         Error        CN         Last nv Method          Energy       Change
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   0      6.10934e-02     1  
+   0      1.04554e-01     2  
+   0                  1.160e+01   0.35416  2 C  
+   1      4.05027e-02     3  
+   1                  1.173e+02   0.42526  3 C  
+   2      1.74424e-02     4  
+   2                  1.415e+03   0.94924  4 C  
+   3      9.52931e-03     5  
+   3                  2.550e+03   0.70382  5 C  
+   4      5.90103e-03     6  
+   4                  2.550e+03   0.18294  6 C  
+   5      5.07843e-03     6  
+   5                  1.233e+04  -0.72610  6 C  
+   6      4.39509e-03     6  
+   6                  2.497e+04   2.49948  6 C  
+   7      5.74410e-03     6  
+   7                  5.996e+03   0.19213  6 C  
+   8      4.65639e-03     6  
+   8                  9.476e+02   1.72457  6 C  
+   9      4.18923e-03     6  
+   9                  7.220e+02  -0.01623  6 C  
+  10      3.63756e-03     6  
+  10                  6.899e+02   0.89277  6 C  
+  11      3.30791e-03     6  
+  11                  6.356e+02  -0.06763  6 C  
+  12      3.31248e-03     6  
+  12                  5.659e+03   1.83821  6 C  
+  13      4.78726e-03     6  
+  13                  7.333e+03   1.24428  6 C  
+  14      8.71028e-03     6  
+  14                  3.948e+04  -0.03106  6 C  
+  15      1.22830e-02     6  
+  15                  5.028e+04   0.72546  6 C  
+  16      9.83528e-03     6  
+  16                  5.559e+04   0.42143  6 C  
+  17      7.64631e-03     6  
+  17                  1.820e+03   0.65417  6 C  
+  18      6.12586e-03     6  
+  18                  3.124e+03   2.13377  6 C  
+  19      6.96207e-03     6  
+  19                  2.940e+03   0.33769  6 C  
+  20      5.04083e-03     6  
+  20                  4.208e+03   0.60907  6 C  
+  21      5.32019e-03     6  
+  21                  1.123e+03   0.31988  6 C  
+  22      4.69306e-03     6  
+  22                  3.233e+02   0.19597  6 C  
+  23      5.02919e-03     6  
+  23                  2.249e+02  -0.51457  6 C  
+  24      5.72462e-03     6  
+  24                  1.074e+03   1.07378  6 C  
+  25      1.44801e-02     6  
+  25                  4.803e+03  -0.33213  6 C  
+  26      7.08090e-03     6  
+  26                  3.969e+03   0.46492  6 C  
+  27      1.90976e-02     6  
+  27                  5.628e+03   0.05922  6 C  
+  28      9.49983e-03     6  
+  28                  2.217e+02   0.51590  6 C  
+  29      1.36154e-02     6  
+  29                  5.196e+02  -0.61867  6 C  
+  30      9.71703e-03     6  
+  30                  6.592e+02   0.51629  6 C  
+  31      7.15849e-03     6  
+  31                  4.315e+02   0.95317  6 C  
+  32      1.72151e-02     6  
+  32                  2.809e+02  -0.36902  6 C  
+  33      1.37157e-02     6  
+  33                  2.286e+02   0.39658  6 C  
+  34      1.09219e-02     6  
+  34                  3.213e+02   0.35495  6 C  
+  35      8.40595e-03     6  
+  35                  1.468e+02   0.56668  6 C  
+  36      7.18979e-03     6  
+  36                  4.787e+02   1.32355  6 C  
+  37      1.50482e-02     6  
+  37                  3.354e+02   0.08158  6 C  
+  38      1.42706e-02     6  
+  38                  4.659e+02   0.82730  6 C  
+  39      1.56838e-02     6  
+  39                  3.966e+02  -1.36829  6 C  
+  40      1.08272e-02     6  
+  40                  7.101e+02   0.26391  6 C  
+  41      1.45736e-02     6  
+  41                  1.240e+03   0.42670  6 C  
+  42      2.66091e-02     6  
+  42                  2.135e+03  -0.35020  6 C  
+  43      2.69183e-02     6  
+  43                  6.469e+02   0.54010  6 C  
+  44      1.49255e-02     6  
+  44                  7.611e+02   0.81279  6 C  
+  45      1.51702e-02     6  
+  45                  6.395e+02  -0.03060  6 C  
+  46      1.53753e-02     6  
+  46                  1.634e+03   0.67391  6 C  
+  47      1.60629e-02     6  
+  47                  5.166e+03   1.75822  6 C  
+  48      2.66412e-02     6  
+  48                  3.995e+03   0.38767  6 C  
+  49      1.34206e-02     6  
+  49                  2.808e+03   0.44490  6 C  
+  50      1.06951e-02     6  
+  50                  4.361e+03   1.26495  6 C  
+  51      6.19624e-03     6  
+  51                  1.433e+03   1.02496  6 C  
+  52      5.34658e-03     6  
+  52                  7.065e+02   0.83902  6 C  
+  53      3.86526e-03     6  
+  53                  1.084e+03  -0.07381  6 C  
+  54      2.73911e-03     6  
+  54                  6.611e+02   0.89224  6 C  
+  55      2.51067e-03     6  
+  55                  7.066e+02   0.90343  6 C  
+  56      8.96928e-04     6  
+  56                  4.195e+02   0.88058  6 C  
+  57      7.61409e-04     6  
+  57                  6.930e+02   1.05071  6 C  
+  58      3.41920e-04     6  
+  58                  1.791e+03   0.72039  6 C  
+  59      2.35564e-04     6  
+  59                  7.230e+03   0.59269  6 C  
+  60      1.28512e-04     6  
+  60                  8.131e+03   0.69438  6 C  
+  61      8.11373e-05     6  
+  61                  2.561e+03   1.29124  6 C  
+  62      6.35404e-05     6  
+  62                  5.325e+03   0.50300  6 C  
+  63      5.11254e-05     6  
+  63                  2.022e+03   0.13218  6 C  
+  64      4.79017e-05     6  
+  64                  6.171e+04   3.79064  6 C  
+  65      2.85436e-05     6  
+  65                  2.500e+04   2.81297  6 C  
+  66      1.16617e-05     6  
+  66                  6.871e+03   0.63310  6 C  
+  67      7.30836e-06     6  
+  67                  2.506e+04   0.62827  6 C  
+  68      8.08068e-06     6  
+  68                  2.247e+04   0.86230  6 C  
+  69      5.22621e-06     6  
+  69                  1.669e+04   1.94865  6 C  
+  70      4.66368e-06     6  
+  70                  1.898e+03   0.59096  6 C  
+  71      1.35002e-06     6  
+  71                  1.060e+03   0.86347  6 C  
+  72      6.62198e-07     6  
+  72                  4.708e+03   0.71703  6 C  
+  73      4.29528e-07     6  
+  73                  7.059e+03   0.50725  6 C  
+  74      1.86767e-07     6  
+  74                  3.417e+04   1.28494  6 C  
+  75      1.36780e-07     6  
+  75                  2.076e+05   0.55926  6 C  
+  76      5.25805e-08     6  
+  76                  6.988e+03   0.60341  6 C  
+  77      3.62033e-08     6  
+  77                  3.264e+03   0.90022  6 C  
+  78      1.27982e-08     6  
+  78                  1.075e+04   0.66826  6 C  
+  79      8.78100e-09 (converged)
+
+Contributions to the energy:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          term           Value
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           one     -82.538450922398
+                       hartree      35.020754520700
+                          x_hf      -8.457020374540
+                      external       0.000000000000
+                         total     -55.974716776238
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Print orbital information:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+               orb_index        Energy[E_h]     Energy[eV]
+		   1     	-0.5145967       -14.003
+		   2     	-0.4966869       -13.516
+		   3     	-0.4961742       -13.502
+		   4     	-0.4961739       -13.502
+		   5     	-0.4624337       -12.583
+		   6     	-0.4624335       -12.583
+		   7     	-0.4611755       -12.549
+		   8     	-0.4609231       -12.542
+		   9     	-0.4609228       -12.542
+		  10     	-0.4211744       -11.461
+		  11     	-0.4211743       -11.461
+		  12     	-0.4188422       -11.397
+		  13     	-0.4077546       -11.096
+		  14     	-0.4070062       -11.075
+		  15     	-0.4068679       -11.071
+		  16     	-0.4068677       -11.071
+		  17     	-0.3598554        -9.792
+		  18     	-0.3598546        -9.792
+		  19     	-0.3591031        -9.772
+		  20     	-0.3583911        -9.752
+		  21     	-0.3583909        -9.752
+		  22     	-0.3552355        -9.666
+		  23     	-0.3540667        -9.635
+		  24     	-0.3540658        -9.635
+		  25     	-0.3516590        -9.569
+		  26     	-0.3167793        -8.620
+		  27     	-0.3167790        -8.620
+		  28     	-0.3156462        -8.589
+		  29     	-0.3123598        -8.500
+		  30     	-0.3123595        -8.500
+		  31     	-0.3105333        -8.450
+		  32     	-0.2721623        -7.406
+		  33     	-0.2720801        -7.404
+		  34     	-0.2720795        -7.404
+		  35     	-0.2719835        -7.401
+		  36     	-0.2719832        -7.401
+		  37     	-0.2718847        -7.398
+		  38     	-0.2701572        -7.351
+		  39     	-0.2701563        -7.351
+		HOMO	        -0.2367176        -6.441
+		LUMO	        -0.2335692        -6.356
+		  42     	-0.2335680        -6.356
+		  43     	-0.2327454        -6.333
+		  44     	-0.1333028        -3.627
+		  45     	-0.1319944        -3.592
+		  46     	-0.1319944        -3.592
+		  47     	-0.1318312        -3.587
+		  48     	-0.1073418        -2.921
+		  49     	-0.1048672        -2.854
+		  50     	-0.1048669        -2.854
+		  51     	-0.1031278        -2.806
+		  52     	-0.1031276        -2.806
+		  53     	-0.1026312        -2.793
+		  54     	-0.0868804        -2.364
+		  55     	-0.0868801        -2.364
+		  56     	-0.0845371        -2.300
+		  57     	-0.0385098        -1.048
+		  58     	-0.0385094        -1.048
+		  59     	-0.0379944        -1.034
+		  60     	-0.0377911        -1.028
+		  61     	-0.0377902        -1.028
+		  62     	-0.0377072        -1.026
+		  63     	-0.0377071        -1.026
+		  64     	-0.0359512        -0.978
+		  65     	-0.0088110        -0.240
+		  66     	-0.0088099        -0.240
+		  67     	-0.0071225        -0.194
+		  68     	-0.0068616        -0.187
+		  69     	-0.0068612        -0.187
+		  70     	 0.0176574         0.480
+		  71     	 0.0184681         0.503
+		  72     	 0.0187052         0.509
+		  73     	 0.0187054         0.509
+		  74     	 0.0635266         1.729
+		  75     	 0.0635269         1.729
+		  76     	 0.0635923         1.730
+		  77     	 0.0638323         1.737
+		  78     	 0.0684288         1.862
+		  79     	 0.0684596         1.863
+		  80     	 0.0684597         1.863
+----------------------------------------------------------------------------------------------------
+       LUMO-HOMO gap 		 0.0031484         0.086
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+Entering RpCCD module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+Entering RpCCD optimization (restricted):
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OPTIMIZATION PARAMETERS:
+Number of frozen cores:      0
+Number of active pairs:      40
+Number of active virtuals:   40
+4-index transformation:      optimal
+Initial guess:
+  type:                        mp2
+  scaling factor:              -0.100
+Solvers:
+  wavefunction amplitudes:   krylov
+  lambda amplitudes:         krylov
+Optimization thresholds:
+  wavefunction:              1.00e-12
+Printing options:
+  threshold:                   1.00e-02
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Generating initial mp2 guess
+----------------------------------------------------------------------------------------------------
+Final reference Energy:          -55.974716776238
+            (Core Energy:          0.000000000000)
+     (determinant Energy:        -55.974716776238)
+Final correlation Energy:         -0.051597973636
+====================================================================================================
+Final total Energy:              -56.026314749875
+====================================================================================================
+----------------------------------------------------------------------------------------------------
+Leading electron-pair excitation amplitudes (i,a = alpha spin; I, A = beta spin)
+ 
+    amplitude    i    I  ->    a    A
+ 
+     1.047382   40   40  ->   43   43
+     0.956972   40   40  ->   42   42
+     0.955467   40   40  ->   41   41
+    -0.125730   37   37  ->   43   43
+    -0.110847   39   39  ->   43   43
+    -0.110797   38   38  ->   43   43
+    -0.102561   35   35  ->   41   41
+    -0.102439   39   39  ->   42   42
+    -0.102354   36   36  ->   42   42
+    -0.102302   38   38  ->   41   41
+    -0.060802   38   38  ->   42   42
+    -0.060710   39   39  ->   41   41
+    -0.060470   33   33  ->   42   42
+    -0.060382   34   34  ->   41   41
+    -0.060319   33   33  ->   43   43
+    -0.060315   34   34  ->   43   43
+    -0.057943   34   34  ->   42   42
+    -0.057845   33   33  ->   41   41
+    -0.057685   40   40  ->   44   44
+    -0.057531   40   40  ->   45   45
+----------------------------------------------------------------------------------------------------
+Natural occupation numbers (for spatial orbitals):
+     1:  1.998860     2:  1.998564     3:  1.998626     4:  1.998625     5:  1.998354
+     6:  1.998355     7:  1.998224     8:  1.998335     9:  1.998335    10:  1.998101
+    11:  1.998101    12:  1.997862    13:  1.997353    14:  1.997476    15:  1.997587
+    16:  1.997587    17:  1.996702    18:  1.996702    19:  1.996103    20:  1.996424
+    21:  1.996424    22:  1.995755    23:  1.996051    24:  1.996051    25:  1.994466
+    26:  1.993343    27:  1.993343    28:  1.992364    29:  1.995247    30:  1.995246
+    31:  1.994433    32:  1.985088    33:  1.986159    34:  1.986158    35:  1.976723
+    36:  1.976756    37:  1.967592    38:  1.978477    39:  1.978467    40:  1.453764
+    41:  0.319049    42:  0.318558    43:  0.062419    44:  0.005001    45:  0.004729
+    46:  0.004728    47:  0.005431    48:  0.004780    49:  0.003727    50:  0.003728
+    51:  0.004007    52:  0.004007    53:  0.005289    54:  0.003948    55:  0.003947
+    56:  0.005472    57:  0.003105    58:  0.003105    59:  0.003235    60:  0.003001
+    61:  0.003002    62:  0.002882    63:  0.002882    64:  0.003670    65:  0.002126
+    66:  0.002126    67:  0.002451    68:  0.002159    69:  0.002159    70:  0.001915
+    71:  0.001846    72:  0.001703    73:  0.001704    74:  0.001298    75:  0.001299
+    76:  0.001735    77:  0.001424    78:  0.001449    79:  0.001362    80:  0.001362
+====================================================================================================
+====================================================================================================
+====================================================================================================
+ 
+ 
+====================================================================================================
+ 
+RCC module
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PARAMETERS
+Wave function model            RfpLCCSD
+Full name of model             Restricted frozen-pair Linearized Coupled Cluster Singles and Doubles
+Cluster operator               T1 + T2 - Tp
+Total number of electrons      80
+Total number of electron pairs 40
+Total number of orbitals       80
+Number of active orbitals      80
+Number of core orbitals        0
+Number of active occupied      40
+Number of active virtual       40
+Initial guess                  mp2
+Solver:                        krylov
+     inner_maxiter             18
+     Jacobian method           lgmres
+Optimization thresholds:
+     energy threshold          1e-06
+     residual threshold        1e-05
+Maximum number of iterations   101
+Tensor contraction engine      automatic
+....................................................................................................
+Computing auxiliary matrices and effective Hamiltonian.
+Performing an MP2 calculations for an initial guess.
+   Generating MP2 guess for T_1.
+   Generating MP2 guess for T_2.
+Resuming CC calculation.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Iter     Total energy        Diff    Corr. energy  |Residual|    max(Residual)         Time
+     1   -57.7019912098    5.77e+01   -1.6756764599    1.30e-03         3.75e-04         140.1048
+     2   -57.7022347440    2.44e-04   -1.6759199942    1.56e-04         8.76e-05         129.6852
+     3   -57.7023351575    1.00e-04   -1.6760204076    2.93e-05         1.90e-05         124.7116
+     4   -57.7023273531   -7.80e-06   -1.6760126032    1.86e-05         1.39e-05         135.1531
+     5   -57.7023374810    1.01e-05   -1.6760227311    6.38e-06         2.69e-06         120.2168
+ 
+Amplitudes converged in 4 iterations.
+ 
+----------------------------------------------------------------------------------------------------
+RfpLCCSD energy
+Total energy               -57.70233748 a.u.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Reference wavefunction     -56.02631475 a.u.
+Total correlation energy    -1.67602273 a.u.
+....................................................................................................
+Singles                      0.00000000 a.u.
+Doubles                     -1.67602273 a.u.
+....................................................................................................
+Seniority 2                 -1.57613446 a.u.
+Seniority 4                 -0.09988827 a.u.
+----------------------------------------------------------------------------------------------------
+ 
+Leading double excitation amplitudes
+
+    amplitude   i   j  ->   a   b
+
+    -0.160533  40  34  ->  41  43
+    -0.160533  34  40  ->  43  41
+    -0.160124  33  40  ->  43  42
+    -0.160124  40  33  ->  42  43
+    -0.148509  40  34  ->  43  41
+    -0.148509  34  40  ->  41  43
+    -0.147675  40  33  ->  43  42
+    -0.147675  33  40  ->  42  43
+    -0.137948  37  39  ->  42  43
+    -0.137948  39  37  ->  43  42
+     0.137647  37  38  ->  41  43
+     0.137647  38  37  ->  43  41
+    -0.111100  37  35  ->  41  43
+    -0.111100  35  37  ->  43  41
+    -0.111003  37  36  ->  42  43
+    -0.111003  36  37  ->  43  42
+    -0.110646  34  40  ->  43  42
+    -0.110646  40  34  ->  42  43
+     0.109317  40  33  ->  41  43
+     0.109317  33  40  ->  43  41
+----------------------------------------------------------------------------------------------------
+
+Leading single excitation amplitudes
+
+    amplitude   i  ->   a
+
+     0.191530  23  ->  42
+     0.191330  24  ->  41
+     0.169543  39  ->  46
+     0.169390  38  ->  45
+    -0.157212  22  ->  43
+     0.123586  38  ->  46
+    -0.123450  39  ->  45
+    -0.107455  32  ->  43
+    -0.088895  18  ->  42
+    -0.088710  17  ->  41
+     0.051217  37  ->  64
+    -0.045575  28  ->  47
+     0.045115  31  ->  47
+    -0.036204  33  ->  51
+    -0.036121  34  ->  52
+    -0.035379  13  ->  44
+     0.030358  36  ->  46
+    -0.030164  35  ->  45
+     0.027840  34  ->  42
+    -0.027735  35  ->  57
+----------------------------------------------------------------------------------------------------
+T1 diagnostic: 0.055679
+D1 diagnostic: 0.217232
+ 
+Entering IP-EOM-CC module
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+IP-EOM-fpLCCSD framework selected
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OPTIMIZATION PARAMETERS:
+Reference Function:            fpLCCSD
+Number of frozen cores:        0
+Number of active occupied:     40
+Number of active virtuals:     40
+Number of hole operators:      2
+Number of unpaired electrons:  1
+Spin-free implementation:      False
+Number of roots:               5
+Total number of roots:         95240
+Diagonalization:               Davidson
+Tensor contraction engine:     automatic
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Building effective Hamiltonian...
+...done.
+Starting diagonalization...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Starting diagonalization for 1 unpaired electrons
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+Davidson diagonalization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             maxiter: 200
+              nroots: 5
+              nguess: 25
+             to disk: False
+    Energy tolerance: 1e-06
+    Vector tolerance: 1e-05
+             restart: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 5 4
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 13 12
+Orthogonalization of (almost) degenerate vectors 16 15
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    0      0    1.313080e-01     2.704558e-01   2.704558e-01  
+    0      1    1.412566e-01     3.198852e-01   3.198852e-01  
+    0      2    1.412666e-01     3.198852e-01   3.198852e-01  
+    0      3    1.419186e-01     3.208845e-01   3.208845e-01  
+    0      4    1.312382e-01     3.232521e-01   3.232521e-01  
+ 
+Imaginary eigenvalues found for root 2. Taking only real part.
+Imaginary eigenvalues found for root 3. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 3 2
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 13 12
+Orthogonalization of (almost) degenerate vectors 16 15
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    1      0    3.273929e-02    -4.045742e-02   2.299984e-01  
+    1      1    4.242020e-02    -5.098487e-02   2.689003e-01  
+    1      2    4.529770e-02    -5.063598e-02   2.692492e-01  
+    1      3    4.530598e-02    -5.163525e-02   2.692492e-01  
+    1      4    3.798155e-02    -4.601868e-02   2.772334e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 13 12
+Orthogonalization of (almost) degenerate vectors 16 15
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    2      0    1.147476e-02    -1.629794e-03   2.283686e-01  
+    2      1    2.259190e-02    -5.572598e-03   2.633277e-01  
+    2      2    2.257097e-02    -5.921484e-03   2.633277e-01  
+    2      3    1.827080e-02    -4.835884e-03   2.644133e-01  
+    2      4    1.845389e-02    -3.625019e-03   2.736084e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 37 36
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    3      0    3.608845e-03     3.556668e-05   2.284042e-01  
+    3      1    1.190734e-02     1.975641e-04   2.635253e-01  
+    3      2    1.189386e-02     1.975641e-04   2.635253e-01  
+    3      3    7.221096e-03     3.156847e-04   2.647290e-01  
+    3      4    8.255403e-03     1.013334e-04   2.737097e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 16 15
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    4      0    1.075625e-03    -4.357577e-05   2.283606e-01  
+    4      1    6.667798e-03    -6.061178e-05   2.634647e-01  
+    4      2    6.654881e-03    -6.061178e-05   2.634647e-01  
+    4      3    2.452970e-03     2.988607e-06   2.647320e-01  
+    4      4    3.300042e-03    -8.809648e-05   2.736217e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 19 18
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    5      0    3.028442e-04    -9.055929e-06   2.283515e-01  
+    5      1    4.425633e-03    -3.946814e-04   2.630700e-01  
+    5      2    4.406765e-03    -3.946814e-04   2.630700e-01  
+    5      3    9.814117e-04    -4.152904e-05   2.646905e-01  
+    5      4    1.522843e-03    -5.740392e-05   2.735642e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 18 17
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    6      0    8.245050e-05     2.779353e-06   2.283543e-01  
+    6      1    2.790773e-03    -1.302526e-04   2.629397e-01  
+    6      2    2.782160e-03    -1.302526e-04   2.629397e-01  
+    6      3    4.620614e-04     9.735715e-06   2.647002e-01  
+    6      4    7.721058e-04     1.469283e-05   2.735789e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    7      0    3.472976e-05    -2.564947e-07   2.283541e-01  
+    7      1    1.466235e-03    -4.090956e-05   2.628988e-01  
+    7      2    1.466780e-03    -4.090956e-05   2.628988e-01  
+    7      3    2.039191e-04     6.735366e-06   2.647069e-01  
+    7      4    3.427906e-04     3.455823e-06   2.735824e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 23 22
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    8      0    1.723950e-05     5.251797e-08   2.283541e-01  
+    8      1    6.201488e-04    -1.822435e-05   2.628806e-01  
+    8      2    6.255029e-04    -1.822435e-05   2.628806e-01  
+    8      3    8.032232e-05     1.793189e-06   2.647087e-01  
+    8      4    1.322381e-04    -4.215311e-07   2.735820e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 17 16
+Orthogonalization of (almost) degenerate vectors 22 21
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+    9      0    8.850348e-06     2.476164e-08   2.283541e-01  converged
+    9      1    2.639687e-04    -1.869919e-05   2.628619e-01  
+    9      2    2.742472e-04    -1.869919e-05   2.628619e-01  
+    9      3    4.055228e-05     1.025199e-06   2.647098e-01  
+    9      4    6.045083e-05     6.868836e-07   2.735827e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 22 21
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   10      1    1.518282e-04     4.826694e-06   2.628667e-01  
+   10      2    1.682636e-04     4.826694e-06   2.628667e-01  
+   10      3    2.717344e-05     1.884071e-07   2.647099e-01  
+   10      4    5.464419e-05     1.214787e-07   2.735828e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 17 16
+Orthogonalization of (almost) degenerate vectors 22 21
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 62 61
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   11      1    1.136857e-04    -1.902649e-06   2.628648e-01  
+   11      2    1.347373e-04    -1.902649e-06   2.628648e-01  
+   11      3    2.397488e-05    -8.543461e-08   2.647099e-01  
+   11      4    7.943103e-05    -3.203274e-07   2.735825e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 6 5
+Orthogonalization of (almost) degenerate vectors 24 23
+Orthogonalization of (almost) degenerate vectors 27 26
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   12      1    1.056628e-04    -1.816010e-07   2.628646e-01  
+   12      2    1.280384e-04    -1.816010e-07   2.628646e-01  
+   12      3    1.800811e-05    -1.213889e-07   2.647097e-01  
+   12      4    1.133112e-04     1.559129e-09   2.735825e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 23 22
+Orthogonalization of (almost) degenerate vectors 27 26
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   13      1    1.044329e-04    -2.002997e-07   2.628644e-01  
+   13      2    1.270218e-04    -2.002997e-07   2.628644e-01  
+   13      3    9.062839e-06    -4.365342e-08   2.647097e-01  converged
+   13      4    1.113839e-04    -1.616918e-06   2.735808e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 23 22
+Orthogonalization of (almost) degenerate vectors 28 27
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   14      1    1.041834e-04     7.536788e-08   2.628645e-01  
+   14      2    1.268091e-04     7.536788e-08   2.628645e-01  
+   14      4    5.430611e-04    -3.871095e-06   2.735770e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 28 27
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   15      1    1.041444e-04    -4.174563e-08   2.628645e-01  
+   15      2    1.267784e-04    -4.174563e-08   2.628645e-01  
+   15      4    1.026658e-03     4.713619e-06   2.735817e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 7 6
+Orthogonalization of (almost) degenerate vectors 24 23
+Orthogonalization of (almost) degenerate vectors 29 28
+Orthogonalization of (almost) degenerate vectors 76 75
+Maximum number of Davidson vectors reached. Performing subspace collapse.
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   16      1    1.041215e-04    -1.266498e-08   2.628645e-01  
+   16      2    1.267593e-04    -1.266498e-08   2.628645e-01  
+   16      4    8.440896e-04     5.666981e-06   2.735874e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   17      1    1.034744e-04    -7.629511e-10   2.628645e-01  
+   17      2    1.272864e-04    -7.629511e-10   2.628645e-01  
+   17      4    4.320368e-04    -6.853802e-06   2.735805e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   18      1    1.034773e-04     7.047713e-10   2.628645e-01  
+   18      2    1.272884e-04     7.047713e-10   2.628645e-01  
+   18      4    2.506492e-04    -3.469721e-06   2.735770e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   19      1    1.034781e-04     5.903920e-10   2.628645e-01  
+   19      2    1.272893e-04     5.903920e-10   2.628645e-01  
+   19      4    1.188426e-04     5.547033e-06   2.735826e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   20      1    1.034815e-04     3.741844e-09   2.628645e-01  
+   20      2    1.272983e-04     3.741844e-09   2.628645e-01  
+   20      4    1.817987e-04    -7.527465e-08   2.735825e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   21      1    1.034816e-04     1.295055e-09   2.628645e-01  
+   21      2    1.272984e-04     1.295055e-09   2.628645e-01  
+   21      4    3.227800e-04    -2.101200e-06   2.735804e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   22      1    1.034881e-04    -5.967965e-09   2.628645e-01  
+   22      2    1.272921e-04    -5.967965e-09   2.628645e-01  
+   22      4    1.579598e-02    -2.577723e-04   2.733226e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   23      1    1.034886e-04     7.109170e-10   2.628645e-01  
+   23      2    1.272872e-04     7.109170e-10   2.628645e-01  
+   23      4    1.332299e-02    -2.094368e-03   2.712283e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   24      1    1.034871e-04     2.019296e-09   2.628645e-01  
+   24      2    1.272844e-04     2.019296e-09   2.628645e-01  
+   24      4    7.478958e-03    -7.643447e-04   2.704639e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   25      1    1.034883e-04     1.528299e-09   2.628645e-01  
+   25      2    1.272856e-04     1.528299e-09   2.628645e-01  
+   25      4    5.159805e-03    -1.888907e-04   2.702750e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   26      1    1.034923e-04     1.895281e-10   2.628645e-01  
+   26      2    1.272880e-04     1.895281e-10   2.628645e-01  
+   26      4    3.351162e-03    -9.384994e-05   2.701812e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 14 13
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   27      1    1.034898e-04     1.519267e-10   2.628645e-01  
+   27      2    1.272852e-04     1.519267e-10   2.628645e-01  
+   27      4    2.054370e-03    -4.742891e-05   2.701337e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   28      1    1.034864e-04     6.718756e-10   2.628645e-01  
+   28      2    1.272827e-04     6.718756e-10   2.628645e-01  
+   28      4    1.718592e-03    -3.771979e-05   2.700960e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   29      1    1.034863e-04     6.230788e-11   2.628645e-01  
+   29      2    1.272823e-04     6.230788e-11   2.628645e-01  
+   29      4    1.224648e-03    -1.082026e-05   2.700852e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 15 14
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   30      1    1.034794e-04     2.331402e-11   2.628645e-01  
+   30      2    1.272812e-04     2.331402e-11   2.628645e-01  
+   30      4    9.375495e-04     6.600353e-07   2.700859e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   31      1    1.034753e-04    -2.916378e-11   2.628645e-01  
+   31      2    1.272782e-04    -2.916378e-11   2.628645e-01  
+   31      4    5.791441e-04    -2.777937e-06   2.700831e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   32      1    1.034745e-04     1.595988e-09   2.628645e-01  
+   32      2    1.272773e-04     1.595988e-09   2.628645e-01  
+   32      4    3.980745e-04     7.128443e-07   2.700838e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 38 37
+Orthogonalization of (almost) degenerate vectors 46 45
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   33      1    1.034762e-04    -1.300404e-09   2.628645e-01  
+   33      2    1.272769e-04    -1.300404e-09   2.628645e-01  
+   33      4    2.532644e-04     2.379894e-07   2.700840e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 26 25
+Orthogonalization of (almost) degenerate vectors 28 27
+Orthogonalization of (almost) degenerate vectors 40 39
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   34      1    1.034751e-04    -7.485851e-10   2.628645e-01  
+   34      2    1.272775e-04    -7.485851e-10   2.628645e-01  
+   34      4    1.300097e-04    -2.021143e-06   2.700820e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 28 27
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   35      1    1.034741e-04    -1.904077e-09   2.628645e-01  
+   35      2    1.272759e-04    -1.904077e-09   2.628645e-01  
+   35      4    5.875312e-05    -1.152296e-06   2.700809e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 29 28
+Maximum number of Davidson vectors reached. Performing subspace collapse.
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   36      1    1.034736e-04     7.933120e-10   2.628645e-01  
+   36      2    1.272723e-04     7.933120e-10   2.628645e-01  
+   36      4    3.269192e-05    -1.531931e-07   2.700807e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   37      1    1.030435e-04     5.303313e-11   2.628645e-01  
+   37      2    1.276212e-04     5.303313e-11   2.628645e-01  
+   37      4    1.933783e-05    -3.649464e-08   2.700807e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   38      1    1.030433e-04    -1.444289e-11   2.628645e-01  
+   38      2    1.276211e-04    -1.444289e-11   2.628645e-01  
+   38      4    1.271608e-05     3.069347e-08   2.700807e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   39      1    1.030447e-04    -8.906398e-11   2.628645e-01  
+   39      2    1.276225e-04    -8.906398e-11   2.628645e-01  
+   39      4    8.198434e-06    -5.178358e-10   2.700807e-01  converged
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   40      1    1.030446e-04     1.135686e-09   2.628645e-01  
+   40      2    1.276240e-04     1.135686e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   41      1    1.030451e-04     6.548299e-10   2.628645e-01  
+   41      2    1.276233e-04     6.548299e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   42      1    1.030457e-04     3.029976e-10   2.628645e-01  
+   42      2    1.276227e-04     3.029976e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   43      1    1.030469e-04    -2.211961e-10   2.628645e-01  
+   43      2    1.276238e-04    -2.211961e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   44      1    1.030471e-04    -3.073028e-10   2.628645e-01  
+   44      2    1.276242e-04    -3.073028e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   45      1    1.030472e-04    -4.148498e-10   2.628645e-01  
+   45      2    1.276231e-04    -4.148498e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 22 21
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   46      1    1.030448e-04    -2.239271e-09   2.628645e-01  
+   46      2    1.276226e-04    -2.239271e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 27 26
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   47      1    1.030448e-04    -9.479301e-10   2.628645e-01  
+   47      2    1.276220e-04    -9.479301e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 30 29
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   48      1    1.030418e-04    -4.081943e-10   2.628645e-01  
+   48      2    1.276226e-04    -4.081943e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   49      1    1.030441e-04     1.707977e-09   2.628645e-01  
+   49      2    1.276243e-04     1.707977e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   50      1    1.030456e-04     2.761248e-10   2.628645e-01  
+   50      2    1.276231e-04     2.761248e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 20 19
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   51      1    1.030455e-04    -3.316283e-09   2.628645e-01  
+   51      2    1.276207e-04    -3.316283e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   52      1    1.030370e-04    -4.004706e-09   2.628645e-01  
+   52      2    1.276202e-04    -4.004706e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 49 48
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   53      1    1.030323e-04    -7.135340e-10   2.628645e-01  
+   53      2    1.276186e-04    -7.135340e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   54      1    1.030322e-04     3.337595e-09   2.628645e-01  
+   54      2    1.276161e-04     3.337595e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 23 22
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   55      1    1.030339e-04     2.043052e-09   2.628645e-01  
+   55      2    1.276138e-04     2.043052e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 8 7
+Orthogonalization of (almost) degenerate vectors 18 17
+Orthogonalization of (almost) degenerate vectors 21 20
+Orthogonalization of (almost) degenerate vectors 24 23
+Orthogonalization of (almost) degenerate vectors 31 30
+Orthogonalization of (almost) degenerate vectors 42 41
+Maximum number of Davidson vectors reached. Performing subspace collapse.
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   56      1    1.030308e-04     5.059976e-09   2.628645e-01  
+   56      2    1.276142e-04     5.059976e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   57      1    1.027484e-04    -6.579328e-10   2.628645e-01  
+   57      2    1.278397e-04    -6.579328e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   58      1    1.027480e-04    -1.504359e-09   2.628645e-01  
+   58      2    1.278426e-04    -1.504359e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   59      1    1.027479e-04    -6.301438e-10   2.628645e-01  
+   59      2    1.278459e-04    -6.301438e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   60      1    1.027511e-04    -4.234613e-10   2.628645e-01  
+   60      2    1.278502e-04    -4.234613e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   61      1    1.027584e-04     2.926845e-10   2.628645e-01  
+   61      2    1.278509e-04     2.926845e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   62      1    1.027658e-04     4.019884e-10   2.628645e-01  
+   62      2    1.278493e-04     4.019884e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   63      1    1.027685e-04    -2.775633e-10   2.628645e-01  
+   63      2    1.278516e-04    -2.775633e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   64      1    1.027675e-04     1.590591e-10   2.628645e-01  
+   64      2    1.278520e-04     1.590591e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 15 14
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   65      1    1.027610e-04    -8.124060e-10   2.628645e-01  
+   65      2    1.278445e-04    -8.124060e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 21 20
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   66      1    1.027586e-04     3.850298e-10   2.628645e-01  
+   66      2    1.278432e-04     3.850298e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 36 35
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   67      1    1.027575e-04     6.235301e-10   2.628645e-01  
+   67      2    1.278408e-04     6.235301e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 15 14
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   68      1    1.027516e-04    -2.591188e-09   2.628645e-01  
+   68      2    1.278411e-04    -2.591188e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   69      1    1.027513e-04     7.142191e-10   2.628645e-01  
+   69      2    1.278420e-04     7.142191e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   70      1    1.027506e-04    -1.675825e-09   2.628645e-01  
+   70      2    1.278390e-04    -1.675825e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   71      1    1.027520e-04     5.961842e-10   2.628645e-01  
+   71      2    1.278397e-04     5.961842e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 14 13
+Orthogonalization of (almost) degenerate vectors 21 20
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   72      1    1.027533e-04     2.426488e-10   2.628645e-01  
+   72      2    1.278395e-04     2.426488e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 50 49
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   73      1    1.027543e-04     7.201097e-10   2.628645e-01  
+   73      2    1.278401e-04     7.201097e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 16 15
+Orthogonalization of (almost) degenerate vectors 24 23
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   74      1    1.027536e-04    -1.543263e-09   2.628645e-01  
+   74      2    1.278401e-04    -1.543263e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   75      1    1.027612e-04    -1.399236e-09   2.628645e-01  
+   75      2    1.278392e-04    -1.399236e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 18 17
+Orthogonalization of (almost) degenerate vectors 24 23
+Maximum number of Davidson vectors reached. Performing subspace collapse.
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   76      1    1.029940e-04     2.508893e-08   2.628645e-01  
+   76      2    1.278851e-04     2.508893e-08   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   77      1    1.026315e-04    -1.157549e-08   2.628645e-01  
+   77      2    1.279876e-04    -1.157549e-08   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   78      1    1.026208e-04    -4.590730e-09   2.628645e-01  
+   78      2    1.279851e-04    -4.590730e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   79      1    1.026883e-04     2.895042e-09   2.628645e-01  
+   79      2    1.279835e-04     2.895042e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   80      1    1.026900e-04    -1.725551e-09   2.628645e-01  
+   80      2    1.279909e-04    -1.725551e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   81      1    1.027213e-04     4.412961e-09   2.628645e-01  
+   81      2    1.279987e-04     4.412961e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   82      1    1.027290e-04     9.249502e-09   2.628645e-01  
+   82      2    1.280029e-04     9.249502e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   83      1    1.027076e-04     7.403178e-10   2.628645e-01  
+   83      2    1.280006e-04     7.403178e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   84      1    1.027081e-04    -3.815950e-09   2.628645e-01  
+   84      2    1.279942e-04    -3.815950e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   85      1    1.027091e-04    -1.320269e-09   2.628645e-01  
+   85      2    1.279933e-04    -1.320269e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   86      1    1.027137e-04    -2.182196e-09   2.628645e-01  
+   86      2    1.279889e-04    -2.182196e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 17 16
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   87      1    1.027117e-04     7.864669e-10   2.628645e-01  
+   87      2    1.279879e-04     7.864669e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   88      1    1.027111e-04    -2.882927e-11   2.628645e-01  
+   88      2    1.279889e-04    -2.882927e-11   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 39 38
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   89      1    1.027048e-04    -3.645409e-09   2.628645e-01  
+   89      2    1.279901e-04    -3.645409e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 21 20
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   90      1    1.027020e-04    -5.077414e-10   2.628645e-01  
+   90      2    1.279914e-04    -5.077414e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   91      1    1.027031e-04    -2.560790e-09   2.628645e-01  
+   91      2    1.279913e-04    -2.560790e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 33 32
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   92      1    1.026966e-04    -7.402373e-10   2.628645e-01  
+   92      2    1.279924e-04    -7.402373e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   93      1    1.026931e-04    -1.027554e-09   2.628645e-01  
+   93      2    1.279928e-04    -1.027554e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 17 16
+Orthogonalization of (almost) degenerate vectors 41 40
+Orthogonalization of (almost) degenerate vectors 64 63
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   94      1    1.026960e-04    -5.607886e-10   2.628645e-01  
+   94      2    1.279921e-04    -5.607886e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 17 16
+Orthogonalization of (almost) degenerate vectors 30 29
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   95      1    1.026942e-04    -5.627148e-10   2.628645e-01  
+   95      2    1.279936e-04    -5.627148e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 30 29
+Maximum number of Davidson vectors reached. Performing subspace collapse.
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   96      1    1.026937e-04    -3.259352e-10   2.628645e-01  
+   96      2    1.279951e-04    -3.259352e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   97      1    1.025800e-04     4.417633e-12   2.628645e-01  
+   97      2    1.280874e-04     4.417633e-12   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   98      1    1.025790e-04    -9.237603e-10   2.628645e-01  
+   98      2    1.280860e-04    -9.237603e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+   99      1    1.025798e-04    -2.302037e-09   2.628645e-01  
+   99      2    1.280898e-04    -2.302037e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  100      1    1.025798e-04    -1.595466e-09   2.628645e-01  
+  100      2    1.280895e-04    -1.595466e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  101      1    1.025791e-04     5.545649e-10   2.628645e-01  
+  101      2    1.280880e-04     5.545649e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 14 13
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  102      1    1.025769e-04    -6.129442e-10   2.628645e-01  
+  102      2    1.280903e-04    -6.129442e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  103      1    1.025774e-04    -1.235977e-09   2.628645e-01  
+  103      2    1.280929e-04    -1.235977e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  104      1    1.025804e-04     2.216587e-09   2.628645e-01  
+  104      2    1.280881e-04     2.216587e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 29 28
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  105      1    1.025747e-04     2.844439e-09   2.628645e-01  
+  105      2    1.280904e-04     2.844439e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  106      1    1.025741e-04     5.308983e-10   2.628645e-01  
+  106      2    1.280929e-04     5.308983e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 36 35
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  107      1    1.025740e-04    -4.328532e-11   2.628645e-01  
+  107      2    1.280912e-04    -4.328532e-11   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  108      1    1.025782e-04    -3.801397e-09   2.628645e-01  
+  108      2    1.280891e-04    -3.801397e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  109      1    1.025781e-04    -2.132159e-09   2.628645e-01  
+  109      2    1.280884e-04    -2.132159e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  110      1    1.025773e-04     7.472256e-10   2.628645e-01  
+  110      2    1.280864e-04     7.472256e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 40 39
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  111      1    1.025743e-04     5.562538e-09   2.628645e-01  
+  111      2    1.280905e-04     5.562538e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  112      1    1.025792e-04     2.689393e-09   2.628645e-01  
+  112      2    1.280975e-04     2.689393e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  113      1    1.025809e-04    -4.801422e-09   2.628645e-01  
+  113      2    1.281039e-04    -4.801422e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 49 48
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  114      1    1.026918e-04    -9.109470e-09   2.628645e-01  
+  114      2    1.290254e-04    -9.109470e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  115      1    1.072615e-04     1.132979e-07   2.628646e-01  
+  115      2    1.644545e-04     1.132979e-07   2.628646e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Maximum number of Davidson vectors reached. Performing subspace collapse.
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  116      0    1.402886e-05     3.424613e-08   2.283542e-01  
+  116      1    2.510891e-04     1.572970e-06   2.628662e-01  
+  116      2    7.095036e-04     1.572970e-06   2.628662e-01  
+  116      4    2.295460e-05    -7.161057e-08   2.700806e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  117      0    4.590411e-06    -2.736034e-08   2.283541e-01  converged
+  117      1    1.286733e-04    -1.343718e-06   2.628648e-01  
+  117      2    2.751557e-04    -1.343718e-06   2.628648e-01  
+  117      4    7.794760e-06     8.936737e-08   2.700807e-01  converged
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  118      1    1.064928e-04    -1.148925e-07   2.628647e-01  
+  118      2    1.552497e-04    -1.148925e-07   2.628647e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  119      1    1.035885e-04     3.570998e-08   2.628647e-01  
+  119      2    1.359833e-04     3.570998e-08   2.628647e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 7 6
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  120      1    1.028981e-04    -8.242290e-08   2.628646e-01  
+  120      2    1.322104e-04    -8.242290e-08   2.628646e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 14 13
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  121      1    1.026786e-04    -1.136339e-07   2.628645e-01  
+  121      2    1.299273e-04    -1.136339e-07   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 9 8
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  122      1    1.025353e-04    -5.755915e-08   2.628645e-01  
+  122      2    1.286435e-04    -5.755915e-08   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  123      1    1.024978e-04    -2.506059e-08   2.628644e-01  
+  123      2    1.283183e-04    -2.506059e-08   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  124      1    1.024772e-04     2.103385e-08   2.628645e-01  
+  124      2    1.283493e-04     2.103385e-08   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 26 25
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  125      1    1.024708e-04    -4.657183e-09   2.628645e-01  
+  125      2    1.282892e-04    -4.657183e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 27 26
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  126      1    1.024690e-04    -3.939347e-09   2.628645e-01  
+  126      2    1.282745e-04    -3.939347e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  127      1    1.024636e-04     5.334291e-09   2.628645e-01  
+  127      2    1.282659e-04     5.334291e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 22 21
+Orthogonalization of (almost) degenerate vectors 24 23
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  128      1    1.024592e-04     4.622498e-10   2.628645e-01  
+  128      2    1.282519e-04     4.622498e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 35 34
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  129      1    1.024551e-04     5.558428e-09   2.628645e-01  
+  129      2    1.282090e-04     5.558428e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 16 15
+Orthogonalization of (almost) degenerate vectors 23 22
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  130      1    1.024517e-04     9.139202e-09   2.628645e-01  
+  130      2    1.282162e-04     9.139202e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 27 26
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  131      1    1.024453e-04     6.613116e-09   2.628645e-01  
+  131      2    1.282139e-04     6.613116e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 22 21
+Orthogonalization of (almost) degenerate vectors 28 27
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  132      1    1.024427e-04    -1.724905e-09   2.628645e-01  
+  132      2    1.282099e-04    -1.724905e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 16 15
+Orthogonalization of (almost) degenerate vectors 22 21
+Orthogonalization of (almost) degenerate vectors 28 27
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  133      1    1.024421e-04    -2.279310e-09   2.628645e-01  
+  133      2    1.282167e-04    -2.279310e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 22 21
+Orthogonalization of (almost) degenerate vectors 48 47
+Orthogonalization of (almost) degenerate vectors 52 51
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  134      1    1.024416e-04     3.704703e-10   2.628645e-01  
+  134      2    1.282137e-04     3.704703e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 23 22
+Orthogonalization of (almost) degenerate vectors 30 29
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  135      1    1.024435e-04     1.354958e-09   2.628645e-01  
+  135      2    1.282169e-04     1.354958e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 19 18
+Orthogonalization of (almost) degenerate vectors 23 22
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 29 28
+Orthogonalization of (almost) degenerate vectors 31 30
+Orthogonalization of (almost) degenerate vectors 34 33
+Orthogonalization of (almost) degenerate vectors 57 56
+Orthogonalization of (almost) degenerate vectors 63 62
+Maximum number of Davidson vectors reached. Performing subspace collapse.
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  136      1    1.024447e-04     9.954653e-10   2.628645e-01  
+  136      2    1.282152e-04     9.954653e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  137      1    1.024197e-04    -4.440615e-12   2.628645e-01  
+  137      2    1.282340e-04    -4.440615e-12   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  138      1    1.024182e-04    -5.191855e-10   2.628645e-01  
+  138      2    1.282328e-04    -5.191855e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  139      1    1.024156e-04    -1.379734e-09   2.628645e-01  
+  139      2    1.282339e-04    -1.379734e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  140      1    1.024155e-04     1.832202e-09   2.628645e-01  
+  140      2    1.282333e-04     1.832202e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  141      1    1.024148e-04    -2.745381e-10   2.628645e-01  
+  141      2    1.282296e-04    -2.745381e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  142      1    1.024174e-04    -1.813380e-09   2.628645e-01  
+  142      2    1.282276e-04    -1.813380e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  143      1    1.024177e-04    -1.725406e-09   2.628645e-01  
+  143      2    1.282297e-04    -1.725406e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  144      1    1.024180e-04     7.815028e-10   2.628645e-01  
+  144      2    1.282290e-04     7.815028e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  145      1    1.024148e-04     4.159936e-09   2.628645e-01  
+  145      2    1.282308e-04     4.159936e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  146      1    1.024162e-04    -2.099589e-09   2.628645e-01  
+  146      2    1.282275e-04    -2.099589e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 10 9
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  147      1    1.024191e-04    -1.665337e-09   2.628645e-01  
+  147      2    1.282274e-04    -1.665337e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  148      1    1.024204e-04     2.693589e-09   2.628645e-01  
+  148      2    1.282265e-04     2.693589e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  149      1    1.024198e-04     1.814704e-10   2.628645e-01  
+  149      2    1.282252e-04     1.814704e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 18 17
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  150      1    1.024182e-04    -1.546900e-09   2.628645e-01  
+  150      2    1.282162e-04    -1.546900e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 28 27
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  151      1    1.024171e-04     2.366023e-09   2.628645e-01  
+  151      2    1.282120e-04     2.366023e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  152      1    1.024180e-04    -4.140986e-09   2.628645e-01  
+  152      2    1.282101e-04    -4.140986e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 23 22
+Orthogonalization of (almost) degenerate vectors 29 28
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  153      1    1.024189e-04    -1.396207e-09   2.628645e-01  
+  153      2    1.282126e-04    -1.396207e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 23 22
+Orthogonalization of (almost) degenerate vectors 33 32
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  154      1    1.024197e-04    -3.203242e-09   2.628645e-01  
+  154      2    1.282121e-04    -3.203242e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 25 24
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  155      1    1.024182e-04    -7.791230e-10   2.628645e-01  
+  155      2    1.282081e-04    -7.791230e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Maximum number of Davidson vectors reached. Performing subspace collapse.
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  156      1    1.024186e-04    -1.313646e-10   2.628645e-01  
+  156      2    1.282023e-04    -1.313646e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  157      1    1.024019e-04     8.137152e-11   2.628645e-01  
+  157      2    1.282154e-04     8.137152e-11   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  158      1    1.024018e-04    -6.656087e-11   2.628645e-01  
+  158      2    1.282165e-04    -6.656087e-11   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  159      1    1.024022e-04    -3.617379e-10   2.628645e-01  
+  159      2    1.282180e-04    -3.617379e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  160      1    1.023984e-04    -1.573043e-09   2.628645e-01  
+  160      2    1.282196e-04    -1.573043e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  161      1    1.023962e-04     1.389935e-10   2.628645e-01  
+  161      2    1.282183e-04     1.389935e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  162      1    1.023929e-04    -1.897946e-09   2.628645e-01  
+  162      2    1.282170e-04    -1.897946e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  163      1    1.023912e-04    -1.184033e-09   2.628645e-01  
+  163      2    1.282178e-04    -1.184033e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  164      1    1.023915e-04    -5.049138e-10   2.628645e-01  
+  164      2    1.282164e-04    -5.049138e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  165      1    1.023920e-04    -3.506537e-10   2.628645e-01  
+  165      2    1.282160e-04    -3.506537e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  166      1    1.023917e-04     2.382979e-10   2.628645e-01  
+  166      2    1.282132e-04     2.382979e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  167      1    1.023850e-04     1.952920e-09   2.628645e-01  
+  167      2    1.282137e-04     1.952920e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 17 16
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  168      1    1.023835e-04     6.233754e-10   2.628645e-01  
+  168      2    1.282081e-04     6.233754e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 19 18
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  169      1    1.023832e-04    -2.616127e-09   2.628645e-01  
+  169      2    1.282035e-04    -2.616127e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 24 23
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  170      1    1.023776e-04    -1.875503e-09   2.628645e-01  
+  170      2    1.282055e-04    -1.875503e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 26 25
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  171      1    1.023740e-04     1.177752e-09   2.628645e-01  
+  171      2    1.282044e-04     1.177752e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 24 23
+Orthogonalization of (almost) degenerate vectors 26 25
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  172      1    1.023740e-04    -8.461742e-10   2.628645e-01  
+  172      2    1.282045e-04    -8.461742e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 24 23
+Orthogonalization of (almost) degenerate vectors 57 56
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  173      1    1.023733e-04    -2.021489e-10   2.628645e-01  
+  173      2    1.282077e-04    -2.021489e-10   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 28 27
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  174      1    1.023797e-04     4.547158e-09   2.628645e-01  
+  174      2    1.282058e-04     4.547158e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 15 14
+Orthogonalization of (almost) degenerate vectors 27 26
+Orthogonalization of (almost) degenerate vectors 39 38
+Orthogonalization of (almost) degenerate vectors 47 46
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  175      1    1.023939e-04     4.442374e-09   2.628645e-01  
+  175      2    1.282071e-04     4.442374e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 27 26
+Orthogonalization of (almost) degenerate vectors 37 36
+Maximum number of Davidson vectors reached. Performing subspace collapse.
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  176      1    1.027984e-04     1.428551e-08   2.628645e-01  
+  176      2    1.282737e-04     1.428551e-08   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  177      1    1.025144e-04     4.358864e-09   2.628645e-01  
+  177      2    1.282217e-04     4.358864e-09   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  178      1    1.024203e-04    -2.341363e-08   2.628645e-01  
+  178      2    1.282264e-04    -2.341363e-08   2.628645e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  179      1    1.024091e-04    -3.230407e-08   2.628644e-01  
+  179      2    1.282583e-04    -3.230407e-08   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  180      1    1.024044e-04    -7.308370e-09   2.628644e-01  
+  180      2    1.282656e-04    -7.308370e-09   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  181      1    1.023972e-04     1.587658e-09   2.628644e-01  
+  181      2    1.282638e-04     1.587658e-09   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  182      1    1.023980e-04     3.978750e-09   2.628644e-01  
+  182      2    1.282578e-04     3.978750e-09   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 26 25
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  183      1    1.023992e-04     6.562256e-11   2.628644e-01  
+  183      2    1.282552e-04     6.562256e-11   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  184      1    1.023935e-04    -1.931316e-09   2.628644e-01  
+  184      2    1.282552e-04    -1.931316e-09   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  185      1    1.023974e-04     2.279495e-10   2.628644e-01  
+  185      2    1.282559e-04     2.279495e-10   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  186      1    1.024001e-04     1.110131e-09   2.628644e-01  
+  186      2    1.282543e-04     1.110131e-09   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 24 23
+Orthogonalization of (almost) degenerate vectors 27 26
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  187      1    1.023981e-04    -1.296925e-10   2.628644e-01  
+  187      2    1.282539e-04    -1.296925e-10   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 16 15
+Orthogonalization of (almost) degenerate vectors 38 37
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  188      1    1.023957e-04    -2.970568e-09   2.628644e-01  
+  188      2    1.282555e-04    -2.970568e-09   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 16 15
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 40 39
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  189      1    1.023953e-04    -1.679542e-09   2.628644e-01  
+  189      2    1.282569e-04    -1.679542e-09   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 12 11
+Orthogonalization of (almost) degenerate vectors 27 26
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  190      1    1.023880e-04     2.742477e-10   2.628644e-01  
+  190      2    1.282571e-04     2.742477e-10   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 21 20
+Orthogonalization of (almost) degenerate vectors 23 22
+Orthogonalization of (almost) degenerate vectors 31 30
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  191      1    1.023856e-04    -2.597479e-10   2.628644e-01  
+  191      2    1.282571e-04    -2.597479e-10   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 24 23
+Orthogonalization of (almost) degenerate vectors 30 29
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  192      1    1.023826e-04    -6.667472e-10   2.628644e-01  
+  192      2    1.282575e-04    -6.667472e-10   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 15 14
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 56 55
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  193      1    1.023826e-04    -8.985918e-11   2.628644e-01  
+  193      2    1.282575e-04    -8.985918e-11   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 15 14
+Orthogonalization of (almost) degenerate vectors 32 31
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  194      1    1.023797e-04     2.140365e-10   2.628644e-01  
+  194      2    1.282573e-04     2.140365e-10   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 15 14
+Orthogonalization of (almost) degenerate vectors 23 22
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 36 35
+Orthogonalization of (almost) degenerate vectors 63 62
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  195      1    1.023800e-04     6.294524e-10   2.628644e-01  
+  195      2    1.282591e-04     6.294524e-10   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+Orthogonalization of (almost) degenerate vectors 17 16
+Orthogonalization of (almost) degenerate vectors 23 22
+Orthogonalization of (almost) degenerate vectors 25 24
+Orthogonalization of (almost) degenerate vectors 27 26
+Orthogonalization of (almost) degenerate vectors 35 34
+Maximum number of Davidson vectors reached. Performing subspace collapse.
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  196      1    1.023805e-04    -1.119271e-10   2.628644e-01  
+  196      2    1.282579e-04    -1.119271e-10   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  197      1    1.023706e-04    -2.275305e-10   2.628644e-01  
+  197      2    1.282653e-04    -2.275305e-10   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  198      1    1.023706e-04    -1.111204e-10   2.628644e-01  
+  198      2    1.282646e-04    -1.111204e-10   2.628644e-01  
+ 
+Imaginary eigenvalues found for root 1. Taking only real part.
+Imaginary eigenvalues found for root 2. Taking only real part.
+Orthogonalization of (almost) degenerate vectors 2 1
+  iter  vector    |HR-ER|       E(new)-E(old)   E_excitation
+  199      1    1.023687e-04    -2.120654e-10   2.628644e-01  
+  199      2    1.282648e-04    -2.120654e-10   2.628644e-01  
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Davidson NOT converged
+====================================================================================================
+Final results for spin projection 0.5:
+ 
+----------------------------------------------------------------------------------------------------
+Root 1:
+Ionization energy:           2.283541e-01 [au]  /   6.213832e+00 [eV]  /   5.011794e+04 [cm-1]
+Energy of ionized state:    -57.4739833590 [au]  /  -1563.9466 [eV]  /  -12614081.299 [cm-1]
+              r_i:           ( 40)    0.92561
+      weight(r_i):  0.85810
+    weight(r_ijb):  0.01404
+    weight(r_iJB):  0.12786
+Suggested spin multiplicity: doublet
+ 
+----------------------------------------------------------------------------------------------------
+Root 2:
+Ionization energy:           2.628644e-01 [au]  /   7.152905e+00 [eV]  /   5.769208e+04 [cm-1]
+Energy of ionized state:    -57.4394730456 [au]  /  -1563.0075 [eV]  /  -12606507.161 [cm-1]
+              r_i:           ( 38)    0.63874
+              r_i:           ( 35)   -0.49898
+              r_i:           ( 39)   -0.18366
+      weight(r_i):  0.70487
+    weight(r_ijb):  0.03145
+    weight(r_iJB):  0.26368
+Suggested spin multiplicity: doublet
+ 
+----------------------------------------------------------------------------------------------------
+Root 3:
+Ionization energy:           2.628644e-01 [au]  /   7.152905e+00 [eV]  /   5.769208e+04 [cm-1]
+Energy of ionized state:    -57.4394730456 [au]  /  -1563.0075 [eV]  /  -12606507.161 [cm-1]
+              r_i:           ( 39)    0.63922
+              r_i:           ( 36)    0.49658
+              r_i:           ( 38)    0.18800
+      weight(r_i):  0.70373
+    weight(r_ijb):  0.03185
+    weight(r_iJB):  0.26442
+Suggested spin multiplicity: doublet
+ 
+----------------------------------------------------------------------------------------------------
+Root 4:
+Ionization energy:           2.647097e-01 [au]  /   7.203117e+00 [eV]  /   5.809706e+04 [cm-1]
+Energy of ionized state:    -57.4376277949 [au]  /  -1562.9573 [eV]  /  -12606102.175 [cm-1]
+              r_i:           ( 32)    0.87301
+      weight(r_i):  0.76235
+    weight(r_ijb):  0.01671
+    weight(r_iJB):  0.22094
+Suggested spin multiplicity: doublet
+ 
+----------------------------------------------------------------------------------------------------
+Root 5:
+Ionization energy:           2.700806e-01 [au]  /   7.349268e+00 [eV]  /   5.927585e+04 [cm-1]
+Energy of ionized state:    -57.4322568311 [au]  /  -1562.8112 [eV]  /  -12604923.385 [cm-1]
+              r_i:           ( 37)    0.88102
+      weight(r_i):  0.77677
+    weight(r_ijb):  0.01786
+    weight(r_iJB):  0.20537
+Suggested spin multiplicity: doublet
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Please, cite the following references:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ * For IP-EOM-CC-based methods
+   - Gałyńska, M.; Boguslawski, K.; J. Chem. Theory Comput. 20, 4182--4195 (2024);
+     http://dx.doi.org/10.1021/acs.jctc.4c00172
+
+ * For model Hamiltonians
+   - Karimi, Z.; Ahmadkhani, S.; Boguslawski, K.; Tecmer, P.; XX X, X--X (2025); X
+
+ * For pCCD and post-pCCD multipole moments using expectation-value approach
+   - Chakraborty, R.; Ahmadkhani, S.; Świerczyński, J.; Boguslawski, K.; Tecmer, Paweł; J. Phys.
+     Chem. A 129, 6713--6732 (2025); https://doi.org/10.1021/acs.jpca.5c03859
+
+ * For pCCD and post-pCCD multipole moments using response approach
+   - Chakraborty, R.; de Moraes, M. M. F.; Boguslawski, K.; Nowak, A.; Świerczyński, J.; Tecmer,
+     P.; J. Chem. Theory Comput. 20, 4689--4702 (2024); https://doi.org/10.1021/acs.jctc.4c00471
+
+ * For the (D)IP-EOM-pCCD-based methods
+   - Boguslawski, K.; Chem. Commun. 57, 12277--12280 (2021); http://dx.doi.org/10.1039/D1CC04539C
+
+   - Pandey, R. D.; de Moraes, M. M. F.; Boguslawski, K.; Tecmer, P.; J. Chem. Theory Comput. 21,
+     5049--5061 (2025); https://doi.org/10.1021/acs.jctc.5c00057
+
+ * For the commutator DIIS SCF algorithm
+   - Pulay, P.; Chem. Phys. Lett. 73, 393--398 (1980);
+     http://dx.doi.org/10.1016/0009-2614(80)80396-4
+
+ * For the pCCD method
+   - Boguslawski, K.; Tecmer, P.; Ayers, P. W.; Bultinck, P.; De Baerdemacker, S.; Van Neck, D.;
+     Phys. Rev. B 89, 201106(R) (2014); http://dx.doi.org/10.1103/PhysRevB.89.201106
+
+   - Boguslawski, K.; Tecmer, P.; Ayers, P. W.; Bultinck, P.; De Baerdemacker, S.; Van Neck, D.; J.
+     Chem. Theory Comput. 10, 4873--4882 (2014); http://dx.doi.org/10.1021/ct500759q
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Details can be found in the file /Users/zahrakarimi/my_pybest/pybest/src/pybest/data/references.bib
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+User:            zahrakarimi
+Machine info:    Darwin host-105.55.fizyka.umk.pl 24.6.0 Darwin Kernel Version 24.6.0: Tue Apr 21
+                 20:17:54 PDT 2026; root:xnu-11417.140.69.710.16~1/RELEASE_X86_64 x86_64
+Time:            2026-06-10T10:11:13.524166
+Python version:  3.12.8 (main, Dec  7 2024, 10:37:29) [Clang 17.0.0 (clang-1700.0.13.3)]
+PyBEST version:  2.1.0.dev60+g74c4c368
+Current Dir:     /Users/zahrakarimi/my_pybest/pybest/src/pybest/data/examples/hamiltonian
+Command line:    ppp.py
+PyBEST module:   /Users/zahrakarimi/my_pybest/pybest/src/pybest/log.py
+
+Overview of CPU time usage.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Label                    Total     Own
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Base: contract          802.5    802.4 WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+Base: expand              0.4      0.4                                                              
+Davidson                213.0     76.0 WWWWW                                                        
+GPU: C-split              0.0      0.0                                                              
+GPU: Splitting            0.0      0.0                                                              
+Geminal: solver           8.4      0.4                                                              
+H_eff: Fock_diag          0.0      0.0                                                              
+H_eff: Fock_full          0.2      0.0                                                              
+IPCCSD1: H_diag           0.1      0.0                                                              
+IPCCSD1: H_eff            8.7      0.1                                                              
+IPCCSD1: H_sub          137.0      5.3                                                              
+Index Trans              11.7     11.7                                                              
+PT2: Epsilon              0.0      0.0                                                              
+RCCSD: MP2 guess          0.1      0.0                                                              
+RCCSD: T_1 MP2 guess      0.0      0.0                                                              
+RCCSD: T_2 MP2 guess      0.1      0.0                                                              
+RCCSD: unravel           14.2     14.2 W                                                            
+RLCCSD: Energy            0.1      0.0                                                              
+RLCCSD: Residual        295.4      9.2                                                              
+RfpLCCSD: Ham             0.0      0.0                                                              
+RfpLCCSD: Residual      324.0     12.1                                                              
+RfpLCCSD: VecFct        638.2      5.0                                                              
+RpCCD: 1DM                0.0      0.0                                                              
+RpCCD: 2DM                0.0      0.0                                                              
+RpCCD: Hamiltonian        0.3      0.2                                                              
+RpCCD: Lambda VecFct      0.6      0.1                                                              
+RpCCD: Lambda eqs         0.6      0.0                                                              
+RpCCD: Solver             5.1      0.3                                                              
+RpCCD: T_p VecFct         0.9      0.1                                                              
+RpCCD: T_p eqs            1.0      0.1                                                              
+RpCCD: nDM                0.0      0.0                                                              
+SCF                      63.6      0.8                                                              
+SCF: Initial Guess        0.0      0.0                                                              
+Total                   957.2     18.1 W                                                            
+XIPCC: Diagonalize      213.0      0.0                                                              
+XIPCC: call             224.9      0.4                                                              
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  CPU user time  :    1980.80
+  CPU sysem time :     136.81
+  Page swaps     :       0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+====================================================================================================
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@/             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*                          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@        @@              @@@@@           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@            @@@       @@@       @@,       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@               @@@   @@           @@   @@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                   @@@             @@@               @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@                     @@           @@                  @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@                     @@,       @@@                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@.                     @@@@@@@                     @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                           @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(                                       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @@\     @@\  @@@  @@@@@@      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         @  @    @  @     @   @        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@          @@/ @ @ @@:  @@@ \@  @         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@           @    @  @  @       @ @          @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@            @    @  @@/  @@@ @@/ @           @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                                                 @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@                                                   @@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@                       @@@                       @@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@               @@@@@@@@@@@@@@&              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+ End of PyBEST. Program finished SUCCESSFULLY. Please read this output file carefully and watch out
+ for possible WARNINGS!
+
+ Thank you for using PyBEST 2.1.0.dev60+g74c4c368! See you soon!
+====================================================================================================
+zahrakarimi@host-105 hamiltonian % 
